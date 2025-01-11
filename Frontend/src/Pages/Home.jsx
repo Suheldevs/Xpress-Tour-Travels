@@ -7,6 +7,8 @@ import BookCar from '../Components/BookCar'
 import ServicesSection from '../Components/ServicesSection'
 import HowWeWork from '../Components/HowWeWork'
 import { HowItWorks } from '../Components/HWW'
+import WhyChooseUs from '../Components/WhyChooseUs'
+import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -18,6 +20,8 @@ function Home() {
     <BookCar/>
     <ServicesSection/>
     <HowWeWork/>
+    <WhyChooseUs/>
+    <Footer/>
     {/* <HowItWorks/> */}
     </>
   )

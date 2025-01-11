@@ -21,9 +21,9 @@ const HowWeWork = () => {
         </div>
 
         {/* Steps Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-6 ">
           {/* Left Section */}
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md flex flex-col  justify-between">
+          <div className="bg-gray-200 p-6 rounded-lg shadow-md flex flex-col justify-between">
             <h4 className="text-2xl font-semibold text-gray-800 mb-4">Top Cars</h4>
             <p className="text-gray-700 text-sm mb-6">
               Explore our top-rated, most popular cars, each maintained to the
@@ -36,11 +36,11 @@ const HowWeWork = () => {
           </div>
 
           {/* Right Steps */}
-          <div className="col-span-3 bg-white p-6 rounded-lg shadow-md">
+          <div className="col-span-3 bg-white p-6 rounded-lg shadow-md mt-4 md:mt-0">
             <div className="grid grid-cols-3 gap-4">
               {/* Step 1 */}
               <div className="text-center">
-                <FaCalendarAlt className="text-blue-600 text-4xl mx-auto mb-4" />
+                <FaCalendarAlt className="text-slate-800 text-4xl mx-auto mb-4" />
                 <h4 className="text-2xl font-semibold text-gray-800">
                   Book Your Car
                 </h4>
@@ -52,7 +52,7 @@ const HowWeWork = () => {
 
               {/* Step 2 */}
               <div className="text-center rounded-2xl bg-slate-200">
-                <FaMoneyCheckAlt className="text-blue-600 text-4xl mx-auto mb-4" />
+                <FaMoneyCheckAlt className="text-slate-800 text-4xl mx-auto mb-4" />
                 <h4 className="text-2xl font-semibold text-gray-800">
                   Booking Payment
                 </h4>
@@ -63,7 +63,7 @@ const HowWeWork = () => {
 
               {/* Step 3 */}
               <div className="text-center">
-                <FaCarAlt className="text-blue-600 text-4xl mx-auto mb-4" />
+                <FaCarAlt className="text-slate-800 text-4xl mx-auto mb-4" />
                 <h4 className="text-2xl font-semibold text-gray-800">
                   Pick-up Car
                 </h4>

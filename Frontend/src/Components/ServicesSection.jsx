@@ -36,7 +36,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="bg-gray-50 lg:py-12 md:py-10 py-8">
       {/* Section Header */}
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-800">Our Services</h2>
@@ -51,7 +51,7 @@ export default function ServicesSection() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+            className="bg-white border-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
             <div className="flex flex-col items-center text-center p-6">
               {/* Icon */}

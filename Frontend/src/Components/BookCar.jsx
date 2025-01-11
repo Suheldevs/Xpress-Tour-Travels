@@ -1,7 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Importing icons
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { FaChevronLeft, FaChevronRight, FaGasPump } from "react-icons/fa";
+import { TbAirConditioning } from "react-icons/tb";
+import { MdAirlineSeatReclineNormal } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -13,34 +15,42 @@ const carData = [
     price: "₹2,800 per day",
     image: "car1.png",
     description: "Best Experience Guaranteed",
+    seats: 4,
+    engine: "Petrol",
   },
   {
     id: 2,
     name: "THAR (2024)",
     price: "₹4,500 per day",
-    image: "car2.png", 
+    image: "car2.png",
     description: "Premium Comfort Assured",
+    seats: 4,
+    engine: "Petrol",
   },
   {
     id: 3,
     name: "SCORPIO N (2024)",
     price: "₹5,500 per day",
-    image: "car3.png", // Replace with actual image URLs
+    image: "car3.png",
     description: "Rugged Drive Experience",
+    seats: 8,
+    engine: "Petrol",
   },
   {
     id: 4,
     name: "FORTUNER (2024)",
     price: "₹6,000 per day",
-    image: "car4.webp", // Replace with actual image URLs
+    image: "car4.webp",
     description: "Luxury Drive Experience",
+    seats: 6,
+    engine: "Petrol",
   },
 ];
 
 const BookCar = () => {
   return (
-    <div className="bg-slate-800 py-10">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="bg-slate-800 lg:py-12 md:py-10 py-8">
+      <div data-aos='fade-up' className="max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="mb-6 text-center">
           <div className="flex justify-center items-center space-x-3">
@@ -60,51 +70,50 @@ const BookCar = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-gray-100">Experience the Best Cars</h2>
+            <h1 className="text-gray-100">Experience the Best Cars</h1>
           </div>
-          <p className="mt-2 text-gray-600">
+          <p className=" text-gray-200">
             Please choose your preferred car from below
           </p>
           <div className="mt-4 flex justify-center space-x-4">
-            <button className="px-4 py-2 rounded-full bg-gray-800 text-white font-medium">
+            <button className="px-4 py-2 rounded-full bg-white text-gray-800 font-medium">
               Pick From Lucknow
             </button>
           </div>
         </div>
 
-        {/* Swiper Section */}
         <Swiper
-          spaceBetween={30}
-          slidesPerView = {1}
-          modules={[Navigation , Pagination , Scrollbar]} // Add this
+          spaceBetween={20}
+          slidesPerView={1}
+          modules={[Navigation, Pagination, Scrollbar]}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
           loop={true}
           centeredSlides={true}
-          pagination={{clickable:true}}
+          pagination={{ clickable: true }}
           breakpoints={{
             640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-             
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
-              
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
           }}
           className="relative mySwiper"
         >
           {carData.map((car) => (
             <SwiperSlide key={car.id}>
-              <div className="bg-gray-100 shadow-md rounded-lg overflow-hidden">
+              <div data-aos='flip-left' className="bg-gray-100 shadow-md rounded-lg overflow-hidden">
                 <img
                   src={car.image}
                   alt={car.name}
@@ -114,18 +123,28 @@ const BookCar = () => {
                   <h3 className="text-lg font-semibold text-gray-800">
                     {car.name}
                   </h3>
-                  <div className="mt-2  items-center text-gray-700">
+                  <div className="  items-center text-gray-700">
                     <span>{car.description}</span>
-                    <div className="">
-                        <span>Start Price Per KM: </span><span>₹11/-</span>
-                        <div className=" flex w-full justify-around">
-                            <span>AC</span>
-                            <span>Petrol</span>
-                            <span>4</span>
+                    <div className="mt-2 ">
+                      <span>Start Price Per KM: </span>
+                      <span className="font-semibold">{car.price}</span>
+                      <div className=" flex w-full justify-start gap-6">
+                        <div className="flex justify-center items-center gap-2 text-lg">
+                          <TbAirConditioning className="text-2xl" />
+                          <span>AC</span>
                         </div>
-                        <div className="bg-gray-800 text-white p-2 rounded-xl">
-                            BOOK NOW
+                        <div className="flex justify-center items-center gap-2 text-lg">
+                          <FaGasPump className="text-2xl" />
+                          <span>{car.engine}</span>
                         </div>
+                        <div className="flex justify-center items-center gap-2 text-lg">
+                          <MdAirlineSeatReclineNormal className="text-2xl" />
+                          <span>{car.seats}</span>
+                        </div>
+                      </div>
+                      <div className="bg-gray-800 mt-4 text-white p-4 rounded-lg">
+                        BOOK NOW
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -134,11 +153,11 @@ const BookCar = () => {
           ))}
 
           {/* Custom Navigation Buttons */}
-          <div className=" swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1/2 z-10  text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
-            <FaChevronLeft size={12} />
+          <div className="bg-slate-800 absolute top-1/2 left-1 transform -translate-y-1/2 z-10  text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
+            <FaChevronLeft size={20} />
           </div>
-          <div className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2 z-10  text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
-            <FaChevronRight size={12} />
+          <div className="bg-slate-800 absolute top-1/2 right-1 transform -translate-y-1/2 z-10  text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
+            <FaChevronRight size={20} />
           </div>
         </Swiper>
       </div>

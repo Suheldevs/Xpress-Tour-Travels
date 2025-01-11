@@ -6,10 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900 ">
+    <header className="sticky top-0 h-[10vh] z-50 bg-white shadow-md dark:bg-gray-900 ">
       <nav className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600">
+        <div className="text-2xl font-bold text-secondary">
           <Link to="/">Xpress Travel</Link>
         </div>
 

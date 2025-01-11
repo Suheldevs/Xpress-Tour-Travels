@@ -11,7 +11,39 @@ h2{
     font-weight: 700;
 }
 
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 p{
     font-size: 1.1rem;
     color:rgb(205, 207, 209)
 }
+
+
+/* .animat{
+    animation: feature-border 2s infinite;
+}
+@keyframes feature-border {
+    0% {
+      .first{
+        color: #f1c40f;
+        border: 2px solid #f1c40f;
+      }
+    }
+    25% {
+        .second{
+            border: 2px solid #f1c40f;
+          }
+    }
+    50% {
+        .third{
+            border: 2px solid #f1c40f;
+          }
+    }
+    100% {
+      
+    }
+  } */
+
