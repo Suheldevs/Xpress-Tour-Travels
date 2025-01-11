@@ -41,7 +41,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className="bg-gray-50 lg:py-12 md:py-10 py-8">
+    <div data-aos="fade-up" className="bg-gray-50 lg:py-12 md:py-10 py-8">
       {/* Section Header */}
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-800">Our Services</h2>
@@ -55,17 +55,18 @@ export default function ServicesSection() {
       <Swiper
         spaceBetween={20}
         autoplay={{
-            delay: 500,
-            disableOnInteraction: true,
-          }}
+          delay: 500,
+          disableOnInteraction: true,
+        }}
         slidesPerView={1}
-        modules={[ Pagination, Scrollbar, Autoplay]}
-        pagination={{ clickable: true, el: ".custom-pagination" }}
+        modules={[Pagination, Scrollbar, Autoplay, Navigation]}
+        pagination={{ clickable: true }}
         loop={true}
+        navigation={true}  // Use default navigation without the need for custom selectors
         centeredSlides={true}
         breakpoints={{
           640: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.5,
             spaceBetween: 20,
           },
           768: {
@@ -81,7 +82,7 @@ export default function ServicesSection() {
       >
         {services.map((service) => (
           <SwiperSlide key={service.id}>
-            <div className="bg-white border-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+            <div className="bg-white border-2 mx-2 border-gray-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
               <div className="flex flex-col items-center text-center p-6">
                 <div className="mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800">
@@ -89,7 +90,7 @@ export default function ServicesSection() {
                 </h3>
                 <p className="text-gray-600 mt-2">{service.description}</p>
               </div>
-              <div className="text-white text-center py-3  bg-slate-800 transition">
+              <div className="text-white text-center py-3 mx-10 mb-2 bg-slate-800 rounded-full transition">
                 <button className="text-sm font-medium uppercase">
                   Learn More
                 </button>

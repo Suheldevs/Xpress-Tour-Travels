@@ -36,9 +36,9 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="bg-slate-50 text-gray-800 py-16">
+    <section data-aos='fade-up' className="bg-slate-50 text-gray-800 py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
           Why Choose Us?
         </h2>
         <p className="text-lg mb-12 text-gray-600">
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+              className="bg-white border-2 border-black/50 rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
             >
               <div className="bg-secondary text-white rounded-full p-4 mb-4">
                 <div className="text-4xl">{reason.icon}</div>

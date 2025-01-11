@@ -25,14 +25,14 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div className="bg-[url('hww.jpg')] py-16">
+    <div data-aos="fade-up" className="bg-[url('hww.jpg')] py-16">
 
       <div className=" relative max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-10">
-          <div className="flex justify-center items-center space-x-2">
+          <div className="flex justify-center  items-center space-x-2">
             <div className="bg-gray-200 p-2 rounded-full">
-              <FaCarAlt className="text-gray-800 text-lg" />
+              <FaCarAlt className="text-gray-800 text-4xl" />
             </div>
             <h2 className=" text-gray-100 uppercase tracking-wide">
               How We Work
