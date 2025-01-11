@@ -29,7 +29,7 @@ const HeroSection = () => {
 
   return (
     <section  className="relative h-[80vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-gray-900">
-      <video
+      {/* <video
       data-aos='fade-up'
         className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
         src="bg-video.mp4" 
@@ -37,7 +37,7 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-      />
+      /> */}
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -59,6 +59,11 @@ const HeroSection = () => {
             <div className="border-4 p-1 animate-bounce border-gray-100 rounded-full">
             <button className="bg-secondary text-white text-xl font-semibold px-12 py-3 rounded-full shadow-md transition">
               Book Now
+            </button>
+            </div>
+            <div className="border-4 p-1 border-gray-100 rounded-full">
+            <button className="bg-gray-700 text-white text-xl font-semibold px-12 py-3 rounded-full shadow-md transition">
+              Explore Our Services
             </button>
             </div>
           </div>

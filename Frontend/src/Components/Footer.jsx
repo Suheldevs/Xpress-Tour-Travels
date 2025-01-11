@@ -13,8 +13,8 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          {/* Logo and Description */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+          {/* Logo and Social Links */}
           <div>
             <h2 className="text-2xl font-bold text-secondary mb-4">
               Xpress Tour & Travel
@@ -47,25 +47,37 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Details */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold text-secondary mb-4">
-              Contact Us
-            </h3>
+            <h3 className="text-xl font-semibold text-secondary mb-4">Quick Links</h3>
+            <div className="text-gray-400 space-y-4">
+              <Link to="/" className="block hover:text-secondary">
+                Home
+              </Link>
+              <Link to="/about" className="block hover:text-secondary">
+                About Us
+              </Link>
+              <Link to="/services" className="block hover:text-secondary">
+                Services
+              </Link>
+              <Link to="/contact" className="block hover:text-secondary">
+                Contact Us
+              </Link>
+            </div>
+          </div>
+
+          {/* Address */}
+          <div>
+            <h3 className="text-xl font-semibold text-secondary mb-4">Contact Us</h3>
             <div className="text-gray-400 space-y-4">
               <div>
-                <h4 className="font-bold">H.O.</h4>
-                <p>2nd Floor, Zeba House, Shakti Nagar Dhall, Faizabad Road, Indira Nagar, Lko-16</p>
+                <h4 className="font-bold">Office Address</h4>
+                <p>45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
                 <p>+91-8604778866, 0522-4077786, 4066686, 2312786</p>
-              </div>
-              <div>
-                <h4 className="font-bold">B.O.</h4>
-                <p>69-70, Gazal Plaza, Auto Stand Road, Gole Market, Mahanagar, Lko-06</p>
-                <p>+91-7860058888, 0522-4954786, 4955786, 4956786, 2326786</p>
               </div>
               <p>
                 <FaPhoneAlt className="inline-block mr-2" />
-                Suggest/Complain: 9935115786
+                Phone: 9935115786
               </p>
               <p>
                 <FaEnvelope className="inline-block mr-2" />
@@ -74,69 +86,19 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Google Map */}
           <div>
-            <h3 className="text-xl font-semibold text-blue-500 mb-4">
-              Quick Links
-            </h3>
-            <ul className="text-gray-400 space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-blue-500 transition"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="hover:text-blue-500 transition"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="hover:text-blue-500 transition"
-                >
-                  Our Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/testimonials"
-                  className="hover:text-blue-500 transition"
-                >
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/gallery"
-                  className="hover:text-blue-500 transition"
-                >
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/faq"
-                  className="hover:text-blue-500 transition"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-blue-500 transition"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+            <h3 className="text-xl font-semibold text-secondary mb-4">Our Location</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14119.787545887719!2d80.9398197!3d26.8507074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b4c1c430b991d%3A0x7dfb68e1397a0f11!2s45A%2C%20Dayal%20Enclave%2C%20Sector%209%2C%20Indira%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh%20226016!5e0!3m2!1sen!2sin!4v1619045107005!5m2!1sen!2sin"
+              width="100%"
+              height="200"
+              frameBorder="0"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+            ></iframe>
           </div>
         </div>
 

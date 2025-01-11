@@ -36,23 +36,25 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="bg-slate-700 text-white py-16">
+    <section className="bg-slate-50 text-gray-800 py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-8">Why Choose Us?</h2>
-        <p className="text-lg mb-12">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
+          Why Choose Us?
+        </h2>
+        <p className="text-lg mb-12 text-gray-600">
           Here's why Express Tour & Travel stands out from the rest:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-10 rounded-lg p-6 flex flex-col items-center text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
             >
-              <div className="bg-secondary rounded-full p-4 mb-4">
-                <div className="text-3xl">{reason.icon}</div>
+              <div className="bg-secondary text-white rounded-full p-4 mb-4">
+                <div className="text-4xl">{reason.icon}</div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
-              <p className="text-base">{reason.description}</p>
+              <h3 className="text-2xl font-semibold mb-3 text-gray-800">{reason.title}</h3>
+              <p className="text-base text-gray-600">{reason.description}</p>
             </div>
           ))}
         </div>
