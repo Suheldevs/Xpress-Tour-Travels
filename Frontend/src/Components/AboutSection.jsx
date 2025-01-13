@@ -3,18 +3,18 @@ import { FaCar, FaClipboardCheck, FaCogs, FaThumbsUp } from "react-icons/fa";
 
 const AboutComponent = () => {
   return (
-    <section data-aos='fade-up' className="bg-bgcolor2 py-12">
+    <section data-aos='fade-up' className="bg-bgcolor2 py-12 ">
       <div className="max-w-7xl mx-auto px-6 lg:px-16 flex flex-wrap lg:flex-nowrap gap-6">
         {/* Left Section */}
         <div className="flex flex-col w-full lg:w-5/12 gap-6">
           {/* Main Image */}
           <div className="relative">
             <img
-              src="about.jpg" 
+              src="aboutUs.jpg" 
               alt="Cars"
-              className="rounded-xl w-full h-96 "
+              className="rounded-xl w-full h-fit"
             />
-            <div className="absolute top-4 right-4 bg-secondary text-black  font-semibold px-4 py-2 rounded-full flex items-center justify-center gap-4 shadow-md">
+            <div className="absolute top-4 animate-pulse right-[-15px] bg-secondary text-black  font-semibold px-4 py-2 rounded-full flex items-center justify-center gap-4 shadow-md">
                 <div className='flex items-center gap-2 justify-center text-xl'>
                   <FaThumbsUp className="bg-slate-800 text-slate-50  w-14 h-14 rounded-full p-1"/>
                 Explore our top-rated cars
@@ -58,11 +58,36 @@ const AboutComponent = () => {
               <div className=" font-semibold">About Express Tour & Travels</div>
             </h2>
 
-            <p className=" mb-4">
-              Experience the freedom of driving your way with reliable, well-maintained vehicles and flexible rental plans. At VCar, we’re committed to delivering convenience and quality, making every journey effortless.
-            </p>
+            <p className="text-lg">
+            <span className="font-bold">Xpress Tour & Travels</span> is a
+            complete travel management company formed by hardcore professionals
+            with an average experience since 1998 in{" "}
+            <span className="font-bold">taxi services Lucknow</span>,{" "}
+            <span className="font-bold">flight booking</span>, and{" "}
+            <span className="font-bold">tour packages</span>.
+          </p>
+          <p className="text-lg mt-4">
+            We are approved by the{" "}
+            <span className="font-bold">
+              Government of India, Department of Tourism
+            </span>{" "}
+            and also a member of{" "}
+            <span className="font-bold">
+              IATO (Indian Association of Tour Operators)
+            </span>
+            .
+          </p>
+          <p className="text-lg mt-4">
+            <span className="font-bold">India</span>, the country of a thousand
+            facets, offers everything – from the desert frontier of{" "}
+            <span className="font-bold">Rajasthan</span> to splendid{" "}
+            <span className="font-bold">Himalayan hideaways</span>, from the
+            incredible southern landscapes to endless beaches, wildlife
+            encounters, ancient sculpture on granite, rare art and crafts,
+            serene landscapes, and monumental edifices awaiting exploration.
+          </p>
 
-            <ul className="list-none space-y-2 ">
+            <ul className="list-none space-y-2 mt-2 text-xl font-semibold ">
               <li className="flex items-center">
                 <FaCogs className="mr-2" /> Wide Range of Vehicles
               </li>

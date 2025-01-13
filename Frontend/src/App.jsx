@@ -2,10 +2,14 @@ import React from 'react'
 import './App.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './Pages/Home'
-// import 'aos/dist/aos.css';
+import 'aos/dist/aos.css';
 import FAQ from './Pages/Faq';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import Services from './Pages/OurServices';
+import Testimonials from './Pages/Testimonials';
+import ContactUs from './Pages/ContactUs';
+import AboutUs from './Pages/AboutUs';
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +17,10 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/faq' element={<FAQ/>} />
+      <Route path='/services' element={<Services/>} />
+      <Route path='/testimonial' element={<Testimonials/>} />
+      <Route path='/contact' element={<ContactUs/>} />
+      <Route path='/about' element={<AboutUs/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>
