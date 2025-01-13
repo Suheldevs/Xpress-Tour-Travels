@@ -131,7 +131,7 @@ const BookCar = () => {
                     <div className="mt-2">
                       <span>Start Price Per KM: </span>
                       <span className="font-semibold">{car.price}</span>
-                      <div className="flex w-full justify-start gap-6">
+                      <div className="flex w-full justify-start gap-6 bg-white rounded font-bold py-1 px-1">
                         <div className="flex justify-center items-center gap-2 text-lg">
                           <TbAirConditioning className="text-2xl" />
                           <span>AC</span>
@@ -145,7 +145,7 @@ const BookCar = () => {
                           <span>{car.seats}</span>
                         </div>
                       </div>
-                      <div className="border-4 p-1 mt-4 w-full border-gray-800 rounded-full hover:scale-105 transition-all duration-700">
+                      <div className="border-4 p-1 mt-4 w-full border-gray-800 rounded-full hover:scale-105 transition-all duration-100">
                         <button className="bg-gray-800 text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
                           Book Now
                         </button>
@@ -158,10 +158,10 @@ const BookCar = () => {
           ))}
 
           <div className="swiper-button-prev bg-slate-800 absolute top-1/2 left-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
-            <FaChevronLeft size={20} />
+            <FaChevronLeft size={12} />
           </div>
           <div className="swiper-button-next bg-slate-800 absolute top-1/2 right-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
-            <FaChevronRight size={20} />
+            <FaChevronRight size={12} />
           </div>
         </Swiper>
         <div className="custom-pagination flex justify-center mt-6"></div>

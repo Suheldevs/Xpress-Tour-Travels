@@ -13,7 +13,6 @@ import Footer from '../Components/Footer'
 function Home() {
   return (
     <>
-    <Header/>
     <HeroSection/>
     <FeatureSection/>
     <AboutComponent/>
@@ -21,7 +20,6 @@ function Home() {
     <ServicesSection/>
     <HowWeWork/>
     <WhyChooseUs/>
-    <Footer/>
     {/* <HowItWorks/> */}
     </>
   )

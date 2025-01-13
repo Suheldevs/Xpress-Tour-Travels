@@ -58,15 +58,15 @@ export default function ServicesSection() {
           delay: 500,
           disableOnInteraction: true,
         }}
-        slidesPerView={1}
+        slidesPerView={1.2}
         modules={[Pagination, Scrollbar, Autoplay, Navigation]}
         pagination={{ clickable: true }}
         loop={true}
-        navigation={true}  // Use default navigation without the need for custom selectors
+        navigation={true} 
         centeredSlides={true}
         breakpoints={{
           640: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
           768: {
@@ -99,6 +99,7 @@ export default function ServicesSection() {
           </SwiperSlide>
         ))}
       </Swiper>
+      
     </div>
   );
 }

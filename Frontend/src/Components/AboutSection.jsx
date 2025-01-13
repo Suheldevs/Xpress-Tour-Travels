@@ -53,7 +53,7 @@ const AboutComponent = () => {
           </div> */}
 
           <div className="bg-slate-800 text-white p-6 rounded-xl shadow-lg w-full">
-            <h2 className="flex items-center mb-4">
+            <h2 className="flex md:text-4xl text-3xl items-center mb-4">
               <FaCar className=" mr-2 text-5xl" />
               <div className=" font-semibold">About Express Tour & Travels</div>
             </h2>

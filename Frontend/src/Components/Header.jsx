@@ -6,81 +6,133 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 h-[10vh] z-50 bg-white shadow-md dark:bg-gray-900 ">
-      <nav className="container mx-auto px-4 flex items-center justify-between h-16">
+    <header
+      className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900"
+    >
+      <nav className="container mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="text-2xl font-bold text-secondary">
           <Link to="/">Xpress Travel</Link>
         </div>
 
-        {/* Menu Button for Mobile */}
-        <button
-          className="text-2xl md:hidden text-gray-700 z-50 transition-all duration-700 ease-in-out dark:text-gray-200"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
-        </button>
+        {/* Mobile Navbar */}
+        <div className="flex md:hidden">
+          <button
+            className="text-2xl text-gray-700 dark:text-gray-200"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
 
-        {/* Links */}
-        <ul
-          className={`flex flex-col md:flex-row items-center absolute md:static bg-white dark:bg-gray-900 w-full md:w-auto left-0 md:space-x-6 md:translate-x-0 transition-transform duration-700 ease-in-out ${
-            isMenuOpen ? "translate-y-16" : "md:translate-y-0 -translate-y-full"
-          }`}
-        >
-          <li className="mt-6 md:mt-0">
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 flex flex-col items-start px-6 space-y-6 py-6 shadow-md">
+            <li>
+              <Link
+                to="/"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/testimonial"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Testimonial
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/faq"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                FAQ
+              </Link>
+            </li>
+          </ul>
+        )}
+
+        {/* Desktop Navbar */}
+        <ul className="hidden md:flex space-x-6">
+          <li>
             <Link
               to="/"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
               Home
             </Link>
           </li>
-          <li className="mt-6 md:mt-0">
+          <li>
             <Link
               to="/about"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
               About
             </Link>
           </li>
-          <li className="mt-6 md:mt-0">
+          <li>
             <Link
               to="/services"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
               Our Services
             </Link>
           </li>
-          <li className="mt-6 md:mt-0">
+          <li>
             <Link
-              to="/testimonials"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
+              to="/contact"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+            >
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/testimonial"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
               Testimonial
             </Link>
           </li>
-          <li className="mt-6 md:mt-0">
-            <Link
-              to="/gallery"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
-            >
-              Gallery
-            </Link>
-          </li>
-          <li className="mt-6 md:mt-0">
+          <li>
             <Link
               to="/faq"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
               FAQ
-            </Link>
-          </li>
-          <li className="mt-6 md:mt-0 mb-6 md:mb-0">
-            <Link
-              to="/contact"
-              className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 transition-colors"
-            >
-              Contact Us
             </Link>
           </li>
         </ul>
