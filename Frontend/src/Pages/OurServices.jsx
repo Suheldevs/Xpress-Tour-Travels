@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -35,14 +36,23 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="md:text-4xl text-3xl font-bold text-center mb-4 bg-gray-800 rounded-lg py-2  text-white">Our Services</h1>
-      <div className="space-y-6">
+    <div className="">
+     <h1 className="breadcrumb relative py-10  font-bold text-center mb-12 text-white">
+        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div className="relative z-10 md:text-5xl text-3xl">Our Services</div>
+        <div className="relative z-10 text-lg mt-2">
+          <Link to='/' className="hover:text-secondary hover:cursor-pointer">
+            Home
+          </Link>{" "}
+          / Our Services
+        </div>
+      </h1>
+    <div className="space-y-6 px-8 mb-8">
         {services.map((service, index) => (
           <div
           data-aos='fade-up'
             key={index}
-            className={`flex flex-col items-center bg-gray-800 text-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200  ${index % 2 != 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
+            className={`flex flex-col items-center p-6 border rounded-lg shadow-lg hover:shadow-md transition-shadow duration-200  ${index % 2 != 0 ? 'md:flex-row-reverse bg-gray-800 text-white' : 'md:flex-row text-black'}`}
           >
             {/* Left Side (Image) */}
             <div className="w-full md:w-1/2 mb-6 md:mb-0 px-4">
@@ -56,9 +66,9 @@ const Services = () => {
             {/* Right Side (Content) */}
             <div className="w-full md:w-1/2 pl-6">
               <h2 className="text-4xl font-semibold mb-4">{service.title}</h2>
-              <p className="text-slate-300 leading-relaxed">{service.content}</p>
-              <div className="border-4 p-1 text-center hover:scale-105 lg:mx-44 mx-12 mt-4 border-gray-100 rounded-full">
-            <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-8 py-2 hover:px-11 rounded-full shadow-md transition">
+              <p className=" leading-relaxed">{service.content}</p>
+              <div className={`border-4 p-1 text-center hover:scale-105 lg:mx-44 mx-12 mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-gray-800'} rounded-full`}>
+            <button className="bg-secondary  lg:text-xl text-lg font-semibold px-8 py-2 hover:px-11 rounded-full shadow-md transition">
               Enquire Now
             </button>
             </div>

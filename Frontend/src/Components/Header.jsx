@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900"
+      className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-800"
     >
       <nav className="container mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
@@ -21,7 +21,7 @@ const Header = () => {
             className="text-2xl text-gray-700 dark:text-gray-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <FaTimes /> : <FaBars />}
+            {isMenuOpen ? <FaTimes className="text-secondary"/> : <FaBars className="text-secondary" />}
           </button>
         </div>
 

@@ -1,23 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto p-6 mt-10">
-     <h1 className="md:text-4xl text-3xl font-bold text-center mb-4 bg-gray-800 rounded-lg py-2  text-white">About Us</h1>
+    <div className=" ">
+        <div className=" bg-cover h-36 text-center">
+
+     <h1 className="md:text-4xl text-3xl font-bold text-center  rounded-lg text-white ">About Us</h1>
+     <div className="text-white font-semibold text-lg "> <Link to='/' className="underline underline-offset-4">Home</Link> - About us </div>
+        </div>
 
       {/* About Us Section */}
-      <div className="flex flex-col-reverse md:flex-row items-center gap-4">
+      <div className="flex mt-4 mx-10 flex-col-reverse md:flex-row items-center px-4 gap-4 mb-4">
         {/* Image Section */}
-        <div className="flex-1 mt-0 border-2 p-2 rounded-lg border-gray-800">
+        {/* <div className="flex-1 mt-0 border-2 p-2 rounded-lg border-gray-800">
           <img
             src="aboutUs.jpg"
             alt="Xpress Tour & Travels"
             className="w-full h-full object-cover rounded-lg"
           />
-        </div>
+        </div> */}
 
         {/* Text Content Section */}
-        <div data-aos='fade-up' className="flex-1 p-6 bg-slate-800 text-white shadow rounded-lg">
+        <div data-aos='fade-up' className="flex-1 p-6  shadow rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">
             Welcome to Xpress Tour & Travels
           </h2>

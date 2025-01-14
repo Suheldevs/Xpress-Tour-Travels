@@ -131,7 +131,7 @@ const BookCar = () => {
                     <div className="mt-2">
                       <span>Start Price Per KM: </span>
                       <span className="font-semibold">{car.price}</span>
-                      <div className="flex w-full justify-start gap-6 bg-white rounded font-bold py-1 px-1">
+                      <div className="flex w-full justify-start gap-6  rounded font-bold py-1 px-1">
                         <div className="flex justify-center items-center gap-2 text-lg">
                           <TbAirConditioning className="text-2xl" />
                           <span>AC</span>

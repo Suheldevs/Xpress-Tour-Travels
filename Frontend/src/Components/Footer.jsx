@@ -7,6 +7,8 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { GiRotaryPhone } from "react-icons/gi";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -69,20 +71,24 @@ const Footer = () => {
           {/* Address */}
           <div>
             <h3 className="text-xl font-semibold text-secondary mb-4">Contact Us</h3>
-            <div className="text-gray-400 space-y-4">
-              <div>
-                <h4 className="font-bold">Office Address</h4>
-                <p>45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
-                <p>+91-8604778866, 0522-4077786, 4066686, 2312786</p>
-              </div>
+            <div className="text-gray-400 space-y-2">
               <p>
                 <FaPhoneAlt className="inline-block mr-2" />
-                Phone: 9935115786
+                +91-9935115786, 8604778866
+              </p>
+              <p>
+              <GiRotaryPhone className="inline-block mr-2" />
+               0522-4077786, 4066686, 2312786
               </p>
               <p>
                 <FaEnvelope className="inline-block mr-2" />
-                Email: xpresstt@yahoo.com
+                xpresstt@yahoo.com
               </p>
+              <div>
+                
+                <p><FaLocationDot className="inline-block mr-2" />
+                  45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
+              </div>
             </div>
           </div>
 
