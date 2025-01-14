@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { FaPlus, FaMinus, FaArrowCircleRight, FaArrowRight } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const faqCategories = [
@@ -90,17 +90,11 @@ const faqCategories = [
 ];
 
 const FAQ = () => {
+  const [selectedCategory, setSelectedCategory] = useState(0);
   const [openIndex, setOpenIndex] = useState(null);
-  const sectionRefs = useRef([]);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const scrollToSection = (index) => {
-    if (sectionRefs.current[index]) {
-      sectionRefs.current[index].scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
@@ -115,57 +109,48 @@ const FAQ = () => {
           / FAQ
         </div>
       </h1>
-      <div className="flex flex-col md:flex-row gap-8 mx-8 mb-8">
-        {/* Sidebar for FAQ Categories */}
-        <div className="w-full md:w-1/3 bg-gray-100 p-4 rounded-lg sticky top-20 h-fit">
-          {faqCategories.map((category, idx) => (
-            <div
-              key={idx}
-              className="mb-4 flex items-center justify-between cursor-pointer group"
-              onClick={() => scrollToSection(idx)}
-            >
-              <p className="text-lg font-medium text-gray-700">{category.category}</p>
-              <FaArrowRight className="text-secondary text-xl -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
-            </div>
-          ))}
-        </div>
 
-        {/* FAQ Content */}
-        <div className="w-full md:w-2/3">
-          {faqCategories.map((category, idx) => (
-            <div
-              key={idx}
-              ref={(el) => (sectionRefs.current[idx] = el)}
-              className="mb-8"
-            >
-              <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-                {category.category}
-              </h2>
-              {category.faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="border-b border-gray-300 p-4 rounded-lg mb-2 bg-gray-50 transition-all duration-700 ease-in-out"
-                >
-                  <div
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleFAQ(`${idx}-${index}`)}
-                  >
-                    <p className="text-md font-medium text-gray-800">{faq.question}</p>
-                    {openIndex === `${idx}-${index}` ? (
-                      <FaMinus className="text-gray-600 text-2xl transition-transform duration-300" />
-                    ) : (
-                      <FaPlus className="text-gray-600 text-2xl transition-transform duration-300" />
-                    )}
-                  </div>
-                  {openIndex === `${idx}-${index}` && (
-                    <p className="mt-2 text-gray-600">{faq.answer}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
+      {/* Category Buttons */}
+      <div className="flex justify-center space-x-4 mb-8">
+        {faqCategories.map((category, idx) => (
+          <button
+            key={idx}
+            className={`px-4 py-2 rounded-lg font-medium ${
+              selectedCategory === idx ? "bg-secondary text-white" : "bg-gray-100 text-gray-700"
+            }`}
+            onClick={() => setSelectedCategory(idx)}
+          >
+            {category.category}
+          </button>
+        ))}
       </div>
+
+      {/* FAQ Content */}
+      <div className="w-full px-10 md:px-24 mb-14">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+          {faqCategories[selectedCategory].category}
+        </h2>
+        {faqCategories[selectedCategory].faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border-b border-gray-300 p-4 rounded-lg mb-2 bg-gray-100 transition-all duration-700 ease-in-out"
+          >
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => toggleFAQ(index)}
+            >
+              <p className="text-md font-medium text-gray-800">{faq.question}</p>
+              {openIndex === index ? (
+                <FaMinus className="text-gray-600 text-2xl transition-transform duration-300" />
+              ) : (
+                <FaPlus className="text-gray-600 text-2xl transition-transform duration-300" />
+              )}
+            </div>
+            {openIndex === index && <p className="mt-2 text-gray-600">{faq.answer}</p>}
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 };

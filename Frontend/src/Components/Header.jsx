@@ -57,15 +57,6 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/contact"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/testimonial"
                 className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
@@ -80,6 +71,15 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
               </Link>
             </li>
           </ul>
@@ -113,14 +113,6 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/contact"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/testimonial"
               className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
@@ -133,6 +125,14 @@ const Header = () => {
               className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
             >
               FAQ
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+            >
+              Contact Us
             </Link>
           </li>
         </ul>

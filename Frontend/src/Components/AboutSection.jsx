@@ -3,13 +3,16 @@ import { FaCogs, FaArrowRight, FaCar, FaRoute, FaMapMarkedAlt, FaGlobe } from "r
 import { Link } from "react-router-dom";
 
 const AboutComponent = () => {
+  const handleScroll = () => {
+    window.scrollTo(0, 0); // Scroll to the top
+  };
   return (
     <section data-aos='fade-up' className="bg-bgcolor2 py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-6">
         {/* Heading Section */}
         <div className="text-left">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-           <FaCar className="inline-block mr-2 text-secondary"/> About Express Tour & Travels
+           <FaCar className="inline-block mr-2 text-secondary text-5xl mb-1"/> About Express Tour & Travels
           </h2>
           <p className="text-lg text-gray-700">
             <span className="font-bold">Xpress Tour & Travels</span> is a complete travel management company
@@ -37,7 +40,7 @@ const AboutComponent = () => {
         </div>
 
         {/* Features Section */}
-        <div className="text-left">
+        <div className="text-left" data-aos='fade-up'>
           <ul className="grid md:grid-cols-4 grid-cols-2  gap-4 text-lg text-gray-700">
             <li className="flex items-center gap-4 flex-col">
               <FaCar className="text-5xl text-secondary" /> Wide Range of Vehicles
@@ -55,8 +58,8 @@ const AboutComponent = () => {
         </div>
 
         {/* Button Section */}
-        <div className="text-left mt-6">
-          <Link to='/about' className="bg-secondary inline-block text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-secondary-dark items-center gap-2">
+        <div className="text-left mt-6" data-aos='fade-up'>
+          <Link to='/about' onClick={handleScroll} className="bg-secondary hover:bg-secondary/90 inline-block text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-secondary-dark items-center gap-2">
             Know More About Us <FaArrowRight className="inline-block ml-2 " />
           </Link>
         </div>

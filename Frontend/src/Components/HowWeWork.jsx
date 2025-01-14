@@ -29,7 +29,7 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div data-aos="fade-up" className="bg-[url('hww.jpg')] py-16">
+    <div data-aos="fade-up" className="bg-gray-800 py-16">
       <div className=" relative max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-10">
@@ -41,9 +41,9 @@ const HowWeWork = () => {
               How We Work
             </h2>
           </div>
-          <h3 className="text-xl font-semibold text-gray-200 mt-4">
+          {/* <h3 className="text-xl font-semibold text-gray-200 mt-4">
             We Are The Best For You
-          </h3>
+          </h3> */}
         </div>
 
         {/* Steps Section */}

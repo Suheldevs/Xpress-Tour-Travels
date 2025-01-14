@@ -16,6 +16,10 @@ h1{
     font-weight: 700;
 }
 
+body{
+  font-family: "El Messiri", serif;
+}
+
 /* p{
     font-size: 1.1rem;
     color:rgb(205, 207, 209)

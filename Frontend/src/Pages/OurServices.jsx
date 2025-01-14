@@ -64,10 +64,10 @@ const Services = () => {
             </div>
 
             {/* Right Side (Content) */}
-            <div className="w-full md:w-1/2 pl-6">
+            <div className="w-full md:w-1/2 pl-6 ">
               <h2 className="text-4xl font-semibold mb-4">{service.title}</h2>
               <p className=" leading-relaxed">{service.content}</p>
-              <div className={`border-4 p-1 text-center hover:scale-105 lg:mx-44 mx-12 mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-gray-800'} rounded-full`}>
+              <div className={`border-4 p-1 text-center hover:scale-105 inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-gray-800'} rounded-full`}>
             <button className="bg-secondary  lg:text-xl text-lg font-semibold px-8 py-2 hover:px-11 rounded-full shadow-md transition">
               Enquire Now
             </button>
