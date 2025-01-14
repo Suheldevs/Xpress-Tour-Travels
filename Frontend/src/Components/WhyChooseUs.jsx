@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full gap-4 py-8 md:py-10 lg:py-12 ">
+    <div data-aos='fade-up' className="relative flex flex-col items-center justify-center w-full gap-4 py-8 md:py-10 lg:py-12 ">
       <h2 className="text-center flex items-center justify-center text-4xl font-bold  ">
 
         Why Choose Us
@@ -24,6 +24,7 @@ const WhyChooseUs = () => {
         <div className="flex flex-col gap-6 lg:gap-8">
           {reasons.slice(0, 3).map((reason, index) => (
             <div
+            data-aos='fade-up'
               key={index}
               className="relative w-full max-w-[20rem] flex items-center gap-4 p-4 bg-gradient-to-r from-[#FFB800] to-[#FF8C00] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
             >
@@ -62,6 +63,7 @@ const WhyChooseUs = () => {
         <div className="flex flex-col gap-6 lg:gap-8">
           {reasons.slice(3).map((reason, index) => (
             <div
+            data-aos='fade-up'
               key={index}
               className="relative w-full max-w-[20rem] flex items-center gap-4 p-4 bg-gradient-to-r from-[#FFB800] to-[#FF8C00] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
             >

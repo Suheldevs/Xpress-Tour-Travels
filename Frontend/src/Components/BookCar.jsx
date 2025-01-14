@@ -6,6 +6,7 @@ import { TbAirConditioning } from "react-icons/tb";
 import { MdAirlineSeatReclineNormal } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 // Sample car data
 const carData = [
@@ -145,11 +146,11 @@ const BookCar = () => {
                           <span>{car.seats}</span>
                         </div>
                       </div>
-                      <div className="border-4 p-1 mt-4 w-full border-gray-800 rounded-full hover:scale-105 transition-all duration-100">
+                      <Link to='/contact' className="border-4 inline-block p-1 mt-4 w-full border-gray-800 rounded-full hover:scale-105 transition-all duration-100">
                         <button className="bg-gray-800 text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
                           Book Now
                         </button>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
