@@ -91,7 +91,7 @@ const faqCategories = [
 
 const FAQ = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -116,7 +116,7 @@ const FAQ = () => {
           <button
             key={idx}
             className={`px-4 py-2 rounded-lg font-medium ${
-              selectedCategory === idx ? "bg-secondary text-white" : "bg-gray-100 text-gray-700"
+              selectedCategory === idx ? "bg-secondary text-white" : "bg-primary text-white"
             }`}
             onClick={() => setSelectedCategory(idx)}
           >
@@ -125,32 +125,35 @@ const FAQ = () => {
         ))}
       </div>
 
-      {/* FAQ Content */}
-      <div className="w-full px-10 md:px-24 mb-14">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+<div className="w-full flex px-6 md:px-10 flex-col md:flex-row gap-6">
+      <div className="flex-1 ">
+        <h2 className="text-3xl font-semibold tex-white mb-4">
           {faqCategories[selectedCategory].category}
         </h2>
         {faqCategories[selectedCategory].faqs.map((faq, index) => (
           <div
             key={index}
-            className="border-b border-gray-300 p-4 rounded-lg mb-2 bg-gray-100 transition-all duration-700 ease-in-out"
+            className="border-b border-gray-300 p-4 rounded-lg mb-2 bg-primary  transition-all duration-700 ease-in-out"
           >
             <div
-              className="flex justify-between items-center cursor-pointer"
+              className="flex justify-between items-center cursor-pointer transition-all duration-1000"
               onClick={() => toggleFAQ(index)}
             >
-              <p className="text-md font-medium text-gray-800">{faq.question}</p>
+              <p className="text-md font-medium text-white">{faq.question}</p>
               {openIndex === index ? (
-                <FaMinus className="text-gray-600 text-2xl transition-transform duration-300" />
+                <FaMinus className="text-secondary text-2xl transition-transform duration-300" />
               ) : (
-                <FaPlus className="text-gray-600 text-2xl transition-transform duration-300" />
+                <FaPlus className="text-secondary text-2xl transition-transform duration-300" />
               )}
             </div>
-            {openIndex === index && <p className="mt-2 text-gray-600">{faq.answer}</p>}
+            {openIndex === index && <p className="mt-2 text-white border-t pt-2">{faq.answer}</p>}
           </div>
         ))}
       </div>
-
+      <div className="flex-1 rounded p-6">
+        <img src="faq.webp" className="rounded"/>
+      </div>
+      </div>
     </div>
   );
 };

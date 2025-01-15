@@ -3,7 +3,7 @@ import { FaMoneyBillAlt, FaShieldAlt, FaHeadset, FaClipboardList } from "react-i
 
 const FeatureSection = () => {
   return (
-    <section className="bg-gray-900 py-8 lg:py-12 md:py-10">
+    <section className="bg-primary py-8 lg:py-12 md:py-10">
       <div data-aos="fade-up" className="max-w-7xl mx-auto px-2 sm:px-12 lg:px-16">
         <div className="grid md:grid-cols-4 grid-cols-1 border rounded-2xl  border-white/10 bg-white/5">
           {/* Feature 1 */}

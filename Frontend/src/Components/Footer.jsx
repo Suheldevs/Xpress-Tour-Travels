@@ -12,10 +12,10 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-primary text-white py-12">
+      <div className="container mx-auto px-4 md:px-10">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
           {/* Logo and Social Links */}
           <div>
             <h2 className="text-2xl font-bold text-secondary mb-4">
@@ -51,19 +51,19 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold text-secondary mb-4">Quick Links</h3>
+            <h3 className="text-xl font-semibold text-secondary mb-4">Our Services</h3>
             <div className="text-gray-400 space-y-4">
-              <Link to="/" className="block hover:text-secondary">
-                Home
-              </Link>
-              <Link to="/about" className="block hover:text-secondary">
-                About Us
+              <Link to="/services" className="block hover:text-secondary">
+                Cap Retal services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                Services
+                Tour Packages
               </Link>
-              <Link to="/contact" className="block hover:text-secondary">
-                Contact Us
+              <Link to="/services" className="block hover:text-secondary">
+              Air Ticketing
+              </Link>
+              <Link to="/services" className="block hover:text-secondary">
+              Train Ticketing
               </Link>
             </div>
           </div>

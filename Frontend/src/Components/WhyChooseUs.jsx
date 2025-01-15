@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
 
   return (
     <div data-aos='fade-up' className="relative flex flex-col items-center justify-center w-full gap-4 py-8 md:py-10 lg:py-12 ">
-      <h2 className="text-center flex items-center justify-center text-4xl font-bold  ">
+      <h2 className="text-center text-primary flex items-center justify-center text-4xl font-bold  ">
 
         Why Choose Us
        
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
             <div
             data-aos='fade-up'
               key={index}
-              className="relative w-full max-w-[20rem] flex items-center gap-4 p-4 bg-gradient-to-r from-[#FFB800] to-[#FF8C00] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              className="relative w-full max-w-[20rem] flex items-center gap-4 p-4 bg-gradient-to-r bg-primary text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
             >
               <div className="text-4xl">{reason.icon}</div>
               <h2 className="text-xl font-semibold tracking-wide">{reason.title}</h2>
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
 
         {/* Rotating circle with central image */}
         <div className="relative h-[25rem] w-[32rem] flex items-center justify-center sm:my-16">
-          <div className="absolute animate-spin- duration-1000 sm:size-[24.5rem] size-[16.5rem] rounded-full border-4 border-yellow-500 flex items-center justify-center">
+          <div className="absolute animate-spin- duration-1000 sm:size-[24.5rem] size-[16.5rem] rounded-full border-4 border-primary flex items-center justify-center">
             {/* {reasons.map((reason, index) => (
               <div
                 key={index}
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
             <div
             data-aos='fade-up'
               key={index}
-              className="relative w-full max-w-[20rem] flex items-center gap-4 p-4 bg-gradient-to-r from-[#FFB800] to-[#FF8C00] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              className="relative w-full max-w-[20rem] flex items-center gap-4 p-4 bg-primary text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
             >
               <div className="text-4xl">{reason.icon}</div>
               <h2 className="text-xl font-semibold tracking-wide">{reason.title}</h2>

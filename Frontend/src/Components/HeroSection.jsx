@@ -1,6 +1,7 @@
 import Aos from "aos";
 import React, { useState, useEffect } from "react";
 import { FaPlane } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   // Car Images Array
@@ -29,7 +30,7 @@ const HeroSection = () => {
   }, [carImages.length]);
 
   return (
-    <section  className="relative h-[80vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-gray-900">
+    <section  className="relative h-[80vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-primary">
       {/* <video
       data-aos='fade-up'
         className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
@@ -57,16 +58,16 @@ const HeroSection = () => {
             Your Trusted Travel Partner
           </p>
           <div className="mt-8 flex gap-4 flex-col md:flex-row items-center">
-            <div className="border-4 p-1 lg:animate-bounce border-gray-100 rounded-full">
+            <div className="border-4 p-1 lg:animate-bounce hover:animate-none border-gray-100 rounded-full">
             <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">
               Book Now
             </button>
             </div>
-            <div className="border-4 p-1 border-gray-100 rounded-full">
-            <button className="bg-gray-700 text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">
+            <Link to='/services' className="border-4 p-1 border-gray-100 rounded-full">
+            <button className="bg-primary hover:bg-primary/60 text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">
               Explore Our Services
             </button>
-            </div>
+            </Link>
           </div>
         </div>
 

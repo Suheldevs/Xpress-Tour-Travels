@@ -7,9 +7,9 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-800"
+      className="sticky top-0 z-50 bg-primary text-white shadow-md"
     >
-      <nav className="container mx-auto px-4 flex justify-between items-center h-16">
+      <nav className="container mx-auto px-6 md:px-10 flex justify-between  items-center h-16">
         {/* Logo */}
         <div className="text-2xl font-bold text-secondary">
           <Link to="/">Xpress Travel</Link>
@@ -18,7 +18,7 @@ const Header = () => {
         {/* Mobile Navbar */}
         <div className="flex md:hidden">
           <button
-            className="text-2xl text-gray-700 dark:text-gray-200"
+            className="text-2xl     "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <FaTimes className="text-secondary"/> : <FaBars className="text-secondary" />}
@@ -27,11 +27,11 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 flex flex-col items-start px-6 space-y-6 py-6 shadow-md">
+          <ul className="absolute top-16 left-0 w-full bg-primary text-white flex flex-col items-start px-6 space-y-6 py-6 shadow-md">
             <li>
               <Link
                 to="/"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                className="block text-lg font-medium      hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -40,7 +40,7 @@ const Header = () => {
             <li>
               <Link
                 to="/about"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                className="block text-lg font-medium      hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <Link
                 to="/services"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                className="block text-lg font-medium      hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Our Services
@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <Link
                 to="/testimonial"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                className="block text-lg font-medium      hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonial
@@ -67,7 +67,7 @@ const Header = () => {
             <li>
               <Link
                 to="/faq"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                className="block text-lg font-medium      hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
@@ -76,7 +76,7 @@ const Header = () => {
             <li>
               <Link
                 to="/contact"
-                className="block text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary border-b-2"
+                className="block text-lg font-medium      hover:text-secondary border-b-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
@@ -86,11 +86,11 @@ const Header = () => {
         )}
 
         {/* Desktop Navbar */}
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden md:flex space-x-6 text-white bg-primary">
           <li>
             <Link
               to="/"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+              className="text-lg font-medium      hover:text-secondary"
             >
               Home
             </Link>
@@ -98,7 +98,7 @@ const Header = () => {
           <li>
             <Link
               to="/about"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+              className="text-lg font-medium      hover:text-secondary"
             >
               About
             </Link>
@@ -106,7 +106,7 @@ const Header = () => {
           <li>
             <Link
               to="/services"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+              className="text-lg font-medium      hover:text-secondary"
             >
               Our Services
             </Link>
@@ -114,7 +114,7 @@ const Header = () => {
           <li>
             <Link
               to="/testimonial"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+              className="text-lg font-medium      hover:text-secondary"
             >
               Testimonial
             </Link>
@@ -122,7 +122,7 @@ const Header = () => {
           <li>
             <Link
               to="/faq"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+              className="text-lg font-medium      hover:text-secondary"
             >
               FAQ
             </Link>
@@ -130,7 +130,7 @@ const Header = () => {
           <li>
             <Link
               to="/contact"
-              className="text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-secondary"
+              className="text-lg font-medium      hover:text-secondary"
             >
               Contact Us
             </Link>

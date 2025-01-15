@@ -29,7 +29,7 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div data-aos="fade-up" className="bg-gray-800 py-16">
+    <div data-aos="fade-up" className="bg-primary py-16">
       <div className=" relative max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-10">
