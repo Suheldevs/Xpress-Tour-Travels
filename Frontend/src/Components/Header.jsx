@@ -9,14 +9,14 @@ const Header = () => {
     <header
       className="sticky top-0 z-50 bg-primary text-white shadow-md"
     >
-      <nav className="container mx-auto px-6 md:px-10 flex justify-between  items-center h-16">
+      <nav className="container mx-auto px-6 md:px-16 flex justify-between  items-center h-16">
         {/* Logo */}
         <div className="text-2xl font-bold text-secondary">
           <Link to="/">Xpress Travel</Link>
         </div>
 
         {/* Mobile Navbar */}
-        <div className="flex md:hidden">
+        <div className="flex md:hidden ">
           <button
             className="text-2xl     "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -86,7 +86,7 @@ const Header = () => {
         )}
 
         {/* Desktop Navbar */}
-        <ul className="hidden md:flex space-x-6 text-white bg-primary">
+        <ul className="hidden md:flex space-x-6 gap-4 text-white bg-primary">
           <li>
             <Link
               to="/"

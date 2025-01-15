@@ -71,7 +71,7 @@ const BookCar = () => {
                 />
               </svg>
             </div>
-            <h1 className="text-gray-100">Experience the Best Cars</h1>
+            <h1 className="text-gray-100 text-3xl md:text-4xl">Experience the Best Cars</h1>
           </div>
           <p className=" text-gray-200">
             Please choose your preferred car from below

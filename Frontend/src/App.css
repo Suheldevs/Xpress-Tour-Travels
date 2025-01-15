@@ -17,7 +17,7 @@ h1{
 }
 
 body{
-  font-family: "El Messiri", serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* p{
@@ -79,8 +79,4 @@ body{
     background-repeat: no-repeat;
   }
 
-  .sidebar a{
-    background-color: white;
-    padding: 5px;
-    border-radius: 50%;
-  }
+

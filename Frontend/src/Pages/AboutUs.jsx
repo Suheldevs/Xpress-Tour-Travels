@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookNow from "../Components/BookNow";
+import BookCar from "../Components/BookCar";
 
 const AboutUs = () => {
   AOS.init();
@@ -32,7 +33,7 @@ const AboutUs = () => {
             alt="Xpress Tour & Travels"
             className="w-full h-auto object-cover rounded-lg"
           />
-          <div className="md:px-10 px-4" data-aos='fade-up'>
+          <div className="md:px-10 px-4 mt-4" data-aos='fade-up'>
         <div className="text-3xl font-bold mb-2">Our mission</div>
         <div className="text-justify" data-aos='fade-up'>
           To provide safe and reliable transportation: We prioritize safety and
@@ -50,7 +51,7 @@ const AboutUs = () => {
           moment they reach their destination. */}
         </div>
       </div>
-          <BookNow />
+         
         </div>
 
         <div
@@ -60,7 +61,7 @@ const AboutUs = () => {
           <h2 className="text-3xl font-semibold mb-6">
             About Xpress Tour & Travels
           </h2>
-          <p className="text-lg">
+          <p className="text-lg" data-aos='fade-up'>
             <span className="font-bold">Xpress Tour & Travels</span> is a
             complete travel management company formed by hardcore professionals
             with an average experience since 1998 in{" "}
@@ -68,7 +69,7 @@ const AboutUs = () => {
             <span className="font-bold">flight booking</span>, and{" "}
             <span className="font-bold">tour packages</span>.
           </p>
-          <p className="text-lg ">
+          <p className="text-lg " data-aos='fade-up'>
             We are approved by the{" "}
             <span className="font-bold">
               Government of India, Department of Tourism
@@ -79,7 +80,7 @@ const AboutUs = () => {
             </span>
             .
           </p>
-          <p className="text-lg   mt-1">
+          <p className="text-lg   mt-1" data-aos='fade-up'>
             <span className="font-bold">India</span>, the country of a thousand
             facets, offers everything – from the desert frontier of{" "}
             <span className="font-bold">Rajasthan</span> to splendid{" "}
@@ -88,7 +89,7 @@ const AboutUs = () => {
             encounters, ancient sculpture on granite, rare art and crafts,
             serene landscapes, and monumental edifices awaiting exploration.
           </p>
-          <p className="text-lg   mt-1">
+          <p className="text-lg   mt-1" data-aos='fade-up'>
             That’s where we,{" "}
             <span className="font-bold">Xpress Tour & Travels</span>, experts in
             the field of <span className="font-bold">Indian tourism</span>, step
@@ -112,7 +113,7 @@ const AboutUs = () => {
             We operate a variety of tours for both groups and individual
             tourists, organizing them efficiently and seamlessly.
           </p> */}
-          <p className="text-lg   mt-1">
+          <p className="text-lg   mt-1" data-aos='fade-up'>
             We are one of the best{" "}
             <span className="font-bold">ticketing agents in India</span>,
             providing confirmed <span className="font-bold">train tickets</span>{" "}
@@ -120,13 +121,14 @@ const AboutUs = () => {
             the cheapest <span className="font-bold">airfares</span> for both
             domestic and international flights.
           </p>
-          <p className="text-lg   mt-1">
+          <p className="text-lg   mt-1" data-aos='fade-up'>
             Our executive team is available 365 days, 24/7, to assist with{" "}
             <span className="font-bold">flight bookings</span> and{" "}
             <span className="font-bold">train bookings</span>.
           </p>
         </div>
       </div>
+      <BookNow />
     </div>
   );
 };

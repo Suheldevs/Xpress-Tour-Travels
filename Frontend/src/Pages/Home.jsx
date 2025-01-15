@@ -9,6 +9,7 @@ import HowWeWork from '../Components/HowWeWork'
 import { HowItWorks } from '../Components/HWW'
 import WhyChooseUs from '../Components/WhyChooseUs'
 import Footer from '../Components/Footer'
+import Review from '../Components/Review'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
     <ServicesSection/>
     <HowWeWork/>
     <WhyChooseUs/>
+    <Review/>
     {/* <HowItWorks/> */}
     </>
   )

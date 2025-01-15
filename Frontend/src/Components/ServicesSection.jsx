@@ -130,15 +130,15 @@ const services = [
     description: "Seamless flight bookings for all your destinations.",
     price: "Starting @ just Rs 1199/-",
     buttonLabel: "Book Now",
-    image: "services/air.png", // Replace with actual image path
+    image: "services/air.jpg", // Replace with actual image path
   },
   {
     id: 4,
-    title: "Train Ticketing",
+    title: "Train Ticketing & Services",
     description: "Convenient train ticket bookings nationwide.",
     price: "Starting @ just Rs 199/-",
     buttonLabel: "Book Now",
-    image: "services/train.webp", // Replace with actual image path
+    image: "train-station.png", // Replace with actual image path
   },
   {
     id: 5,
@@ -150,11 +150,11 @@ const services = [
   },
   {
     id: 6,
-    title: "Helicopter & Charter Services",
+    title: "Helicopter Services",
     description: "Seamless Helicopter bookings for all your destinations.",
     price: "Starting @ just Rs 20000/-",
     buttonLabel: "Book Now",
-    image: "services/helicoptor.jpg", // Replace with actual image path
+    image: "helicopter.png", // Replace with actual image path
   },
 ];
 
@@ -163,7 +163,7 @@ export default function ServicesSection() {
     <div className="bg-gray-50 py-12">
       {/* Section Header */}
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold text-gray-800">Our Services</h2>
+        <h2 className="md:text-4xl text-3xl font-bold text-gray-800">Our Services</h2>
         <p className="text-gray-600 mt-4">
           Explore our range of premium services designed to make your journey seamless and memorable.
         </p>
@@ -171,16 +171,16 @@ export default function ServicesSection() {
 
       {/* Grid Layout */}
       <div className="max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {services.map((service) => (
+        {services.map((service)=> (
           <div
             key={service.id}
-            className="bg-white border rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+            className="bg-gray-50 border  rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
           >
             <div className="h-1/2">
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-full object-cover"
+              className="w-full md:p-8 p-6 h-full rounded object-cover"
             />
             </div>
             <div className="h-1/2">

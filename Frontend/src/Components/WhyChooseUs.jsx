@@ -13,10 +13,8 @@ const WhyChooseUs = () => {
 
   return (
     <div data-aos='fade-up' className="relative flex flex-col items-center justify-center w-full gap-4 py-8 md:py-10 lg:py-12 ">
-      <h2 className="text-center text-primary flex items-center justify-center text-4xl font-bold  ">
-
+      <h2 className="text-center text-primary flex items-center justify-center md:text-4xl text-3xl font-bold  ">
         Why Choose Us
-       
       </h2>
 
       <div className="flex flex-col items-center justify-center lg:flex-row max-w-7xl">

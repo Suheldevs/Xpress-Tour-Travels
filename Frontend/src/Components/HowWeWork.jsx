@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCarAlt, FaCalendarAlt, FaMoneyCheckAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HowWeWork = () => {
   // Steps data
@@ -37,7 +38,7 @@ const HowWeWork = () => {
             <div className="bg-gray-200 p-2 rounded-full">
               <FaCarAlt className="text-gray-800 text-4xl" />
             </div>
-            <h2 className=" text-gray-100 uppercase tracking-wide">
+            <h2 className="text-3xl md:text-4xl text-gray-100  tracking-wide">
               How We Work
             </h2>
           </div>
@@ -59,7 +60,7 @@ const HowWeWork = () => {
             </p>
             <button className="px-4 py-2 bg-black text-white text-sm font-medium rounded-md flex items-center justify-center">
               <FaCarAlt className="mr-2" />
-              Book Now
+             <Link to='/contact'>Book Now</Link>
             </button>
           </div>
 

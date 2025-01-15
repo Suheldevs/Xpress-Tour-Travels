@@ -12,7 +12,7 @@ const AboutComponent = () => {
         {/* Heading Section */}
         <div className="text-left">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-           <FaCar className="inline-block mr-2 text-secondary text-5xl mb-1"/> About Express Tour & Travels
+           <FaCar className="inline-block mr-2 text-secondary md:text-4xl text-3xl mb-1"/> About Express Tour & Travels
           </h2>
           <p className="text-lg text-gray-700">
             <span className="font-bold">Xpress Tour & Travels</span> is a complete travel management company
@@ -43,16 +43,16 @@ const AboutComponent = () => {
         <div className="text-left" data-aos='fade-up'>
           <ul className="grid md:grid-cols-4 grid-cols-2  gap-4 text-lg text-gray-700">
             <li className="flex items-center gap-4 flex-col">
-              <FaCar className="text-5xl text-secondary" /> Wide Range of Vehicles
+              <img src='car.png' className="h-24"/> Wide Range of Vehicles
             </li>
             <li className="flex items-center gap-4 flex-col">
-              <FaRoute className="text-5xl text-secondary" /> Flexible Rental Plans
+            <img src='flexibility.png' className="h-24"/> Flexible Rental Plans
             </li>
             <li className="flex items-center gap-4 flex-col">
-              <FaMapMarkedAlt className="text-5xl text-secondary" /> Seamless Pickup & Drop-off
+            <img src='delivery-location.png' className="h-24"/> Seamless Pickup & Drop-off
             </li>
             <li className="flex items-center gap-4 flex-col">
-              <FaGlobe className="text-5xl text-secondary" /> Customized Tour Packages
+            <img src='tour-bus.png' className="h-24"/> Customized Tour Packages
             </li>
           </ul>
         </div>
