@@ -7,7 +7,7 @@ const AboutComponent = () => {
     window.scrollTo(0, 0); // Scroll to the top
   };
   return (
-    <section data-aos='fade-up' className="bg-bgcolor2 py-12">
+    <section data-aos='fade-up' className="relative bg-bgcolor2 py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-6">
         {/* Heading Section */}
         <div className="text-left">
@@ -22,6 +22,8 @@ const AboutComponent = () => {
             <span className="font-bold"> tour packages</span>.
           </p>
         </div>
+        {/* <div class="absolute top-0 right-0  w-[200px] h-[200px] z-[-20]  bg-primary rounded-full transform translate-x-[0%] translate-y-[-40%]  opacity-100"></div> */}
+
 
         {/* Content Section */}
         <div className="text-left">

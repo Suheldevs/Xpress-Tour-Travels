@@ -35,7 +35,7 @@ const AboutUs = () => {
           />
           <div className="md:px-10 px-4 mt-4" data-aos='fade-up'>
         <div className="text-3xl font-bold mb-2">Our mission</div>
-        <div className="text-justify" data-aos='fade-up'>
+        <div className="text-justify text-lg" data-aos='fade-up'>
           To provide safe and reliable transportation: We prioritize safety and
           reliability, striving to provide a high-quality transportation service
           that customers can trust. To offer convenient and accessible

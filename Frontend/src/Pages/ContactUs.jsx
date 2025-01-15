@@ -48,7 +48,7 @@ const ContactUs = () => {
       <div className="container px-8  max-w-7xl gap-6 mb-12">
         <div className="flex md:mx-10 md:flex-row flex-col md:gap-0 gap-4">
           {/* Office Details */}
-          <div className="border flex-2 text-gray-800 p-6 rounded-lg shadow-2xl z-10 ">
+          <div className="border flex-2 bg-white md:bg-transparent text-gray-800 p-6 rounded-lg shadow-2xl z-10 ">
             <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
             <p className="mb-2 flex justify-start items-start gap-2">
               <FaLocationDot className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
@@ -121,7 +121,8 @@ const ContactUs = () => {
               </a>
             </p>
           </div>
-          <div class="absolute z-[-10] w-[500px] h-[500px] bg-gradient-to-b from-secondary to-secondary rounded-full transform translate-x-[40%] translate-y-[40%] opacity-30"></div>
+          <div class="absolute z-[-10] w-[500px] h-[500px] bg-secondary rounded-full transform translate-x-[40%] translate-y-[40%] md:opacity-50 opacity-100"></div>
+          <div class="absolute top-0 right-0 z-[-10] w-[500px] h-[500px] md:bg-secondary bg-primary rounded-full transform translate-x-[0%] translate-y-[0%] md:opacity-50 opacity-100"></div>
 
           {/* Enquiry Form */}
           <div className="p-8 flex-1 bg-primary   border rounded-lg shadow-lg">

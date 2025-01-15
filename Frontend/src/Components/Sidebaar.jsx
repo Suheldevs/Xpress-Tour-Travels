@@ -10,7 +10,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="bg-blue-500 p-2 rounded-full text-white transition-transform transform hover:scale-110"
       >
-        <FaFacebookF size={30} />
+        <FaFacebookF size={25} />
       </a>
       {/* <a
         href="https://twitter.com"
@@ -18,7 +18,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="text-blue-400 transition-transform transform hover:scale-110"
       >
-        <FaTwitter size={30} />
+        <FaTwitter size={25} />
       </a> */}
       <a
         href="https://instagram.com"
@@ -26,7 +26,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="bg-gradient-to-t to-red-500 from-pink-600 p-2 rounded-full text-white transition-transform transform hover:scale-110"
       >
-        <FaInstagram size={30} />
+        <FaInstagram size={25} />
       </a>
       {/* <a
         href="https://linkedin.com"
@@ -34,7 +34,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="text-blue-700 transition-transform transform hover:scale-110"
       >
-        <FaLinkedin size={30} />
+        <FaLinkedin size={25} />
       </a> */}
       <a
         href="https://linkedin.com"
@@ -42,7 +42,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="bg-green-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
       >
-        <FaWhatsapp size={30} />
+        <FaWhatsapp size={25} />
       </a>
       <a
         href="tel:+91-9935115786"
@@ -50,7 +50,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
       >
-        <FaPhone className='rotate-90' size={23} />
+        <FaPhone className='rotate-90' size={15} />
       </a>
     </div>
   );
