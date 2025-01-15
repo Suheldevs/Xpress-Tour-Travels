@@ -11,8 +11,12 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 md:px-16 flex justify-between  items-center h-16">
         {/* Logo */}
-        <div className="text-2xl font-bold text-secondary">
-          <Link to="/">Xpress Travel</Link>
+        <div className="text-2xl font-bold text-white">
+          <Link to="/">
+          <div className="flex items-center gap-2">
+            <img src="xpress-logo.png" className="h-14 rounded-full border"/><span>Express Tour & Travels</span>
+          </div>
+          </Link>
         </div>
 
         {/* Mobile Navbar */}

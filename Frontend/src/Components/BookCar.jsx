@@ -50,7 +50,7 @@ const carData = [
 
 const BookCar = () => {
   return (
-    <div className="bg-slate-800 lg:py-12 md:py-10 py-8">
+    <div className="bg-primary lg:py-12 md:py-10 py-8">
       <div data-aos="fade-up" className="max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="mb-6 text-center">
@@ -77,7 +77,7 @@ const BookCar = () => {
             Please choose your preferred car from below
           </p>
           <div className="mt-4 flex justify-center space-x-4">
-            <button className="px-4 py-2 rounded-full bg-white text-gray-800 font-medium">
+            <button className="px-4 py-2 rounded-full bg-white text-primary font-medium">
               Pick From Lucknow
             </button>
           </div>
@@ -124,10 +124,10 @@ const BookCar = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4 bg-slate-200 rounded-xl">
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                  <h3 className="text-2xl font-semibold text-primary">
                     {car.name}
                   </h3>
-                  <div className="items-center text-gray-700">
+                  <div className="items-center text-primary/90">
                     <span>{car.description}</span>
                     <div className="mt-2">
                       <span>Start Price Per KM: </span>
@@ -146,8 +146,8 @@ const BookCar = () => {
                           <span>{car.seats}</span>
                         </div>
                       </div>
-                      <Link to='/contact' className="border-4 inline-block p-1 mt-4 w-full border-gray-800 rounded-full hover:scale-105 transition-all duration-100">
-                        <button className="bg-gray-800 text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
+                      <Link to='/contact' className="border-4 inline-block p-1 mt-4 w-full border-primary rounded-full hover:scale-105 transition-all duration-100">
+                        <button className="bg-primary text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
                           Book Now
                         </button>
                       </Link>
@@ -158,10 +158,10 @@ const BookCar = () => {
             </SwiperSlide>
           ))}
 
-          <div className="swiper-button-prev bg-slate-800 absolute top-1/2 left-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
+          <div className="swiper-button-prev bg-primary absolute top-1/2 left-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
             <FaChevronLeft size={12} />
           </div>
-          <div className="swiper-button-next bg-slate-800 absolute top-1/2 right-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
+          <div className="swiper-button-next bg-primary absolute top-1/2 right-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
             <FaChevronRight size={12} />
           </div>
         </Swiper>

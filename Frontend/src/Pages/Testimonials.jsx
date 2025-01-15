@@ -15,7 +15,7 @@ function Testimonials() {
         </div>
       </h1>
 
-<iframe src="https://widget.tagembed.com/2147211" className='w-full h-screen my-8 bg-slate-50 px-6'></iframe>
+<iframe src="https://widget.tagembed.com/2147211" className='w-full min-h-screen  my-8 bg-slate-50 px-6'></iframe>
 
     </div>
   )
