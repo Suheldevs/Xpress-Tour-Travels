@@ -31,7 +31,7 @@ const HeroSection = () => {
 
   return (
     <section  className="relative h-[80vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-primary">
-      {/* <video
+      <video
       data-aos='fade-up'
         className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
         src="bg-video.mp4" 
@@ -39,7 +39,7 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-      /> */}
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -71,11 +71,11 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div data-aos='fade-left' className="md:w-4/12 mt-36 shadow-sm  hidden md:flex justify-start items-end">
+        <div data-aos='fade-left' className="md:w-4/12 mt-36 z-10 bg-black/5 shadow-sm transition-all ease-in-out duration-1000  hidden md:flex justify-start items-end">
           <img
             src={carImages[currentCarIndex]} 
             alt="Car"
-            className="w-full h-auto scale-125 transition-all ease-in-out duration-1000"
+            className="w-full h-auto scale-150 ml-[-50px] transition-all ease-in-out duration-1000"
           />
         </div>
       </div>

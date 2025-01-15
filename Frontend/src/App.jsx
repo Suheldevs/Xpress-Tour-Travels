@@ -10,10 +10,12 @@ import Services from './Pages/OurServices';
 import Testimonials from './Pages/Testimonials';
 import ContactUs from './Pages/ContactUs';
 import AboutUs from './Pages/AboutUs';
+import SocialSidebar from './Components/Sidebaar';
 function App() {
   return (
     <BrowserRouter>
     <Header/>
+    <SocialSidebar/>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/faq' element={<FAQ/>} />
