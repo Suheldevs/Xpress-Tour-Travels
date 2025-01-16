@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookNow from "../Components/BookNow";
-import BookCar from "../Components/BookCar";
 
 const AboutUs = () => {
   AOS.init();
@@ -25,43 +24,18 @@ const AboutUs = () => {
       </h1>
 
       {/* About Us Section */}
-      
-      <div data-aos='fade-right' className="flex flex-col-reverse md:flex-row mt-1 md:mx-10 mx-4 gap-6">
-        <div className="flex-1  border-gray-800">
-          <img
-            src="aboutUs.png"
-            alt="Xpress Tour & Travels"
-            className="w-full h-auto object-cover rounded-lg"
-          />
-          <div className="md:px-10 px-4 mt-4" data-aos='fade-up'>
-        <div className="text-3xl font-bold mb-2">Our mission</div>
-        <div className="text-justify text-lg" data-aos='fade-up'>
-          To provide safe and reliable transportation: We prioritize safety and
-          reliability, striving to provide a high-quality transportation service
-          that customers can trust. To offer convenient and accessible
-          transportation: Our aim to make transportation more convenient and
-          accessible for people, by offering a variety of booking options,
-          affordable prices, and vehicles that can accommodate different needs.
-          {/* To promote sustainability and reduce emissions: We prioritize
-          sustainability and work to reduce their environmental impact by using
-          low-emission vehicles or supporting other environmentally friendly
-          initiatives. To provide exceptional customer service: We prioritize
-          customer service, aiming to provide a positive and enjoyable
-          experience for passengers from the moment they book a ride to the
-          moment they reach their destination. */}
-        </div>
-      </div>
-         
-        </div>
-
+      <div
+        data-aos="fade-right"
+        className="flex flex-col-reverse md:flex-row border-t-4 rounded shadow-xl bg-white border-secondary mt-1 md:mx-10 mx-4 "
+      >
         <div
           data-aos="fade-left"
-          className="flex-1 p-8 mb-8 border-t-4 rounded shadow-xl bg-white  border-secondary hover:shadow-2xl transition-all duration-300"
+          className="flex-[8] p-8 mb-8 transition-all duration-300"
         >
           <h2 className="text-3xl font-semibold mb-6">
             About Xpress Tour & Travels
           </h2>
-          <p className="text-lg" data-aos='fade-up'>
+          <p className="text-lg" data-aos="fade-up">
             <span className="font-bold">Xpress Tour & Travels</span> is a
             complete travel management company formed by hardcore professionals
             with an average experience since 1998 in{" "}
@@ -69,7 +43,7 @@ const AboutUs = () => {
             <span className="font-bold">flight booking</span>, and{" "}
             <span className="font-bold">tour packages</span>.
           </p>
-          <p className="text-lg " data-aos='fade-up'>
+          <p className="text-lg" data-aos="fade-up">
             We are approved by the{" "}
             <span className="font-bold">
               Government of India, Department of Tourism
@@ -80,7 +54,7 @@ const AboutUs = () => {
             </span>
             .
           </p>
-          <p className="text-lg   mt-1" data-aos='fade-up'>
+          <p className="text-lg mt-1" data-aos="fade-up">
             <span className="font-bold">India</span>, the country of a thousand
             facets, offers everything – from the desert frontier of{" "}
             <span className="font-bold">Rajasthan</span> to splendid{" "}
@@ -89,31 +63,14 @@ const AboutUs = () => {
             encounters, ancient sculpture on granite, rare art and crafts,
             serene landscapes, and monumental edifices awaiting exploration.
           </p>
-          <p className="text-lg   mt-1" data-aos='fade-up'>
+          <p className="text-lg mt-1" data-aos="fade-up">
             That’s where we,{" "}
             <span className="font-bold">Xpress Tour & Travels</span>, experts in
             the field of <span className="font-bold">Indian tourism</span>, step
             in. We help you choose the right places to visit and assist you in
             reaching your dream destination.
           </p>
-          {/* <p className="text-lg   mt-1">
-            <span className="font-bold">Xpress Tour & Travels</span> offers the
-            best deals possible by providing affordable tour packages and
-            minimal service charges on ticketing services and planning your
-            entire vacation.
-          </p> */}
-          {/* <p className="text-lg   mt-1">
-            <span className="font-bold">xpresstourtravels.com</span> has all the
-            information you need to plan a trip to any destination. Our
-            corporate culture of putting people first has given us an edge and
-            made us stand out in the industry.
-          </p> */}
-          {/* <p className="text-lg   mt-1">
-            We have been recognized as the best travel companion for consumers.
-            We operate a variety of tours for both groups and individual
-            tourists, organizing them efficiently and seamlessly.
-          </p> */}
-          <p className="text-lg   mt-1" data-aos='fade-up'>
+          <p className="text-lg mt-1" data-aos="fade-up">
             We are one of the best{" "}
             <span className="font-bold">ticketing agents in India</span>,
             providing confirmed <span className="font-bold">train tickets</span>{" "}
@@ -121,13 +78,68 @@ const AboutUs = () => {
             the cheapest <span className="font-bold">airfares</span> for both
             domestic and international flights.
           </p>
-          <p className="text-lg   mt-1" data-aos='fade-up'>
+          <p className="text-lg mt-1" data-aos="fade-up">
             Our executive team is available 365 days, 24/7, to assist with{" "}
             <span className="font-bold">flight bookings</span> and{" "}
             <span className="font-bold">train bookings</span>.
           </p>
         </div>
+        <div className="flex-[4] border-2 rounded p-1 m-1 ">
+          <img
+            src="aboutUs.png"
+            alt="Xpress Tour & Travels"
+            className="w-full h-full  object-cover rounded-lg"
+          />
+        </div>
       </div>
+
+     {/* Our Vision and Mission Section */}
+<div
+  className="md:flex border-t-4 rounded shadow-xl bg-white border-secondary md:mx-10 mx-4 gap-6 mt-10"
+>
+  {/* Our Vision Section */}
+  <div className="flex-[6] p-8">
+    <h2 className="text-3xl font-semibold mb-4">Our Vision</h2>
+    <p className="text-lg">
+      To provide safe and reliable transportation: We prioritize safety and
+      reliability, striving to provide a high-quality transportation service
+      that customers can trust.
+    </p>
+    <p className="text-lg mt-2">
+      To offer convenient and accessible transportation: Our aim is to make
+      transportation more convenient and accessible for people, by offering a
+      variety of booking options, affordable prices, and vehicles that can
+      accommodate different needs.
+    </p>
+  </div>
+
+  {/* Our Mission Section */}
+  <div className="flex-[6] p-8">
+    <h2 className="text-3xl font-semibold mb-4">Our Mission</h2>
+    <p className="text-lg">
+      To deliver exceptional travel experiences: Our mission is to ensure that
+      every journey becomes a memorable and enriching experience for our
+      customers, offering unique and tailored solutions to meet their needs.
+    </p>
+    <p className="text-lg mt-2">
+      To promote sustainable tourism: We are committed to protecting the
+      environment and supporting local communities by fostering responsible and
+      sustainable tourism practices.
+    </p>
+    {/* <p className="text-lg mt-2">
+      To provide unparalleled customer service: We prioritize customer
+      satisfaction by being available 24/7 and addressing their travel
+      requirements with professionalism and efficiency.
+    </p>
+    <p className="text-lg mt-2">
+      To stay innovative and adaptive: Our mission includes staying ahead of
+      the curve by adopting modern technologies and continuously improving our
+      services to provide seamless and hassle-free travel experiences.
+    </p> */}
+  </div>
+</div>
+
+
       <BookNow />
     </div>
   );

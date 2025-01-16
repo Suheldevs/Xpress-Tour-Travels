@@ -122,7 +122,7 @@ const services = [
     description: "Customizable tours for families and solo travelers.",
     price: "Starting @ just Rs 499/-",
     buttonLabel: "Book Now",
-    image: "services/tour.png", // Replace with actual image path
+    image: "tour.png", // Replace with actual image path
   },
   {
     id: 3,
