@@ -114,7 +114,7 @@ const services = [
    description: "Affordable, reliable cars for every journey.",
     price: "Starting @ just Rs 12/Km",
     buttonLabel: "Book Now",
-    image: "services/cab.png", // Replace with actual image path
+    image: "cab.avif", // Replace with actual image path
   },
   {
     id: 2,
@@ -122,7 +122,7 @@ const services = [
     description: "Customizable tours for families and solo travelers.",
     price: "Starting @ just Rs 499/-",
     buttonLabel: "Book Now",
-    image: "tour.png", // Replace with actual image path
+    image: "tour.avif", // Replace with actual image path
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ const services = [
     description: "Seamless flight bookings for all your destinations.",
     price: "Starting @ just Rs 1199/-",
     buttonLabel: "Book Now",
-    image: "services/air.jpg", // Replace with actual image path
+    image: "air.avif", // Replace with actual image path
   },
   {
     id: 4,
@@ -154,7 +154,7 @@ const services = [
     description: "Seamless Helicopter bookings for all your destinations.",
     price: "Starting @ just Rs 20000/-",
     buttonLabel: "Book Now",
-    image: "helicopter.png", // Replace with actual image path
+    image: "helicopter.avif", // Replace with actual image path
   },
 ];
 
@@ -180,11 +180,11 @@ export default function ServicesSection() {
         <img
           src={service.image}
           alt={service.title}
-          className="w-full h-full py-2 px-6  object-containe"
+          className="w-full h-full  object-cover"
         />
       </div>
       <div className="flex flex-1 flex-col justify-between">
-        <div className=" text-center">
+        <div className=" text-center mt-2">
           <h3 className="text-xl font-semibold text-gray-800">
             {service.title}
           </h3>

@@ -30,8 +30,8 @@ const HeroSection = () => {
   }, [carImages.length]);
 
   return (
-    <section  className="relative h-[80vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-primary">
-      {/* <video
+    <section  className="relative h-[90vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-primary">
+      <video
       data-aos='fade-up'
         className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
         src="bg-video.mp4" 
@@ -39,7 +39,7 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-      /> */}
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -54,13 +54,13 @@ const HeroSection = () => {
             Explore More, Pay Less <br />
             <span className="text-secondary">Hassle-Free Travel Services</span>
           </h1>
-          <p className="mt-4 text-xl sm:text-2xl font-medium">
+          <p className="mt-4 text-lg  font-medium">
             Your Trusted Travel Partner
           </p>
           <div className="mt-8 flex gap-4 flex-col md:flex-row items-center">
             <div className="border-4 p-1 lg:animate-bounce hover:animate-none border-gray-100 rounded-full">
             <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">
-              Book Now
+              Call Us
             </button>
             </div>
             <Link to='/services' className="border-4 p-1 border-gray-100 rounded-full">
@@ -72,11 +72,11 @@ const HeroSection = () => {
         </div>
 
         <div data-aos='fade-left' className="md:w-4/12 mt-36 z-10 bg-black/5 shadow-sm transition-all ease-in-out duration-1000  hidden md:flex justify-start items-end">
-          <img
+          {/* <img
             src={carImages[currentCarIndex]} 
             alt="Car"
             className="w-full h-auto scale-150 ml-[-50px] transition-all ease-in-out duration-1000"
-          />
+          /> */}
         </div>
       </div>
     </section>

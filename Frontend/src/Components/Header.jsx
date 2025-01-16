@@ -7,18 +7,19 @@ const Header = () => {
 
   return (
     <header
-      className={` sticky top-0 z-50 bg-primary  text-white shadow-2xl`}
+      className={` fixed  top-0 z-50 h-[10vh]  w-full backdrop-blur-md rounded-b-full bg-white bg-opacity-5  text-white `}
     >
+
       <nav className="container mx-auto px-6 md:px-16 flex justify-between  items-center h-16">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white">
+        <div className="text-2xl font-bold  text-white">
           <Link to="/">
-          <div className="flex items-center gap-2">
-            <img src="xpress.jpg" className="h-12 rounded-full "/><span className="md:block hidden">Express Tour & Travels</span>
+          <div className="flex ">
+            <img src="xpress-logo.png" className="h-20  rounded-full "/>
           </div>
           </Link>
         </div>
-
+        
         {/* Mobile Navbar */}
         <div className="flex md:hidden ">
           <button
@@ -90,7 +91,7 @@ const Header = () => {
         )}
 
         {/* Desktop Navbar */}
-        <ul className="hidden md:flex space-x-6 gap-4 text-white bg-primary">
+        <ul className="hidden md:flex space-x-6 gap-4  text-white">
           <li>
             <Link
               to="/"
@@ -140,6 +141,11 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className="md:block hidden border-2 p-1  border-gray-100 rounded-full">
+            <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-8 py-1 rounded-full shadow-md transition">
+              Book a Cab Now
+            </button>
+            </div>
       </nav>
     </header>
   );
