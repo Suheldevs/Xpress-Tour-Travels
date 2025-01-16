@@ -8,13 +8,13 @@ const AboutComponent = () => {
   };
   return (
     <section data-aos='fade-up' className="relative bg-bgcolor2 py-12">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-6">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-1">
         {/* Heading Section */}
-        <div className="text-left">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">
-           <FaCar className="inline-block mr-2 text-secondary md:text-4xl text-3xl mb-1"/> About Express Tour & Travels
+        <div className="md:text-left text-center">
+          <h2 className="md:text-4xl text-3xl font-bold text-slate-800 mb-4">
+           <FaCar className="inline-block mr-1 text-secondary  bg-primary p-1 rounded-full text-5xl mb-1"/> About Express Tour & Travels
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 text-justify">
             <span className="font-bold">Xpress Tour & Travels</span> is a complete travel management company
             formed by hardcore professionals with an average experience since 1998 in
             <span className="font-bold"> taxi services Lucknow</span>,
@@ -32,7 +32,7 @@ const AboutComponent = () => {
             <span className="font-bold"> Government of India, Department of Tourism</span> and also a member of
             <span className="font-bold"> IATO (Indian Association of Tour Operators)</span>.
           </p>
-          <p className="text-lg text-gray-700 mt-4">
+          <p className="text-lg text-gray-700 mt-4 md:block hidden">
             <span className="font-bold">India</span>, the country of a thousand facets, offers everything – from the
             desert frontier of <span className="font-bold">Rajasthan</span> to splendid
             <span className="font-bold"> Himalayan hideaways</span>, from the incredible southern landscapes to
@@ -60,11 +60,13 @@ const AboutComponent = () => {
         </div>
 
         {/* Button Section */}
-        <div className="text-left mt-6" data-aos='fade-up'>
-          <Link to='/about' onClick={handleScroll} className="bg-secondary hover:bg-secondary/90 inline-block text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-secondary-dark items-center gap-2">
-            Know More About Us <FaArrowRight className="inline-block ml-2 " />
-          </Link>
-        </div>
+        <div className="md:inline md:text-left text-center mt-4" data-aos='fade-up'>
+        <div className="border-4 p-1  inline-block  border-primary rounded-full">
+            <Link to='/about' className="bg-secondary hover:bg-secondary/80 inline-block text-white lg:text-xl text-lg font-semibold px-12 py-2 rounded-full shadow-md transition">
+            Know More About Us
+            </Link>
+            </div>
+            </div>
       </div>
     </section>
   );

@@ -45,23 +45,23 @@ const ContactUs = () => {
       </h1>
 
       {/* Form and Office Details Section */}
-      <div className="container px-8  max-w-7xl gap-6 mb-12">
-        <div className="flex md:mx-10 md:flex-row flex-col md:gap-0 gap-4">
+      <div className="container md:px-8 px-4  max-w-7xl gap-6 mb-12">
+        <div className="flex md:mx-10  md:flex-row flex-col md:gap-0 gap-4">
           {/* Office Details */}
-          <div className="border flex-2 bg-white bg-transparent text-gray-800 p-6 rounded-lg shadow-2xl z-10 ">
+          <div className="border flex-2 bg-white  md:bg-transparent text-gray-800 md:p-10 p-6 rounded-lg shadow-2xl z-10 ">
             <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
             <p className="mb-2 flex justify-start items-start gap-2">
               <FaLocationDot className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
-              <div>
-                <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
+              <div className="font-sans ">
+                <div className="text-lg  font-semibold text-secondary tracking-wider md:mt-[-7px]">
                   Address
                 </div>
-                45A, Dayal Enclave, Sector 9, Indira Nagar, <br /> Lucknow, Uttar Pradesh 226016
+                45A, Dayal Enclave, Sector 9, Indira Nagar, <br className="md:block hidden" /> Lucknow, Uttar Pradesh 226016
               </div>
             </p>
             <p className="mb-2 flex justify-start items-start gap-2 mt-4">
               <MdEmail className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
-              <div>
+              <div className="font-sans">
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Mail For Information
                 </div>
@@ -79,14 +79,14 @@ const ContactUs = () => {
             </p>
             <p className="mb-2 flex justify-start items-start gap-2 mt-4">
               <GiRotaryPhone className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
-              <div>
+              <div className="font-sans">
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Land Line help
                 </div>
                 0522-4077786, 4066686, 2312786
               </div>
             </p>
-            <p className="flex gap-4 mt-2">
+            <p className="flex gap-4 mt-4 ">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -125,12 +125,12 @@ const ContactUs = () => {
           <div class="absolute top-0 right-0 z-[-10] w-[500px] h-[500px] md:bg-secondary bg-primary rounded-full transform translate-x-[0%] translate-y-[0%] md:opacity-50 opacity-100"></div>
 
           {/* Enquiry Form */}
-          <div className="p-8 flex-1 bg-primary   border rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-100 mb-6">Enquiry Now</h2>
+          <div className="pt-4 px-8 pb-2 flex-1 bg-primary  border rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-100 mb-2">Enquiry Now</h2>
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mb-2" htmlFor="name">
+                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="name">
                     Name
                   </label>
                   <input
@@ -140,13 +140,13 @@ const ContactUs = () => {
                     placeholder="Enter your name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full p-3 border-2 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-secondary"
+                    className="w-full p-2 border-b-2 bg-primary  shadow-sm outline-none text-white"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mb-2" htmlFor="number">
+                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="number">
                     Phone Number
                   </label>
                   <input
@@ -156,13 +156,13 @@ const ContactUs = () => {
                     name="number"
                     value={formData.number}
                     onChange={handleChange}
-                    className="w-full p-3 border-2 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-secondary"
+                     className="w-full p-2 border-b-2 bg-primary  shadow-sm outline-none text-white"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mb-2" htmlFor="email">
+                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="email">
                     Email
                   </label>
                   <input
@@ -172,13 +172,13 @@ const ContactUs = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-3 border-2 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-secondary"
+                    className="w-full p-2 border-b-2 bg-primary  shadow-sm outline-none text-white"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mb-2" htmlFor="service">
+                  <label className="block text-lg font-semibold text-gray-100 mt-3" htmlFor="service">
                     Service Interested In
                   </label>
                   <select
@@ -187,7 +187,7 @@ const ContactUs = () => {
                     placeholder="Select a service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full p-3 border-2 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-secondary"
+                     className="w-full p-2 border-b-2 mt-1 bg-primary  shadow-sm outline-none text-white"
                     required
                   >
                     <option value="" disabled>Select a Service</option>
@@ -198,7 +198,7 @@ const ContactUs = () => {
                 </div>
 
                 <div className="col-span-1 md:col-span-2">
-                  <label className="block text-lg font-semibold text-gray-100 mb-2" htmlFor="message">
+                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="message">
                     Message
                   </label>
                   <textarea
@@ -207,14 +207,14 @@ const ContactUs = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="2"
-                    className="w-full p-3 border-2 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-secondary"
+                    className="w-full border-b-2 bg-primary  shadow-sm outline-none text-white"
                     placeholder="Enter your message here..."
                     required
                   ></textarea>
                 </div>
               </div>
 
-              <div className="text-center mt-8">
+              <div className="md:text-left text-center  mt-2">
                 <button
                   type="submit"
                   className="bg-secondary text-white py-3 px-12 text-lg font-semibold rounded-full shadow-lg transition hover:bg-secondary/80"
@@ -228,9 +228,10 @@ const ContactUs = () => {
 
         {/* Right Section: Google Map */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="text-2xl font-semibold mb-2">Our Location</div>
           <iframe
             className="w-full md:h-96 h-52 rounded-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.827146649382!2d80.99930401504472!3d26.886608583140214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd45bf6d4b9f%3A0xb85f5db3bb7075dc!2s45A%2C%20Dayal%20Enclave%2C%20Sector%209%2C%20Indira%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh%20226016!5e0!3m2!1sen!2sin!4v1673521834185!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6717900683716!2d81.0059795!3d26.8821669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2z4KSP4KSV4KWN4KS44KSq4KWN4KSw4KWH4KS4IOCkn-ClguCksCDgpI_gpILgpKEg4KSf4KWN4KSw4KWH4KS14KSy4KWN4KS4!5e0!3m2!1shi!2sin!4v1737003479975!5m2!1shi!2sin"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

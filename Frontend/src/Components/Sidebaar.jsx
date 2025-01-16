@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaWhatsapp, FaPhone, Fa
 
 const SocialSidebar = () => {
   return (
-    <div className="sidebar fixed bottom-0 z-50 md:right-0 right-2 transform -translate-y-1/2 flex flex-col items-center rounded-l-lg p-2 shadow-lg space-y-5">
+    <div className="sidebar fixed bottom-0 z-50  right-0 transform -translate-y-1/5 mb-4 flex flex-col items-center rounded-l-lg p-2 shadow-lg space-y-5">
       <a
         href="https://facebook.com"
         target="_blank"

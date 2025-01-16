@@ -19,13 +19,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
           {/* Logo and Social Links */}
           <div>
-            <h2 className="text-2xl font-bold text-secondary mb-4">
+            <div className="flex justify-center items-center ">
+              <img src="xpress.jpg" className="h-24 rounded-full"/>
+            </div>
+            <h2 className="text-2xl font-bold text-secondary text-center mb-4">
               Xpress Tour & Travel
             </h2>
-            <p className="text-gray-200">
+            {/* <p className="text-gray-200">
               Travel with trust and comfort. Your satisfaction is our priority.
-            </p>
-            <div className="flex justify-center md:justify-start space-x-4 mt-4">
+            </p> */}
+            <div className="flex justify-center md:justify-center space-x-4 mt-4">
               <a
                 href="#"
                 className="p-2 bg-secondary hover:bg-secondary/70 rounded-full  transition"
@@ -103,7 +106,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-secondary mb-4">Our Location</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14119.787545887719!2d80.9398197!3d26.8507074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b4c1c430b991d%3A0x7dfb68e1397a0f11!2s45A%2C%20Dayal%20Enclave%2C%20Sector%209%2C%20Indira%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh%20226016!5e0!3m2!1sen!2sin!4v1619045107005!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6717900683716!2d81.0059795!3d26.8821669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2z4KSP4KSV4KWN4KS44KSq4KWN4KSw4KWH4KS4IOCkn-ClguCksCDgpI_gpILgpKEg4KSf4KWN4KSw4KWH4KS14KSy4KWN4KS4!5e0!3m2!1shi!2sin!4v1737003479975!5m2!1shi!2sin"
               width="100%"
               height="200"
               frameBorder="0"

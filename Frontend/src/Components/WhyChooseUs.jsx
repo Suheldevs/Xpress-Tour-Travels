@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Rotating circle with central image */}
-        <div className="relative h-[25rem] w-[32rem] flex items-center justify-center sm:my-16">
+        <div className="relative h-[25rem] md:w-[32rem] w-[20rem] flex items-center justify-center sm:my-16">
           <div className="absolute animate-spin- duration-1000 sm:size-[24.5rem] size-[16.5rem] rounded-full border-4 border-primary flex items-center justify-center">
             {/* {reasons.map((reason, index) => (
               <div
@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
             ))} */}
-          <img src='why-choose-us1.webp' className="w-full rounded-full p-1 h-auto object-cover" alt="Car" />
+          <img src='why-choose-us.webp' className="w-full rounded-full p-1 h-auto object-cover" alt="Car" />
           </div>
         </div>
 

@@ -115,7 +115,7 @@ const BookCar = () => {
           {carData.map((car) => (
             <SwiperSlide key={car.id}>
               <div
-                data-aos="flip-left"
+                data-aos="flip-right"
                 className="bg-gray-100 shadow-md rounded-lg overflow-hidden"
               >
                 <img

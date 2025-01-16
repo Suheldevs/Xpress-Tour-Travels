@@ -7,14 +7,14 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-50 bg-primary text-white shadow-md"
+      className={` sticky top-0 z-50 bg-primary  text-white shadow-2xl`}
     >
       <nav className="container mx-auto px-6 md:px-16 flex justify-between  items-center h-16">
         {/* Logo */}
         <div className="text-2xl font-bold text-white">
           <Link to="/">
           <div className="flex items-center gap-2">
-            <img src="xpress-logo.png" className="h-14 rounded-full border"/><span>Express Tour & Travels</span>
+            <img src="xpress.jpg" className="h-12 rounded-full "/><span className="md:block hidden">Express Tour & Travels</span>
           </div>
           </Link>
         </div>
@@ -25,7 +25,7 @@ const Header = () => {
             className="text-2xl     "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <FaTimes className="text-secondary"/> : <FaBars className="text-secondary" />}
+            {isMenuOpen ? <FaTimes className="hover:text-secondary"/> : <FaBars className="hover:text-secondary" />}
           </button>
         </div>
 
