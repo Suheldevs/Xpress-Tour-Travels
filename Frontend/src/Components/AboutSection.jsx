@@ -12,7 +12,7 @@ const AboutComponent = () => {
         {/* Heading Section */}
         <div className="md:text-left text-center">
           <h2 className="md:text-4xl text-3xl font-bold text-slate-800 mb-4">
-           <FaCar className="inline-block mr-1 text-secondary  bg-primary p-1 rounded-full text-5xl mb-1"/> About Express Tour & Travels
+           <FaCar className="inline-block mr-1 text-secondary  bg-primary p-2 rounded-full text-5xl mb-1"/> About Xpress Tour & Travels
           </h2>
           <p className="text-lg text-gray-700 text-justify">
             <span className="font-bold">Xpress Tour & Travels</span> is a complete travel management company
@@ -44,25 +44,29 @@ const AboutComponent = () => {
         {/* Features Section */}
         <div className="text-left" data-aos='fade-up'>
           <ul className="grid md:grid-cols-4 grid-cols-2  gap-4 text-lg text-gray-700">
-            <li className="flex items-center gap-4 flex-col">
-              <img src='car.png' className="h-24"/> Wide Range of Vehicles
+            <li className="flex items-center gap-0 flex-col">
+              <img src='car.png' className="h-24"/> 
+              Wide Range of Vehicles
             </li>
-            <li className="flex items-center gap-4 flex-col">
-            <img src='flexibility.png' className="h-24"/> Flexible Rental Plans
+            <li className="flex items-center gap-0 flex-col">
+            <img src='flexibility.png' className="h-24"/> 
+            Flexible Rental Plans
             </li>
-            <li className="flex items-center gap-4 flex-col">
-            <img src='delivery-location.png' className="h-24"/> Seamless Pickup & Drop-off
+            <li className="flex items-center gap-0 flex-col">
+            <img src='delivery-location.png' className="h-24"/>
+             Seamless Pickup & Drop-off
             </li>
-            <li className="flex items-center gap-4 flex-col">
-            <img src='tour-bus.png' className="h-24"/> Customized Tour Packages
+            <li className="flex items-center gap-0 flex-col">
+            <img src='tour-bus.png' className="h-24"/>
+             Customized Tour Packages
             </li>
           </ul>
         </div>
 
         {/* Button Section */}
-        <div className="md:inline md:text-left text-center mt-4" data-aos='fade-up'>
-        <div className="border-4 p-1  inline-block  border-primary rounded-full">
-            <Link to='/about' className="bg-secondary hover:bg-secondary/80 inline-block text-white lg:text-xl text-lg font-semibold px-12 py-2 rounded-full shadow-md transition">
+        <div className="md:inline md:text-left text-center mt-7">
+        <div className="border-0 p-1  inline-block  border-primary rounded-full">
+            <Link to='/about' className="btn ">
             Know More About Us
             </Link>
             </div>

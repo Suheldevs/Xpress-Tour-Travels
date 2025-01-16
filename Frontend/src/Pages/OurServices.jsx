@@ -37,7 +37,7 @@ const services = [
 const Services = () => {
   return (
     <div className="">
-     <h1 className="breadcrumb relative py-10  font-bold text-center mb-12 text-white">
+     <h1 className="breadcrumb relative pt-32 pb-12  font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Our Services</div>
         <div className="relative z-10 text-lg mt-2">
@@ -67,8 +67,8 @@ const Services = () => {
             <div className="w-full md:w-1/2 pl-6 ">
               <h2 className="text-4xl font-semibold mb-4">{service.title}</h2>
               <p className=" leading-relaxed">{service.content}</p>
-              <div className={`border-4 p-1 text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
-            <button className="bg-secondary ease-in-out  lg:text-xl text-lg font-semibold px-8 py-2 hover:px-11 rounded-full shadow-md transition-all duration-500">
+              <div className={`borde p-1 text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
+            <button className="bg-secondary btn1 ease-in-out  lg:text-xl text-lg font-semibold px-8 py-2 hover:px-11 rounded-full shadow-md transition-all duration-500">
               Enquire Now
             </button>
             </div>

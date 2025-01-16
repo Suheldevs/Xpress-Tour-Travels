@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaPhone, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { GiRotaryPhone } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
@@ -35,7 +35,7 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <h1 className="breadcrumb relative py-10 font-bold text-center mb-12 text-white">
+      <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Contact Us</div>
         <div className="relative z-10 text-lg mt-2">
@@ -87,8 +87,24 @@ const ContactUs = () => {
               </div>
             </p>
             <p className="flex gap-4 mt-4 ">
+            <a
+                href="https://api.whatsapp.com/send?phone=9935115786"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
+              >
+                <FaWhatsapp size={30} />
+              </a>
+            <a
+                href="https://www.youtube.com/@xpresstourandtravels"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
+              >
+                <FaYoutube size={30} />
+              </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/xpress-tour-and-travels/61569937321411/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-500 p-2 rounded-full text-white transition-transform transform hover:scale-110"
@@ -96,21 +112,14 @@ const ContactUs = () => {
                 <FaFacebookF size={30} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/xpresstourandtravels/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-t to-red-500 from-pink-600 p-2 rounded-full text-white transition-transform transform hover:scale-110"
               >
                 <FaInstagram size={30} />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
-              >
-                <FaWhatsapp size={30} />
-              </a>
+             
               <a
                 href="tel:+91-9935115786"
                 target="_blank"
@@ -227,11 +236,11 @@ const ContactUs = () => {
         </div>
 
         {/* Right Section: Google Map */}
-        <div className="bg-white p-8 rounded-lg shadow-lg">
-          <div className="text-2xl font-semibold mb-2">Our Location</div>
+        <div className="bg-white px-4 py-8 mx-10 rounded-lg shadow-lg">
+          {/* <div className="text-2xl font-semibold mb-2">Our Location</div> */}
           <iframe
             className="w-full md:h-96 h-52 rounded-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6717900683716!2d81.0059795!3d26.8821669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2z4KSP4KSV4KWN4KS44KSq4KWN4KSw4KWH4KS4IOCkn-ClguCksCDgpI_gpILgpKEg4KSf4KWN4KSw4KWH4KS14KSy4KWN4KS4!5e0!3m2!1shi!2sin!4v1737003479975!5m2!1shi!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.671640149946!2d81.003404574093!3d26.88217166140491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2sXpress%20Tour%20And%20Travels!5e0!3m2!1sen!2sin!4v1737034567545!5m2!1sen!2sin"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

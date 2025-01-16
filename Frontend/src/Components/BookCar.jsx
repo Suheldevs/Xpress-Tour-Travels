@@ -101,21 +101,21 @@ const carData = [
     engine: "Diesel",
   },
   {
-    id: 11,
-    name: "Toyota Fortuner",
-    price: "25/- per km",
-    image: "cars/ToyotaFor.png",
-    description: "Luxury SUV for Adventures",
-    seats: 6,
-    engine: "Diesel",
-  },
-  {
     id: 12,
     name: "Tempo Traveller (12/18/25 Seater)",
     price: "30/- per km",
     image: "cars/Tempo.png",
     description: "Perfect for Group Travel",
     seats: 12,
+    engine: "Diesel",
+  },
+  {
+    id: 11,
+    name: "Toyota Fortuner",
+    price: "25/- per km",
+    image: "cars/ToyotaFor.png",
+    description: "Luxury SUV for Adventures",
+    seats: 6,
     engine: "Diesel",
   },
   {
@@ -206,7 +206,7 @@ const BookCar = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4 bg-slate-200 rounded-xl">
-                  <h3 className="text-2xl font-semibold text-primary">
+                  <h3 className="text-xl font-semibold text-primary">
                     {car.name}
                   </h3>
                   <div className="items-center text-primary/90">

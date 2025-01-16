@@ -6,27 +6,28 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header
-      className={` fixed  top-0 z-50 h-[10vh]  w-full backdrop-blur-md rounded-b-full bg-white bg-opacity-5  text-white `}
-    >
-
-      <nav className="container mx-auto px-6 md:px-16 flex justify-between  items-center h-16">
+    <header className={`absolute z-50  w-full   text-white `}>
+      <nav className=" mx-auto flex  justify-between h-[7rem]  px-16 items-center ">
         {/* Logo */}
         <div className="text-2xl font-bold  text-white">
           <Link to="/">
-          <div className="flex ">
-            <img src="xpress-logo.png" className="h-20  rounded-full "/>
-          </div>
+            <div className="flex ">
+              <img src="xpress-logo.png" className="h-[8rem]  rounded-full " />
+            </div>
           </Link>
         </div>
-        
+
         {/* Mobile Navbar */}
         <div className="flex md:hidden ">
           <button
             className="text-2xl     "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <FaTimes className="hover:text-secondary"/> : <FaBars className="hover:text-secondary" />}
+            {isMenuOpen ? (
+              <FaTimes className="hover:text-secondary" />
+            ) : (
+              <FaBars className="hover:text-secondary" />
+            )}
           </button>
         </div>
 
@@ -105,7 +106,7 @@ const Header = () => {
               to="/about"
               className="text-lg font-medium      hover:text-secondary"
             >
-              About
+              About Us
             </Link>
           </li>
           <li>
@@ -141,11 +142,11 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <div className="md:block hidden border-2 p-1  border-gray-100 rounded-full">
-            <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-8 py-1 rounded-full shadow-md transition">
-              Book a Cab Now
-            </button>
-            </div>
+        {/* <div className="md:block hidden border-2 p-1  border-gray-100 rounded-full">
+          <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-8 py-1 rounded-full shadow-md transition">
+            Book a Cab Now
+          </button>
+        </div> */}
       </nav>
     </header>
   );

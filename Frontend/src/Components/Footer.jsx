@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaPhoneAlt,
   FaEnvelope,
+  FaGreaterThan,
 } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
@@ -58,22 +59,22 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-secondary mb-4">Our Services</h3>
             <div className="text-gray-200 space-y-1">
               <Link to="/services" className="block hover:text-secondary">
-                Cab Retal services
+               <FaGreaterThan className="inline-block  text-secondary"/>  Cab Retal services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                Tour Packages
+              <FaGreaterThan className="inline-block  text-secondary"/> Tour Packages
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-              Air Ticketing
+              <FaGreaterThan className="inline-block  text-secondary"/> Air Ticketing
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-              Train Ticketing
+              <FaGreaterThan className="inline-block  text-secondary"/> Train Ticketing
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-              Passport & Visa Services
+              <FaGreaterThan className="inline-block  text-secondary"/> Passport & Visa Services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-              Helicopter & Charter Services
+              <FaGreaterThan className="inline-block  text-secondary"/> Helicopter & Charter Services
               </Link>
             </div>
           </div>
@@ -106,7 +107,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-secondary mb-4">Our Location</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6717900683716!2d81.0059795!3d26.8821669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2z4KSP4KSV4KWN4KS44KSq4KWN4KSw4KWH4KS4IOCkn-ClguCksCDgpI_gpILgpKEg4KSf4KWN4KSw4KWH4KS14KSy4KWN4KS4!5e0!3m2!1shi!2sin!4v1737003479975!5m2!1shi!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.671640149946!2d81.003404574093!3d26.88217166140491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2sXpress%20Tour%20And%20Travels!5e0!3m2!1sen!2sin!4v1737034567545!5m2!1sen!2sin"
               width="100%"
               height="200"
               frameBorder="0"

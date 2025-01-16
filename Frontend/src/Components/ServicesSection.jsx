@@ -164,9 +164,9 @@ export default function ServicesSection() {
       {/* Section Header */}
       <div className="text-center mb-10">
         <h2 className="md:text-4xl text-3xl font-bold text-gray-800">Our Services</h2>
-        <p className="text-gray-600 mt-4">
+        {/* <p className="text-gray-600 mt-4">
           Explore our range of premium services designed to make your journey seamless and memorable.
-        </p>
+        </p> */}
       </div>
 
       {/* Grid Layout */}
@@ -184,17 +184,17 @@ export default function ServicesSection() {
         />
       </div>
       <div className="flex flex-1 flex-col justify-between">
-        <div className=" text-center mt-2">
+        <div className=" text-center my-4">
           <h3 className="text-xl font-semibold text-gray-800">
             {service.title}
           </h3>
           <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
           {/* <p className="text-red-500 font-bold mt-4">{service.price}</p> */}
         </div>
-        <div className="p-4 mt-2 text-center" dat-aos='fade-up'>
+        <div className="p-4  text-center" dat-aos='fade-up'>
           <Link to="/contact">
-          <div className="inline py-4 px-1 rounded-full border-4 border-primary">
-            <button className="bg-primary text-lg text-white px-8 py-2 rounded-full hover:bg-secondary/80 transition-all">
+          <div className="">
+            <button className=" btn1 ">
               {service.buttonLabel}
             </button>
             </div>
