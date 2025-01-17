@@ -86,7 +86,7 @@ const ContactUs = () => {
       </h1>
 
       {/* Form and Office Details Section */}
-      <div className="container md:px-8 px-4  max-w-7xl gap-6 mb-12">
+      <div className=" md:px-8  px-4  gap-6 md:gap-0 mb-12">
         <div className="flex md:mx-10  md:flex-row flex-col md:gap-0 gap-4">
           {/* Office Details */}
           <div className="border flex-2 bg-white  md:bg-transparent text-gray-800 md:p-10 p-6 rounded-lg shadow-2xl z-10 ">

@@ -26,7 +26,7 @@ const Footer = () => {
             <Link to='/' className="flex justify-center items-center ">
               <img src="xpress.jpg" className="h-24 rounded-full" />
             </Link>
-            <h2 className="text-2xl font-bold text-secondary text-center mb-4">
+            <h2 className="text-xl font-bold text-secondary text-center mb-4">
              <Link to='/'> Xpress Tour & Travel </Link>
             </h2>
             {/* <p className="text-gray-200">
@@ -37,40 +37,40 @@ const Footer = () => {
                 href="https://api.whatsapp.com/send?phone=9935115786"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
+                className="bg-green-500 p-1 text-white rounded-full transition-transform transform hover:scale-110"
               >
-                <FaWhatsapp size={25} />
+                <FaWhatsapp size={20} />
               </a>
               <a
                 href="https://www.youtube.com/@xpresstourandtravels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
+                className="bg-red-500 p-1 text-white rounded-full transition-transform transform hover:scale-110"
               >
-                <FaYoutube size={30} />
+                <FaYoutube size={20} />
               </a>
               <a
                 href="https://www.facebook.com/people/xpress-tour-and-travels/61569937321411/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 p-2 rounded-full text-white transition-transform transform hover:scale-110"
+                className="bg-blue-500 p-1 rounded-full text-white transition-transform transform hover:scale-110"
               >
-                <FaFacebookF size={25} />
+                <FaFacebookF size={20} />
               </a>
               <a
                 href="https://www.instagram.com/xpresstourandtravels/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-t to-red-500 from-pink-600 p-2 rounded-full text-white transition-transform transform hover:scale-110"
+                className="bg-gradient-to-t p-1 to-red-500 from-pink-600  rounded-full text-white transition-transform transform hover:scale-110"
               >
-                <FaInstagram size={25} />
+                <FaInstagram size={20} />
               </a>
               
               <a
                 href="tel:+91-9935115786"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
+                className="bg-green-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
               >
                 <FaPhone className="rotate-90" size={15} />
               </a>
@@ -84,27 +84,27 @@ const Footer = () => {
             </h3>
             <div className="text-gray-200 space-y-1">
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Cab
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Cab
                 Retal services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Tour
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Tour
                 Packages
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Air
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Air
                 Ticketing
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Train
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Train
                 Ticketing
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-secondary" />{" "}
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
                 Passport & Visa Services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-secondary" />{" "}
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
                 Helicopter & Charter Services
               </Link>
             </div>
