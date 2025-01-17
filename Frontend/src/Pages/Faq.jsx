@@ -102,16 +102,16 @@ const FAQ = () => {
       <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Frequently Asked Questions</div>
-        <div className="relative z-10 text-lg mt-2">
-          <Link to="/" className="hover:text-secondary hover:cursor-pointer">
-            Home
+        <div className="relative z-10 text-lg mt-2 text-secondary">
+          <Link to="/" className="text-white hover:text-secondary hover:cursor-pointer">
+            Home /
           </Link>{" "}
-          / FAQ
+           FAQ
         </div>
       </h1>
 
       {/* Category Buttons */}
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="flex justify-center flex-wrap gap-4 space-x-4 mb-8">
         {faqCategories.map((category, idx) => (
           <button
             key={idx}

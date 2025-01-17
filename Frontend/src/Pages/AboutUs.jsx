@@ -15,18 +15,18 @@ const AboutUs = () => {
         <div className="relative z-10 md:text-5xl text-4xl text-shadow-lg">
           About Us
         </div>
-        <div className="relative z-10 text-lg mt-2 text-gray-200">
-          <Link to="/" className="hover:text-yellow-400 hover:cursor-pointer">
-            Home
+        <div className="relative z-10 text-lg mt-2 text-secondary">
+          <Link to="/" className="text-white hover:text-secondary hover:cursor-pointer">
+            Home /
           </Link>{" "}
-          / About Us
+           About Us
         </div>
       </h1>
 
       {/* About Us Section */}
       <div className="flex flex-col md:flex-row border-t-4 rounded shadow-xl bg-white border-secondary mt-4 md:mx-10 mx-4 overflow-hidden">
         <div className="flex-[6] p-6" data-aos="fade-right">
-          <h2 className="text-3xl font-semibold mb-6">About Xpress Tour & Travels</h2>
+          <h2 className="text-3xl font-semibold mb-6 text-secondary">About Xpress Tour & Travels</h2>
           <p className="text-lg mb-4">
             <span className="font-bold">Xpress Tour & Travels</span> is a complete travel management company formed by professionals with extensive experience since 1998 in <span className="font-bold">taxi services Lucknow</span>, <span className="font-bold">flight booking</span>, and <span className="font-bold">tour packages</span>.
           </p>
@@ -57,19 +57,19 @@ const AboutUs = () => {
             alt="Vision"
             className="w-full h-52 object-cover rounded mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-3">Our Vision</h3>
-          <p className="text-lg">
+          <h3 className="text-2xl font-semibold mb-1 px-2">Our Vision</h3>
+          <p className="text-lg px-2">
             To provide safe, reliable, and high-quality transportation services that our customers can trust and depend on.
           </p>
         </div>
-        <div className="p-2 bg-white rounded shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div className="p-2 bg-white rounded shadow-2xl" data-aos="fade-up" data-aos-delay="100">
           <img
             src="mission.avif"
             alt="Mission"
             className="w-full h-52 object-cover rounded mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
-          <p className="text-lg">
+          <h3 className="text-2xl font-semibold mb-1 px-2">Our Mission</h3>
+          <p className="text-lg px-2">
             To deliver exceptional travel experiences by offering tailored solutions and promoting sustainable tourism practices.
           </p>
         </div>
@@ -79,8 +79,8 @@ const AboutUs = () => {
             alt="Services"
             className="w-full h-52 object-cover rounded mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-3">Our Services</h3>
-          <p className="text-lg">
+          <h3 className="text-2xl font-semibold mb-1 px-2">Our Services</h3>
+          <p className="text-lg px-2">
             From last-minute <span className="font-bold">train tickets</span> to affordable <span className="font-bold">airfares</span>, we provide round-the-clock assistance for all your travel needs.
           </p>
         </div>

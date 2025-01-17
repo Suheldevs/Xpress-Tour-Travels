@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className="bg-primary text-white pt-12 pb-2">
       <div className="container mx-auto px-4 md:px-6">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left">
           {/* Logo and Social Links */}
           <div>
             <Link to='/' className="flex justify-center items-center ">
@@ -84,27 +84,27 @@ const Footer = () => {
             </h3>
             <div className="text-gray-200 space-y-1">
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1" /> Cab
+                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Cab
                 Retal services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1" /> Tour
+                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Tour
                 Packages
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1" /> Air
+                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Air
                 Ticketing
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1" /> Train
+                <FaGreaterThan className="inline-block mr-1 text-secondary" /> Train
                 Ticketing
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1" />{" "}
+                <FaGreaterThan className="inline-block mr-1 text-secondary" />{" "}
                 Passport & Visa Services
               </Link>
               <Link to="/services" className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1" />{" "}
+                <FaGreaterThan className="inline-block mr-1 text-secondary" />{" "}
                 Helicopter & Charter Services
               </Link>
             </div>

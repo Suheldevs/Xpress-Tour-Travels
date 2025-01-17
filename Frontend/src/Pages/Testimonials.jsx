@@ -1,24 +1,57 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Testimonials() {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  const handleLoad = () => setLoading(false);
+  const handleError = () => {
+    setLoading(false);
+    setError(true);
+  };
+
   return (
-    <div className="">
-<h1 className="breadcrumb relative pt-32 pb-12  font-bold text-center mb-12 text-white">
+    <div>
+      <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="relative z-10 md:text-5xl text-3xl">What Our Clients Says</div>
-        <div className="relative z-10 text-lg mt-2">
-          <Link to='/' className="hover:text-secondary hover:cursor-pointer">
-            Home
+        <div className="relative z-10 md:text-5xl text-3xl">What Our Clients Say</div>
+        <div className="relative z-10 text-lg mt-2 text-secondary">
+          <Link to="/" className="text-white hover:text-secondary hover:cursor-pointer">
+            Home /
           </Link>{" "}
-          / Testimonials
+           Testimonials
         </div>
       </h1>
 
-<iframe src="https://widget.tagembed.com/2147211" className='w-full min-h-screen  my-8 bg-slate-50 px-6'></iframe>
+      {loading && (
+        <div className="w-full min-h-screen bg-slate-50 px-1  flex flex-wrap gap-4 justify-center">
+          {[...Array(12)].map((_, index) => (
+            <div
+              key={index}
+              className="bg-gray-400 animate-pulse w-80 h-40 rounded-md"
+            ></div>
+          ))}
+        </div>
+      )}
 
+      {!error ? (
+        <iframe
+          src="https://widget.tagembed.com/2147211"
+          className="w-full min-h-screen my-8 bg-slate-50 px-6"
+          onLoad={handleLoad}
+          onError={handleError}
+          style={loading ? { display: 'none' } : {}}
+        ></iframe>
+      ) : (
+        <div className="w-full text-center my-8">
+          <p className="text-red-500 text-lg font-bold">
+            Unable to load testimonials at the moment. Please try again later.
+          </p>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default Testimonials
+export default Testimonials;

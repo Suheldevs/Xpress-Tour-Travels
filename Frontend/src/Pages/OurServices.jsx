@@ -40,11 +40,11 @@ const Services = () => {
      <h1 className="breadcrumb relative pt-32 pb-12  font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Our Services</div>
-        <div className="relative z-10 text-lg mt-2">
-          <Link to='/' className="hover:text-secondary hover:cursor-pointer">
-            Home
+        <div className="relative z-10 text-lg mt-2 text-secondary">
+          <Link to='/' className="text-white hover:text-secondary hover:cursor-pointer">
+            Home /
           </Link>{" "}
-          / Our Services
+           Our Services
         </div>
       </h1>
     <div className="space-y-6 px-8 mb-8">
@@ -52,10 +52,10 @@ const Services = () => {
           <div
           data-aos='fade-up'
             key={index}
-            className={`flex flex-col items-center p-6 border rounded-lg shadow-lg hover:shadow-md transition-shadow duration-200  ${index % 2 != 0 ? 'md:flex-row-reverse bg-primary text-white' : 'md:flex-row text-black'}`}
+            className={`flex flex-col items-center md:p-6 p-2 border rounded-lg shadow-lg hover:shadow-md transition-shadow duration-200  ${index % 2 != 0 ? 'md:flex-row-reverse bg-primary text-white' : 'md:flex-row text-black'}`}
           >
             {/* Left Side (Image) */}
-            <div className="w-full md:w-1/2 mb-6 md:mb-0 px-4">
+            <div className="w-full md:w-1/2 mb-6 md:mb-0 px-2">
               <img
                 src={service.image}
                 alt={service.title}
@@ -64,7 +64,7 @@ const Services = () => {
             </div>
 
             {/* Right Side (Content) */}
-            <div className="w-full md:w-1/2 pl-6 ">
+            <div className="w-full md:w-1/2 md:pl-6 px-2 md:px-0">
               <h2 className="text-4xl font-semibold mb-4">{service.title}</h2>
               <p className=" leading-relaxed">{service.content}</p>
               <div className={`borde p-1 text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>

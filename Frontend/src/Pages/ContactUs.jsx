@@ -1,10 +1,20 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaPhone, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import Swal from 'sweetalert2'
+import axios from 'axios'
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaPhone,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { GiRotaryPhone } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
 
 const ContactUs = () => {
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     number: "",
@@ -27,9 +37,40 @@ const ContactUs = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData); // Handle form submission logic here
+    console.log(formData);
+    try {
+      setLoading(true)
+      setError(null)
+      const res = await axios.post('https://db.drmanasaggarwal.com/api/v1/inquiry/express',formData)
+      if(res.status === 200 || 201){
+        Swal.fire({
+          title: "Successfull!",
+          text: "Your Enquiry has been submited",
+          icon: "success"
+        });
+      }
+      console.log(res)
+      setError('Something Went Wrong')
+    } catch (err) {
+      setError('Something Went Wrong')
+      Swal.fire({
+        title: "Failed!",
+        text: "Try After Some Time ",
+        icon: "error"
+      });
+    }
+    finally{
+      setLoading(false)
+      setFormData({
+        name: "",
+        number: "",
+        email: "",
+        service: "",
+        message: "",
+      });
+    }
   };
 
   return (
@@ -38,8 +79,8 @@ const ContactUs = () => {
       <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Contact Us</div>
-        <div className="relative z-10 text-lg mt-2">
-          <span className="hover:text-gray-300 cursor-pointer">Home</span> /
+        <div className="relative z-10 text-lg mt-2 text-secondary">
+          <span className="hover:text-gray-300 cursor-pointer text-white">Home / </span>
           Contact Us
         </div>
       </h1>
@@ -56,7 +97,8 @@ const ContactUs = () => {
                 <div className="text-lg  font-semibold text-secondary tracking-wider md:mt-[-7px]">
                   Address
                 </div>
-                45A, Dayal Enclave, Sector 9, Indira Nagar, <br className="md:block hidden" /> Lucknow, Uttar Pradesh 226016
+                45A, Dayal Enclave, Sector 9, Indira Nagar,{" "}
+                <br className="md:block hidden" /> Lucknow, Uttar Pradesh 226016
               </div>
             </p>
             <p className="mb-2 flex justify-start items-start gap-2 mt-4">
@@ -87,7 +129,7 @@ const ContactUs = () => {
               </div>
             </p>
             <p className="flex gap-4 mt-4 ">
-            <a
+              <a
                 href="https://api.whatsapp.com/send?phone=9935115786"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -95,7 +137,7 @@ const ContactUs = () => {
               >
                 <FaWhatsapp size={30} />
               </a>
-            <a
+              <a
                 href="https://www.youtube.com/@xpresstourandtravels"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -119,7 +161,7 @@ const ContactUs = () => {
               >
                 <FaInstagram size={30} />
               </a>
-             
+
               <a
                 href="tel:+91-9935115786"
                 target="_blank"
@@ -130,16 +172,26 @@ const ContactUs = () => {
               </a>
             </p>
           </div>
-          <div class="absolute z-[-10] w-[500px] h-[500px] bg-secondary rounded-full transform translate-x-[40%] translate-y-[40%] md:opacity-50 opacity-100"></div>
-          <div class="absolute top-0 right-0 z-[-10] w-[500px] h-[500px] md:bg-secondary bg-primary rounded-full transform translate-x-[0%] translate-y-[0%] md:opacity-50 opacity-100"></div>
+          <div className="md:absolute md:block hidden z-[-10] w-[500px] h-[500px] bg-secondary rounded-full transform translate-x-[40%] translate-y-[40%] md:opacity-50 opacity-100"></div>
+          <div className="absolute top-0 right-0 z-[-10] w-[500px] h-[500px] md:bg-secondary bg-primary rounded-full transform translate-x-[0%] translate-y-[0%] md:opacity-50 opacity-100"></div>
 
           {/* Enquiry Form */}
           <div className="pt-4 px-8 pb-2 flex-1 bg-primary  border rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">Enquiry Now</h2>
+            <h2 className="text-2xl font-bold text-gray-100 mb-2">
+              Enquiry Now
+            </h2>
             <form onSubmit={handleSubmit}>
+              {error && (
+                <div className="text-red-500 bg-white rounded font-medium w-full mx-2 p-1">
+                  {error}!
+                </div>
+              )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="name">
+                  <label
+                    className="block text-lg font-semibold text-gray-100 mt-2"
+                    htmlFor="name"
+                  >
                     Name
                   </label>
                   <input
@@ -155,7 +207,10 @@ const ContactUs = () => {
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="number">
+                  <label
+                    className="block text-lg font-semibold text-gray-100 mt-2"
+                    htmlFor="number"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -163,15 +218,20 @@ const ContactUs = () => {
                     id="number"
                     placeholder="Enter your phone number"
                     name="number"
+                    minLength="10"
+                    maxLength="10"
                     value={formData.number}
                     onChange={handleChange}
-                     className="w-full p-2 border-b-2 bg-primary  shadow-sm outline-none text-white"
+                    className="w-full p-2 border-b-2 bg-primary  shadow-sm outline-none text-white"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="email">
+                  <label
+                    className="block text-lg font-semibold text-gray-100 mt-2"
+                    htmlFor="email"
+                  >
                     Email
                   </label>
                   <input
@@ -187,7 +247,10 @@ const ContactUs = () => {
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-100 mt-3" htmlFor="service">
+                  <label
+                    className="block text-lg font-semibold text-gray-100 mt-3"
+                    htmlFor="service"
+                  >
                     Service Interested In
                   </label>
                   <select
@@ -196,18 +259,25 @@ const ContactUs = () => {
                     placeholder="Select a service"
                     value={formData.service}
                     onChange={handleChange}
-                     className="w-full p-2 border-b-2 mt-1 bg-primary  shadow-sm outline-none text-white"
+                    className="w-full p-2 border-b-2 mt-1 bg-primary  shadow-sm outline-none text-white"
                     required
                   >
-                    <option value="" disabled>Select a Service</option>
+                    <option value="" disabled>
+                      Select a Service
+                    </option>
                     {servicesList.map((service) => (
-                      <option key={service} value={service}>{service}</option>
+                      <option key={service} value={service}>
+                        {service}
+                      </option>
                     ))}
                   </select>
                 </div>
 
                 <div className="col-span-1 md:col-span-2">
-                  <label className="block text-lg font-semibold text-gray-100 mt-2" htmlFor="message">
+                  <label
+                    className="block text-lg font-semibold text-gray-100 mt-2"
+                    htmlFor="message"
+                  >
                     Message
                   </label>
                   <textarea
@@ -226,9 +296,10 @@ const ContactUs = () => {
               <div className="md:text-left text-center  mt-2">
                 <button
                   type="submit"
+                  disabled={loading}
                   className="bg-secondary text-white py-3 px-12 text-lg font-semibold rounded-full shadow-lg transition hover:bg-secondary/80"
                 >
-                  Submit
+                  {loading ? <span>Sending..</span> : "Submit"}
                 </button>
               </div>
             </form>

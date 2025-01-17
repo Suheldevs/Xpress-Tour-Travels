@@ -11,7 +11,7 @@ const BookNow = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-l from-transparent md:via-transparent to-black bg-opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-lg px-6 md:px-12">
