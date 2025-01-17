@@ -104,7 +104,7 @@ const carData = [
     id: 12,
     name: "Tempo Traveller (12/18/25 Seater)",
     price: "30/- per km",
-    image: "cars/Tempo.png",
+    image: "cars/tempo.png",
     description: "Perfect for Group Travel",
     seats: 12,
     engine: "Diesel",
@@ -159,9 +159,9 @@ const BookCar = () => {
             Please choose your preferred car from below
           </p>
           <div className="mt-4 flex justify-center space-x-4">
-            <button className="px-4 py-2 rounded-full bg-white text-primary font-medium">
+            <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA" className="px-4 py-2 cursor-pointer rounded-full bg-white text-primary font-medium">
               Pick From Lucknow
-            </button>
+            </a>
           </div>
         </div>
 

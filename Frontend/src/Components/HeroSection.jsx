@@ -30,7 +30,7 @@ const HeroSection = () => {
   }, [carImages.length]);
 
   return (
-    <section  className="relative h-[90vh] w-full overflow-hidden bg-gradient-to-b  from-gray-600 to-primary">
+    <section  className="relative md:h-[90vh] h-[60vh] w-full overflow-hidden bg-gradient-to-b  from-gray-600 to-primary">
       <video
       data-aos='fade-up'
         className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
@@ -45,14 +45,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Content */}
-      <div  className="relative z-10 flex flex-col md:flex-row  pt-14 h-full items-center md:justify-start mt-14 px-8 justify-center md:text-left text-center">
+      <div  className="relative z-10 flex flex-col md:flex-row  md:pt-14 h-full items-center md:justify-start mt-14 md:px-8 px-0 justify-center md:text-left text-center">
         <div data-aos='fade-down' className="md:w-8/12 w-full flex flex-col justify-center md:pl-12 px-4 md:px-0 pb-10 items-center md:items-start text-white">
           <p className=" sm:text-lg bg-opacity-70 bg-black py-2 px-4 rounded-full w-fit flex justify-center items-center gap-2">
          <span ><FaCar className=""/></span>   Welcome to Xpress Tour & Travels
           </p>
-          <h1 className="text-4xl  md:text-5xl  font-bold mt-2 ">
+          <h1 className="text-3xl  md:text-5xl  font-bold mt-2 ">
             Explore More, Pay Less 
-            <div className="text-secondary mt-2">Hassle-Free Travel Services</div>
+            <div className="text-secondary md:mt-2 mt-1">Hassle-Free Travel Services</div>
           </h1>
           <p className="mt-4 text-lg  font-medium">
             Your Trusted Travel Partner
@@ -63,7 +63,7 @@ const HeroSection = () => {
               Book Now
             </button>
             </div>
-            <Link to='/services' className="border-4 p-1 border-gray-100 rounded-full">
+            <Link to='/services' className="md:block hidden border-4 p-1 border-gray-100 rounded-full">
             <button className="bg-primary hover:bg-primary/60 text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">
               Explore Our Services
             </button>

@@ -7,12 +7,12 @@ const Header = () => {
 
   return (
     <header className={`absolute z-50  w-full   text-white `}>
-      <nav className=" mx-auto flex  justify-between h-[7rem]  px-16 items-center ">
+      <nav className=" mx-auto flex  justify-between md:h-[7rem] h-[5rem]  px-16 items-center ">
         {/* Logo */}
         <div className="text-2xl font-bold  text-white">
           <Link to="/">
             <div className="flex ">
-              <img src="xpress-logo.png" className="h-[8rem]  rounded-full " />
+              <img src="xpress-logo.png" className="h-[5rem] md:h-[8rem] rounded-full " />
             </div>
           </Link>
         </div>
@@ -24,16 +24,17 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <FaTimes className="hover:text-secondary" />
+              <FaTimes className="hover:text-secondary shadow-lg" />
             ) : (
-              <FaBars className="hover:text-secondary" />
+              <FaBars className="hover:text-secondary shadow-lg" />
             )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-primary text-white flex flex-col items-start px-6 space-y-6 py-6 shadow-md">
+          <div className="flex" >
+          <ul className="absolute top-0 left-0 w-full bg-primary text-white flex flex-col items-start px-6 space-y-6 py-6 shadow-md">
             <li>
               <Link
                 to="/"
@@ -89,6 +90,8 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+         <FaTimes className="hover:text-secondary shadow-lg z-50 text-2xl cursor-pointer"  onClick={() => setIsMenuOpen(!isMenuOpen)}/>
+          </div>
         )}
 
         {/* Desktop Navbar */}
