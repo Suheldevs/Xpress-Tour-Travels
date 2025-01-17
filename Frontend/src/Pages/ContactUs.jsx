@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Swal from 'sweetalert2'
 import axios from 'axios'
 import {
@@ -22,12 +22,15 @@ const ContactUs = () => {
     service: "",
     message: "",
   });
-
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+     }, []);
   const servicesList = [
     "Tour Package",
     "Car Rental",
-    "Flight Booking",
-    "Rail Ticketing",
+    "Bus Booking",
+    "Train Ticketing",
     "Passport & Visa",
     "Other Services",
   ];
@@ -51,8 +54,9 @@ const ContactUs = () => {
           icon: "success"
         });
       }
-      console.log(res)
-      setError('Something Went Wrong')
+      else{
+      setError('Something Went Wrong');
+      }
     } catch (err) {
       setError('Something Went Wrong')
       Swal.fire({
@@ -91,7 +95,7 @@ const ContactUs = () => {
           {/* Office Details */}
           <div className="border flex-2 bg-white  md:bg-transparent text-gray-800 md:p-10 p-6 rounded-lg shadow-2xl z-10 ">
             <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
-            <p className="mb-2 flex justify-start items-start gap-2">
+            <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA" className="mb-2 flex justify-start items-start gap-2">
               <FaLocationDot className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
               <div className="font-sans ">
                 <div className="text-lg  font-semibold text-secondary tracking-wider md:mt-[-7px]">
@@ -100,8 +104,8 @@ const ContactUs = () => {
                 45A, Dayal Enclave, Sector 9, Indira Nagar,{" "}
                 <br className="md:block hidden" /> Lucknow, Uttar Pradesh 226016
               </div>
-            </p>
-            <p className="mb-2 flex justify-start items-start gap-2 mt-4">
+            </a>
+            <a href="mailto:xpresstt@yahoo.com" className="mb-2 flex justify-start items-start gap-2 mt-4">
               <MdEmail className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
               <div className="font-sans">
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
@@ -109,17 +113,17 @@ const ContactUs = () => {
                 </div>
                 xpresstt@yahoo.com
               </div>
-            </p>
-            <p className="mb-2 flex justify-start items-start gap-2 mt-4">
+            </a>
+            <a href="tel:+91-8604778866" className="mb-2 flex justify-start items-start gap-2 mt-4">
               <FaPhone className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rotate-90 rounded w-8 h-8" />
               <div>
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Call for Help
                 </div>
-                +91-8604778866
+                +91-8604778866, 8604778866
               </div>
-            </p>
-            <p className="mb-2 flex justify-start items-start gap-2 mt-4">
+            </a>
+            <a href="tel:0522-4077786" className="mb-2 flex justify-start items-start gap-2 mt-4">
               <GiRotaryPhone className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
               <div className="font-sans">
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
@@ -127,7 +131,7 @@ const ContactUs = () => {
                 </div>
                 0522-4077786, 4066686, 2312786
               </div>
-            </p>
+            </a>
             <p className="flex gap-4 mt-4 ">
               <a
                 href="https://api.whatsapp.com/send?phone=9935115786"

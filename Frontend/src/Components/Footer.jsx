@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -15,7 +15,18 @@ import { GiRotaryPhone } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
 import BottomFooter from "./CopyRightsection";
 
+
 const Footer = () => {
+  const location = useLocation();
+
+  const handleServiceLinkClick = (sectionId) => {
+    if (location.pathname === '/services') {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
   return (
     <footer className="bg-primary text-white pt-12 pb-2">
       <div className="container mx-auto px-4 md:px-6">
@@ -29,10 +40,10 @@ const Footer = () => {
             <h2 className="text-xl font-bold text-secondary text-center mb-4">
              <Link to='/'> Xpress Tour & Travel </Link>
             </h2>
-            {/* <p className="text-gray-200">
+            <p className="text-gray-200 text-center">
               Travel with trust and comfort. Your satisfaction is our priority.
-            </p> */}
-            <div className="flex justify-center items-center space-x-4 mt-4">
+            </p>
+            {/* <div className="flex justify-center items-center space-x-4 mt-4">
               <a
                 href="https://api.whatsapp.com/send?phone=9935115786"
                 target="_blank"
@@ -74,7 +85,7 @@ const Footer = () => {
               >
                 <FaPhone className="rotate-90" size={15} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -83,29 +94,47 @@ const Footer = () => {
               Our Services
             </h3>
             <div className="text-gray-200 space-y-1">
-              <Link to="/services" className="block hover:text-secondary">
+              <Link to="/services" onClick={(e) => {
+                    e.preventDefault(); 
+                    handleServiceLinkClick('cab'); 
+                  }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Cab
                 Retal services
               </Link>
-              <Link to="/services" className="block hover:text-secondary">
+              <Link to="/services" onClick={(e) => {
+                    e.preventDefault(); 
+                    handleServiceLinkClick('tour'); 
+                  }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Tour
                 Packages
               </Link>
-              <Link to="/services" className="block hover:text-secondary">
+              <Link to="/services" onClick={(e) => {
+                    e.preventDefault(); 
+                    handleServiceLinkClick('air'); 
+                  }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Air
                 Ticketing
               </Link>
-              <Link to="/services" className="block hover:text-secondary">
+              <Link to="/services" onClick={(e) => {
+                    e.preventDefault(); 
+                    handleServiceLinkClick('train'); 
+                  }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Train
                 Ticketing
               </Link>
-              <Link to="/services" className="block hover:text-secondary">
+              <Link to="/services" onClick={(e) => {
+                    e.preventDefault(); 
+                    handleServiceLinkClick('passport'); 
+                  }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
                 Passport & Visa Services
               </Link>
-              <Link to="/services" className="block hover:text-secondary">
+              <Link to="/services" onClick={(e) => {
+                    e.preventDefault(); 
+                    handleServiceLinkClick('bus'); 
+                  }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Helicopter & Charter Services
+                Bus Booking Services
               </Link>
             </div>
           </div>

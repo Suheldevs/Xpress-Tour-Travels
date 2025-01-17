@@ -188,7 +188,7 @@ export default function ServicesSection() {
           <h3 className="text-xl font-semibold text-gray-800">
             {service.title}
           </h3>
-          <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+          <p className="text-gray-600 mt-2 text-sm px-5">{service.description}</p>
           {/* <p className="text-red-500 font-bold mt-4">{service.price}</p> */}
         </div>
         <div className="p-4  text-center" dat-aos='fade-up'>

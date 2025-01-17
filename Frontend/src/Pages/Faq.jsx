@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -97,6 +97,9 @@ const FAQ = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+     }, []);
   return (
     <div>
       <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
@@ -150,7 +153,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-      <div className="flex-1 rounded p-6">
+      <div className="flex-1 rounded p-6 mt-[-10px]">
         <img src="faq.webp" className="rounded"/>
       </div>
       </div>

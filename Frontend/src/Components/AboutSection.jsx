@@ -23,9 +23,11 @@ const AboutComponent = () => {
             About Xpress Tour & Travels
           </h2>
           <p className="text-lg text-gray-700 text-justify">
-            <span className="font-bold">Xpress Tour & Travels</span> is a
-            complete travel management company formed by hardcore professionals
-            with an average experience since 1998 in
+            <span className="font-bold">Wellcome to Xpress Tour & Travels</span>
+            your trusted partner for reliable and
+            affordable cab rental services. Established with a passion for
+            providing exceptional transportation solutions, we have built a
+            reputation for safety, comfort, and customer satisfaction.
             <span className="font-bold"> taxi services Lucknow</span>,
             <span className="font-bold"> flight booking</span>, and
             <span className="font-bold"> tour packages</span>.
@@ -48,7 +50,7 @@ const AboutComponent = () => {
             </span>
             .
           </p>
-          <p className="text-lg text-gray-700 mt-4 md:block hidden">
+          <p className="text-lg text-gray-700 mt-1 md:block hidden">
             <span className="font-bold">India</span>, the country of a thousand
             facets, offers everything – from the desert frontier of{" "}
             <span className="font-bold">Rajasthan</span> to splendid

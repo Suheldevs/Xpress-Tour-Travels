@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookNow from "../Components/BookNow";
-import WhyChooseUs from '../Components/WhyChooseUs'
+import WhyChooseUs from "../Components/WhyChooseUs";
 const AboutUs = () => {
   AOS.init();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+     }, []);
 
   return (
     <div>
@@ -29,18 +32,20 @@ const AboutUs = () => {
       {/* About Us Section */}
       <div className="flex flex-col md:flex-row border-t-4 text-justify rounded shadow-xl bg-white border-secondar p-10 mt-4 md:mx-10 mx-4 overflow-hidden">
         <div className="flex-[6] p-6" data-aos="fade-right">
-          <h2 className="text-3xl font-semibold mb-6 ">
+          <h2 className="text-3xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>
-          <p className="text-lg mb-4">
-            <span className="font-bold">Xpress Tour & Travels</span> is a
-            complete travel management company formed by professionals with
-            extensive experience since 1998 in{" "}
+          <p className="text-lg mb-2">
+            Welcome to <span className="font-bold">Xpress Tour & Travels</span>{" "}
+            your trusted partner for reliable and affordable cab rental
+            services. Established with a passion for providing exceptional
+            transportation solutions, we have built a reputation for safety,
+            comfort, and customer satisfaction.
             <span className="font-bold">taxi services Lucknow</span>,{" "}
             <span className="font-bold">flight booking</span>, and{" "}
             <span className="font-bold">tour packages</span>.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-2">
             We are approved by the{" "}
             <span className="font-bold">
               Government of India, Department of Tourism
@@ -51,13 +56,13 @@ const AboutUs = () => {
             </span>
             .
           </p>
-          <p className="text-lg mb-4">
-            From the desert frontiers of{" "}
-            <span className="font-bold">Rajasthan</span> to the serene{" "}
-            <span className="font-bold">Himalayan hideaways</span>, from
-            incredible southern landscapes to endless beaches, wildlife
-            encounters, ancient sculptures, rare art and crafts, and monumental
-            edifices, India offers a wealth of travel experiences.
+          <p className="text-lg mb-2">
+            Our fleet of
+            well-maintained vehicles is designed to meet all your travel needs,
+            whether you're commuting for business, exploring the city, or
+            heading to the airport. With a team of professional drivers who are
+            knowledgeable about local routes and dedicated to your safety, we
+            guarantee a smooth and enjoyable ride every time.
           </p>
           <p className="text-lg mb-4">
             That’s where we,{" "}
@@ -132,7 +137,7 @@ const AboutUs = () => {
 
       {/* Call to Action Section */}
       <div>
-        <WhyChooseUs/>
+        <WhyChooseUs />
         <BookNow />
       </div>
     </div>

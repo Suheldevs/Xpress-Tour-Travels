@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Testimonials() {
@@ -11,6 +11,9 @@ function Testimonials() {
     setError(true);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+     }, []);
   return (
     <div>
       <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">

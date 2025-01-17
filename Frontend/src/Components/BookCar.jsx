@@ -176,7 +176,7 @@ const BookCar = () => {
           }}
           pagination={{ clickable: true, el: ".custom-pagination" }}
           loop={true}
-          centeredSlides={true}
+          centeredSlides={false}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -241,7 +241,7 @@ const BookCar = () => {
             </SwiperSlide>
           ))}
 
-          <div className="swiper-button-prev bg-primary absolute top-1/2 left-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
+          <div className="swiper-button-prev bg-primary absolute top-1/2 left-1  transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
             <FaChevronLeft size={12} />
           </div>
           <div className="swiper-button-next bg-primary absolute top-1/2 right-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">

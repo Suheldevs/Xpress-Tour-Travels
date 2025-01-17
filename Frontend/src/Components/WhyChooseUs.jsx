@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
             ))} */}
-          <img src='whyChooseUs.png' className="w-full rounded-full p-1 h-full object-cover" alt="Car" />
+          <img src='why-choose-us1.webp' loading="lazy" className="w-full rounded-full p-1 h-full object-cover" alt="Car" />
           </div>
         </div>
 
