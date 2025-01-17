@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 const BookNow = () => {
   return (
     <div
-      className="relative bg-cover bg-center text-white flex items-center h-64 md:h-80  shadow-lg m-4"
+      className="relative bg-cover bg-center text-white flex items-center h-64 md:h-80  shadow-lg "
       data-aos='zoom-in'
       style={{
         backgroundImage: "url('bmw-banner.webp')", // Replace with the actual URL or path of the image
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-l from-transparent md:via-transparent to-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-l from-transparent  to-black bg-opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-lg px-6 md:px-12">

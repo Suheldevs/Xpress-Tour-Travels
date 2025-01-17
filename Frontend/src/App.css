@@ -17,7 +17,7 @@ h1{
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", serif;
 }
 
 /* p{
@@ -112,4 +112,7 @@ background-color:#5bbcf8;
   border-color: #1191f3;
   border-radius: 10px;
   padding: 5px 20px 5px 20px;
+}
+.sdw{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

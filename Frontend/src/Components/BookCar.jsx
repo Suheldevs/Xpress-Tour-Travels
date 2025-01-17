@@ -56,6 +56,15 @@ const carData = [
     engine: "Petrol",
   },
   {
+    id: 10,
+    name: "Toyota Crysta",
+    price: "18/- per km",
+    image: "cars/ToyotaC.png",
+    description: "Luxury and Performance",
+    seats: 7,
+    engine: "Diesel",
+  },
+  {
     id: 6,
     name: "Honda Amaze",
     price: "13/- per km",
@@ -91,13 +100,14 @@ const carData = [
     seats: 7,
     engine: "Diesel",
   },
+ 
   {
-    id: 10,
-    name: "Toyota Crysta",
-    price: "18/- per km",
-    image: "cars/ToyotaC.png",
-    description: "Luxury and Performance",
-    seats: 7,
+    id: 11,
+    name: "Toyota Fortuner",
+    price: "25/- per km",
+    image: "cars/ToyotaFor.png",
+    description: "Luxury SUV for Adventures",
+    seats: 6,
     engine: "Diesel",
   },
   {
@@ -107,15 +117,6 @@ const carData = [
     image: "cars/tempo.png",
     description: "Perfect for Group Travel",
     seats: 12,
-    engine: "Diesel",
-  },
-  {
-    id: 11,
-    name: "Toyota Fortuner",
-    price: "25/- per km",
-    image: "cars/ToyotaFor.png",
-    description: "Luxury SUV for Adventures",
-    seats: 6,
     engine: "Diesel",
   },
   {

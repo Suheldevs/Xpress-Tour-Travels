@@ -111,7 +111,7 @@ const services = [
   {
     id: 1,
     title: "Cab Rental Services",
-   description: "Affordable, reliable cars for every journey.",
+   description: "Reliable cab rental services offering affordable rates, professional drivers, and 24/7 availability for your convenience.",
     price: "Starting @ just Rs 12/Km",
     buttonLabel: "Book Now",
     image: "cab.avif", // Replace with actual image path
@@ -119,7 +119,7 @@ const services = [
   {
     id: 2,
     title: "Tour Packages",
-    description: "Customizable tours for families and solo travelers.",
+    description: "Exciting tour packages featuring unique destinations, curated experiences, and all-inclusive options for unforgettable adventures.",
     price: "Starting @ just Rs 499/-",
     buttonLabel: "Book Now",
     image: "tour.avif", // Replace with actual image path
@@ -127,15 +127,15 @@ const services = [
   {
     id: 3,
     title: "Air Ticketing",
-    description: "Seamless flight bookings for all your destinations.",
+    description: "Convenient Air Ticketing Services offering competitive fares, easy booking, and real-time flight updates for travelers.",
     price: "Starting @ just Rs 1199/-",
     buttonLabel: "Book Now",
     image: "air.avif", // Replace with actual image path
   },
   {
     id: 4,
-    title: "Train Ticketing & Services",
-    description: "Convenient train ticket bookings nationwide.",
+    title: "Train Ticketing Services",
+    description: "Efficient Train Ticketing services providing easy bookings, real-time updates, and competitive pricing for hassle-free travel.",
     price: "Starting @ just Rs 199/-",
     buttonLabel: "Book Now",
     image: "train.jpg", // Replace with actual image path
@@ -143,18 +143,18 @@ const services = [
   {
     id: 5,
     title: "Passport & Visa Services",
-    description: "Convenient Passport ticket & Visa bookings .",
+    description: "Comprehensive Passport and Visa Services ensuring fast processing, expert guidance, and hassle-free travel documentation solutions.",
     price: "Starting @ just Rs 19999/-",
     buttonLabel: "Book Now",
     image: "services/passport.webp", // Replace with actual image path
   },
   {
     id: 6,
-    title: "Helicopter Services",
-    description: "Seamless Helicopter bookings for all your destinations.",
+    title: "Bus Booking Services",
+    description: "Affordable Bus Booking Services with easy online reservations, real-time tracking, and comfortable travel options available.",
     price: "Starting @ just Rs 20000/-",
     buttonLabel: "Book Now",
-    image: "helicopter.avif", // Replace with actual image path
+    image: "cars/bus.png", // Replace with actual image path
   },
 ];
 
@@ -184,7 +184,7 @@ export default function ServicesSection() {
         />
       </div>
       <div className="flex flex-1 flex-col justify-between">
-        <div className=" text-center my-4">
+        <div className=" text-center mt-4 mb-0">
           <h3 className="text-xl font-semibold text-gray-800">
             {service.title}
           </h3>
