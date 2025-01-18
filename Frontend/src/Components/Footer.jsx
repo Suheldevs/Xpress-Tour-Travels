@@ -95,42 +95,42 @@ const Footer = () => {
             </h3>
             <div className="text-gray-200 space-y-1">
               <Link to="/services" onClick={(e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     handleServiceLinkClick('cab'); 
                   }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Cab
                 Retal services
               </Link>
               <Link to="/services" onClick={(e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     handleServiceLinkClick('tour'); 
                   }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Tour
                 Packages
               </Link>
               <Link to="/services" onClick={(e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     handleServiceLinkClick('air'); 
                   }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Air
                 Ticketing
               </Link>
               <Link to="/services" onClick={(e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     handleServiceLinkClick('train'); 
                   }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Train
                 Ticketing
               </Link>
               <Link to="/services" onClick={(e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     handleServiceLinkClick('passport'); 
                   }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
                 Passport & Visa Services
               </Link>
               <Link to="/services" onClick={(e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     handleServiceLinkClick('bus'); 
                   }} className="block hover:text-secondary">
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}

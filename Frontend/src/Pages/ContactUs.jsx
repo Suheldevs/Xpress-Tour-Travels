@@ -311,7 +311,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right Section: Google Map */}
-        <div className="bg-white px-4 py-8 mx-10 rounded-lg shadow-lg">
+        <div className="bg-white px-4 py-8 md:mx-10  rounded-lg shadow-lg">
           {/* <div className="text-2xl font-semibold mb-2">Our Location</div> */}
           <iframe
             className="w-full md:h-96 h-52 rounded-md"

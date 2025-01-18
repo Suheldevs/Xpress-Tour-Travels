@@ -170,10 +170,11 @@ const BookCar = () => {
           spaceBetween={20}
           slidesPerView={1}
           modules={[Navigation, Pagination, Scrollbar]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
+          // navigation={{
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // }}
+          navigation={false}
           pagination={{ clickable: true, el: ".custom-pagination" }}
           loop={true}
           centeredSlides={false}
@@ -241,14 +242,14 @@ const BookCar = () => {
             </SwiperSlide>
           ))}
 
-          <div className="swiper-button-prev bg-primary absolute top-1/2 left-1  transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
+          {/* <div className="swiper-button-prev bg-primary absolute top-1/2 left-1  transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
             <FaChevronLeft size={12} />
           </div>
           <div className="swiper-button-next bg-primary absolute top-1/2 right-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
             <FaChevronRight size={12} />
-          </div>
+          </div> */}
         </Swiper>
-        <div className="custom-pagination flex justify-center mt-6"></div>
+        <div className="custom-pagination flex justify-center mt-6 hover:cursor-pointer"></div>
       </div>
     </div>
   );

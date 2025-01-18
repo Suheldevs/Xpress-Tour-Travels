@@ -56,7 +56,7 @@ const Services = () => {
            Our Services
         </div>
       </h1>
-    <div className="space-y-6 px-8 mb-8">
+    <div className="space-y-6 md:px-8 px-2 mb-8">
         {services.map((service, index) => (
           <div
           data-aos='fade-up'

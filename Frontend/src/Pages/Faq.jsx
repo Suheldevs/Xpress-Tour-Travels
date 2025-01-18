@@ -153,7 +153,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-      <div className="flex-1 rounded p-6 mt-[-10px]">
+      <div className="flex-1 rounded md:p-6 p-0 mt-[-10px]">
         <img src="faq.webp" className="rounded"/>
       </div>
       </div>

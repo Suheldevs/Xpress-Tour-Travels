@@ -30,8 +30,8 @@ const AboutUs = () => {
       </h1>
 
       {/* About Us Section */}
-      <div className="flex flex-col md:flex-row border-t-4 text-justify rounded shadow-xl bg-white border-secondar p-10 mt-4 md:mx-10 mx-4 overflow-hidden">
-        <div className="flex-[6] p-6" data-aos="fade-right">
+      <div className="flex flex-col md:flex-row border-t-4 text-justify rounded shadow-xl bg-white border-secondar md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
+        <div className="flex-[6] md:p-6 p-0" data-aos="fade-right">
           <h2 className="text-3xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>
@@ -71,13 +71,13 @@ const AboutUs = () => {
             <span className="font-bold">Indian tourism</span>, we ensure your
             journeys are seamless and memorable.
           </p>
-          <div className="border-0 p-1 mt-3 inline-block  border-primary rounded-full">
+          <div className="border-0 p-1 mt-3 md:mb-0 mb-4 inline-block  border-primary rounded-full">
             <Link to="/contact" className="btn ">
               Know More
             </Link>
           </div>
         </div>
-        <div className="flex-[6] p-2">
+        <div className="flex-[6] md:block hidden md:p-2 p-0">
           <img
             src="about-us.jpg"
             alt="Xpress Tour & Travels"
@@ -106,7 +106,7 @@ const AboutUs = () => {
           data-aos-delay="100"
         >
           <img
-            src="mission.avif"
+            src="mission.jpg"
             alt="Mission"
             className="w-full h-52 object-cover rounded mb-4"
           />
