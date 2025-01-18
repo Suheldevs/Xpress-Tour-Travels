@@ -8,51 +8,45 @@ const AboutComponent = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-1">
         {/* Heading Section */}
         <div className="md:text-left text-center">
-          <h2 className="md:text-4xl text-3xl font-bold text-slate-800 mb-4">
-            <FaCar className="inline-block mr-1 text-secondary  bg-primary p-2 rounded-full text-5xl mb-1" />{" "}
+          <h2 className="md:text-4xl text-lg font-bold text-slate-800 mb-4">
+            <FaCar className="inline-block mr-1 text-white bg-primary p-2 rounded-full md:text-5xl text-4xl mb-1" />{" "}
             About Xpress Tour & Travels
           </h2>
-          <p className="text-lg text-gray-700 text-justify">
-            <span className="font-bold">Wellcome to Xpress Tour & Travels</span>
+          <p className="md:text-lg text-base text-gray-700 text-justify">
+          Welcome to<span className="font-bold"> Xpress Tour & Travels</span>,
             your trusted partner for reliable and affordable cab rental
             services. Established with a passion for providing exceptional
             transportation solutions, we have built a reputation for safety,
             comfort, and customer satisfaction.
-            <span className="font-bold"> taxi services Lucknow</span>,
-            <span className="font-bold"> flight booking</span>, and
-            <span className="font-bold"> tour packages</span>.
           </p>
         </div>
 
         {/* Content Section */}
-        <div className="text-left">
-          <p className="text-lg text-gray-700">
-            We are approved by the
-            <span className="font-bold">
-              {" "}
-              Government of India, Department of Tourism
-            </span>{" "}
-            and also a member of
-            <span className="font-bold">
-              {" "}
-              IATO (Indian Association of Tour Operators)
-            </span>
-            .
+        <div className="text-justify">
+          <p className="md:text-lg text-base text-gray-700">
+              Our fleet of well-maintained vehicles
+          
+            is designed to meet all your travel needs, whether you're commuting
+            for business, exploring the city, or heading to the airport. With a
+            team of professional drivers who are knowledgeable about local
+            routes and dedicated to your safety, we guarantee a smooth and
+            enjoyable ride every time.
           </p>
-          <p className="text-lg text-gray-700 mt-1 md:block hidden">
-            <span className="font-bold">India</span>, the country of a thousand
-            facets, offers everything – from the desert frontier of{" "}
-            <span className="font-bold">Rajasthan</span> to splendid
-            <span className="font-bold"> Himalayan hideaways</span>, from the
-            incredible southern landscapes to endless beaches, wildlife
-            encounters, ancient sculpture on granite, rare art and crafts,
-            serene landscapes, and monumental edifices awaiting exploration.
+          <p className="md:text-lg text-base text-gray-700 mt-1">
+            At <span className="font-bold">Xpress Tour & Travel</span>, we
+            prioritize convenience and flexibility. Our easy booking
+            system and <span className="font-bold">
+            24/7 customer support
+            </span>{" "} ensure that you can reserve your
+            cab whenever you need it. We believe in{" "}
+            <span className="font-bold">transparent pricing</span>, with no
+            hidden fees, so you can travel with peace of mind.
           </p>
         </div>
 
         {/* Features Section */}
-        <div className="text-left" data-aos="fade-up">
-          <ul className="grid md:grid-cols-4 grid-cols-2  gap-4 text-lg text-gray-700">
+        <div className="text-left md:mt-0 mt-2" data-aos="fade-up">
+          <ul className="grid md:grid-cols-4 grid-cols-2  gap-10 text-lg text-gray-700">
             <li className="flex items-center gap-0 flex-col">
               <img src="About/car.png" className="h-24" />
               Wide Range of Vehicles
@@ -73,7 +67,10 @@ const AboutComponent = () => {
         </div>
 
         {/* Button Section */}
-        <div data-aos='fade-up' className="md:inline md:text-left text-center mt-7">
+        <div
+          data-aos="fade-up"
+          className="md:inline md:text-left text-center mt-7"
+        >
           <div className="border-0 p-1  inline-block  border-primary rounded-full">
             <Link to="/about" className="btn ">
               Know More About Us

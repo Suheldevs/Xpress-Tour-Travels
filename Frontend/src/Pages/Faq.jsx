@@ -102,9 +102,9 @@ const FAQ = () => {
      }, []);
   return (
     <div>
-      <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
+      <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12 font-bold text-center md:mb-10 mb-6 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="relative z-10 md:text-5xl text-3xl">Frequently Asked Questions</div>
+        <div className="relative z-10 md:text-5xl text-xl">Frequently Asked Questions</div>
         <div className="relative z-10 text-lg mt-2 text-secondary">
           <Link to="/" className="text-white hover:text-secondary hover:cursor-pointer">
             Home /
@@ -130,7 +130,7 @@ const FAQ = () => {
 
 <div className="w-full flex px-6 md:px-10 flex-col md:flex-row gap-6 mb-6">
       <div className="flex-1 ">
-        <h2 className="text-3xl font-semibold tex-white mb-4">
+        <h2 className="md:text-3xl text-xl font-semibold tex-white mb-4">
           {faqCategories[selectedCategory].category}
         </h2>
         {faqCategories[selectedCategory].faqs.map((faq, index) => (
@@ -142,14 +142,14 @@ const FAQ = () => {
               className="flex justify-between items-center cursor-pointer transition-all duration-1000"
               onClick={() => toggleFAQ(index)}
             >
-              <p className="text-md font-medium text-white">{faq.question}</p>
+              <p className=" font-medium text-white">{faq.question}</p>
               {openIndex === index ? (
                 <FaMinus className="text-secondary text-2xl transition-transform duration-300" />
               ) : (
                 <FaPlus className="text-secondary text-2xl transition-transform duration-300" />
               )}
             </div>
-            {openIndex === index && <p className="mt-2 text-white border-t pt-2">{faq.answer}</p>}
+            {openIndex === index && <p className="mt-2 text-sm text-white border-t pt-2">{faq.answer}</p>}
           </div>
         ))}
       </div>

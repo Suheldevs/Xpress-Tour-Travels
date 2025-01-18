@@ -9,7 +9,7 @@ const services = [
     content: `We provide a wide range of vehicles to suit every need and budget. From compact city cars like Tata Indica to luxury vehicles such as Toyota Innova, Honda Civic, Skoda, and Fortuner, our fleet is well-maintained and ready for your journey. All vehicles come with professional drivers who are trained to ensure comfort, safety, and an enjoyable experience. We also offer additional services such as GPS navigation, air conditioning, and child safety seats for family travel. Whether you are on a business trip, family vacation, or special occasion, we have the perfect vehicle for you.`,
   },
   {
-    title: "Tour Packages Services",
+    title: "Tour Packages",
     id:'tour',
     image: "tour-package-services.jpg", 
     content: `Our Tour Packages are designed to make your vacations extraordinary. We offer a variety of international and domestic holiday packages, including leisure holidays, honeymoon trips, family holidays, group holidays, and more. Our destinations span across the globe—Bangkok, Thailand, Dubai, Maldives, Sri Lanka, Europe, the US, and beyond. Every package includes comfortable accommodations, guided tours to major attractions, transportation, and personalized itineraries. Our goal is to help you relax, explore, and experience new cultures while handling all the details of your trip, from start to finish.`,
@@ -46,7 +46,7 @@ const Services = () => {
      }, []);
   return (
     <div className="">
-     <h1 className="breadcrumb relative pt-32 pb-12  font-bold text-center mb-12 text-white">
+     <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12  font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Our Services</div>
         <div className="relative z-10 text-lg mt-2 text-secondary">
@@ -69,14 +69,14 @@ const Services = () => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full  object-cover rounded-lg"
               />
             </div>
 
             {/* Right Side (Content) */}
-            <div className="w-full md:w-1/2 md:pl-6 px-2 md:px-0">
-              <h2 className="text-4xl font-semibold mb-4">{service.title}</h2>
-              <p className=" leading-relaxed">{service.content}</p>
+            <div className="w-full md:w-1/2 md:pl-6 px-2 md:px-0 ">
+              <h2 className="md:text-4xl text-2xl font-semibold mb-4">{service.title}</h2>
+              <p className=" leading-relaxed text-justify">{service.content}</p>
               <div className={` text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
             <Link to='/contact' className="bg-secondary btn2 ease-in-out block  lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
               Enquire Now

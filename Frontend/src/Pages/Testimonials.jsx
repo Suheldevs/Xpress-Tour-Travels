@@ -16,7 +16,7 @@ function Testimonials() {
      }, []);
   return (
     <div>
-      <h1 className="breadcrumb relative pt-32 pb-12 font-bold text-center mb-12 text-white">
+      <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12 font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">What Our Clients Say</div>
         <div className="relative z-10 text-lg mt-2 text-secondary">

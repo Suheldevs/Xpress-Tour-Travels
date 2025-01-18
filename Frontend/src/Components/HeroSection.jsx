@@ -28,7 +28,7 @@ const HeroSection = () => {
     <section  className="relative md:h-[90vh] h-[60vh] w-full overflow-hidden bg-gradient-to-b  from-gray-600 to-primary">
       <video
       data-aos='fade-up'
-        className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
+        className="absolute opacity-25 top-0 left-0 h-full   w-full object-cover"
         src="bg-video.mp4" 
         autoPlay
         loop
@@ -40,21 +40,21 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Content */}
-      <div  className="relative z-10 flex flex-col md:flex-row  md:pt-14 h-full items-center md:justify-start mt-14 md:px-8 px-0 justify-center md:text-left text-center">
+      <div  className="relative z-10 flex flex-col md:flex-row  md:pt-14  h-full items-center md:justify-start md:mt-14 mt-10  md:px-8 px-0 justify-center md:text-left text-center">
         <div data-aos='fade-down' className="md:w-8/12 w-full flex flex-col justify-center md:pl-12 px-4 md:px-0 pb-10 items-center md:items-start text-white">
           <p className=" sm:text-lg bg-opacity-70 bg-black py-2 px-4 rounded-full w-fit flex justify-center items-center gap-2">
-         <span ><FaCar className=""/></span>   Welcome to Xpress Tour & Travels
+         <span ><FaCar className=""/></span>Welcome to Xpress Tour & Travels
           </p>
-          <h1 className="text-3xl  md:text-5xl  font-bold mt-2 ">
+          <h1 className="text-2xl md:text-5xl  font-bold mt-2 ">
             Explore More, Pay Less 
             <div className="text-secondary md:mt-2 mt-1">Hassle-Free Travel Services</div>
           </h1>
-          <p className="mt-4 text-lg  font-medium">
+          <p className="mt-4 text-lg md:block hidden font-medium">
             Your Trusted Travel Partner
           </p>
-          <div className="mt-8 flex gap-4 flex-col md:flex-row items-center">
+          <div className="md:mt-8 mt-4 flex gap-4 flex-col md:flex-row items-center">
             <div className="border-4 p-1 lg:animate-bounce hover:animate-none border-gray-100 rounded-full">
-            <button className="bg-secondary text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">
+            <button className="bg-secondary text-white lg:text-xl text-lg font-semibold md:px-12 px-10 md:py-3 py-2 rounded-full shadow-md transition">
               Book Now
             </button>
             </div>

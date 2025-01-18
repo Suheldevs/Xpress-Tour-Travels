@@ -19,7 +19,7 @@ const HowWeWork = () => {
       title: "Booking Payment",
       description:
         "After reserving, finalize your booking with a secure payment.",
-      bgClass: "", // Example background class
+      bgClass: "bg-gray-200 rounded-lg p-2 ", // Example background class
     },
     {
       icon: <FaCarAlt className="text-slate-800 text-4xl mx-auto mb-4" />,
@@ -30,21 +30,21 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div data-aos="fade-up" className="bg-primary py-16">
+    <div data-aos="fade-up" className="bg-primary lg:py-12 md:py-10 py-8">
       <div className=" relative max-w-6xl mx-auto px-4">
         {/* Header Section */}
-        <div className="text-center mb-10">
+        <div className="text-center md:mb-10 mb-8">
           <div className="flex justify-center items-center space-x-2">
             <div className="bg-gray-200 p-2 rounded-full">
               <FaCarAlt className="text-gray-800 text-4xl" />
             </div>
-            <h2 className="text-3xl md:text-4xl text-gray-100  tracking-wide">
+            <h2 className="text-2xl md:text-4xl text-gray-100  tracking-wide">
               How We Work
             </h2>
           </div>
-          {/* <h3 className="text-xl font-semibold text-gray-200 mt-4">
+          <h3 className="text-sm font-semibold text-gray-200 md:ps-0 ps-6 md:mt-2 mt-0">
             We Are The Best For You
-          </h3> */}
+          </h3>
         </div>
 
         {/* Steps Section */}
@@ -65,14 +65,14 @@ const HowWeWork = () => {
           </div>
 
           {/* Right Steps */}
-          <div className="col-span-3 bg-white p-6 lg:rounded-r-lg lg:rounded-l-none rounded-l-lg rounded-r-lg shadow-md mt-4 md:mt-0">
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+          <div className="col-span-3 bg-white p-6 lg:rounded-r-lg lg:rounded-l-none rounded-l-lg rounded-r-lg shadow-md mt- md:mt-0">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-4 gap-2 ">
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  className={`text-justify p-4 ${step.bgClass || ""}`}
+                  className={`text-justify md:p-4 p-2  ${step.bgClass || ""}`}
                 >
-                  <div className=" flex text-5xl font-bold text-gray-800/80 justify-start items-center gap-6"> 
+                  <div className=" flex text-5xl  font-bold text-gray-800/80 justify-start items-center md:gap-6 gap-3"> 
                     <div className="">{index + 1}.</div>{" "}
                     <div className="pt-4"> {step.icon}</div>
                   </div>

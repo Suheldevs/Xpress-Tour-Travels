@@ -4,18 +4,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BookNow from "../Components/BookNow";
 import WhyChooseUs from "../Components/WhyChooseUs";
+import { FaCar } from "react-icons/fa";
 const AboutUs = () => {
   AOS.init();
   useEffect(() => {
     window.scrollTo(0, 0);
-     }, []);
+  }, []);
 
   return (
     <div>
       {/* Breadcrumb Section */}
-      <h1 className="breadcrumb relative pt-32 pb-12 font-semibold text-center mb-12 text-white">
+      <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12 font-semibold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="relative z-10 md:text-5xl text-4xl text-shadow-lg">
+        <div className="relative z-10 md:text-5xl text-2xl px-6 text-shadow-lg">
           About Xpress Tour & Travels
         </div>
         <div className="relative z-10 text-lg mt-2 text-secondary">
@@ -30,48 +31,57 @@ const AboutUs = () => {
       </h1>
 
       {/* About Us Section */}
-      <div className="flex flex-col md:flex-row border-t-4 text-justify rounded shadow-xl bg-white border-secondar md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
-        <div className="flex-[6] md:p-6 p-0" data-aos="fade-right">
-          <h2 className="text-3xl font-semibold mb-6">
+      <div className="flex flex-col md:flex-row text-justify rounded shadow-xl bg-white md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
+        <div className="flex-[6] md:p-6 p-0 text-justify" data-aos="fade-right">
+          <h2 className="md:text-3xl text-2xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>
-          <p className="text-base mb-2">
-            Welcome to <span className="font-bold">Xpress Tour & Travels</span>{" "}
-            your trusted partner for reliable and affordable cab rental
-            services. Established with a passion for providing exceptional
-            transportation solutions, we have built a reputation for safety,
-            comfort, and customer satisfaction.
-            <span className="font-bold">taxi services Lucknow</span>,{" "}
-            <span className="font-bold">flight booking</span>, and{" "}
-            <span className="font-bold">tour packages</span>.
-          </p>
-          <p className="text-base mb-2">
-            We are approved by the{" "}
-            <span className="font-bold">
-              Government of India, Department of Tourism
-            </span>{" "}
-            and are proud members of the{" "}
-            <span className="font-bold">
-              IATO (Indian Association of Tour Operators)
-            </span>
-            .
-          </p>
-          <p className="text-base mb-2">
-            Our fleet of
-            well-maintained vehicles is designed to meet all your travel needs,
-            whether you're commuting for business, exploring the city, or
-            heading to the airport. With a team of professional drivers who are
-            knowledgeable about local routes and dedicated to your safety, we
-            guarantee a smooth and enjoyable ride every time.
-          </p>
-          <p className="text-base mb-4">
-            That’s where we,{" "}
-            <span className="font-bold">Xpress Tour & Travels</span>, step in to
-            guide you to your dream destinations. With our expertise in{" "}
-            <span className="font-bold">Indian tourism</span>, we ensure your
-            journeys are seamless and memorable.
-          </p>
-          <div className="border-0 p-1 mt-3 md:mb-0 mb-4 inline-block  border-primary rounded-full">
+          <div className="md:text-left text-center">
+            <p className="md:text-lg text-base text-gray-700 text-justify">
+              <span className="font-bold">
+                Welcome to Xpress Tour & Travels
+              </span>
+              , your trusted partner for reliable and affordable cab rental
+              services. Established with a passion for providing exceptional
+              transportation solutions, we have built a reputation for safety,
+              comfort, and customer satisfaction. We offer a range of services,
+              including{" "}
+              <span className="font-bold">taxi services in Lucknow</span>,{" "}
+              <span className="font-bold">flight booking</span>, and{" "}
+              <span className="font-bold">tour packages</span>.
+            </p>
+          </div>
+
+          {/* Content Section */}
+          <div className="text-justify">
+            <p className="md:text-lg text-base text-gray-700">
+              We are approved by the{" "}
+              <span className="font-bold">
+                Government of India, Department of Tourism
+              </span>{" "}
+              and are proud members of the{" "}
+              <span className="font-bold">
+                IATO (Indian Association of Tour Operators)
+              </span>
+              .
+            </p>
+            <p className="md:text-lg text-base text-gray-700">
+              Our fleet of well-maintained vehicles is designed to meet all your
+              travel needs, whether you're commuting for business, exploring the
+              city, or heading to the airport. With a team of professional
+              drivers who are knowledgeable about local routes and dedicated to
+              your safety, we guarantee a smooth and enjoyable ride every time.
+            </p>
+            <p className="md:text-lg text-base text-gray-700">
+              That’s where we,{" "}
+              <span className="font-bold">Xpress Tour & Travels</span>, step in
+              to guide you to your dream destinations. With our expertise in{" "}
+              <span className="font-bold">Indian tourism</span>, we ensure your
+              journeys are seamless and memorable.
+            </p>
+          </div>
+
+          <div className="border-0 p-1 mt-4 md:mb-0 mb-4 inline-block  border-primary rounded-full">
             <Link to="/contact" className="btn ">
               Know More
             </Link>
@@ -80,7 +90,7 @@ const AboutUs = () => {
         <div className="flex-[6] md:block hidden md:p-2 p-0">
           <img
             src="about-us.jpg"
-            data-aos='zoom-in'
+            data-aos="zoom-in"
             loading="lazy"
             alt="Xpress Tour & Travels"
             className="w-full h-full object-cover border-2 rounded sdw"
@@ -95,45 +105,39 @@ const AboutUs = () => {
             src="vision.jpg"
             alt="Vision"
             loading="lazy"
-            data-aos='zoome-in'
+            data-aos="zoome-in"
             className="w-full h-52 object-cover rounded mb-4"
           />
           <h3 className="text-2xl font-semibold mb-1 px-2">Our Vision</h3>
-          <p className="text-lg px-2">
+          <p className="md:text-lg text-base px-2">
             To provide safe, reliable, and high-quality transportation services
             that our customers can trust and depend on.
           </p>
         </div>
-        <div
-          className="p-2 bg-white rounded shadow-2xl"
-          data-aos="fade-up"
-        >
+        <div className="p-2 bg-white rounded shadow-2xl" data-aos="fade-up">
           <img
-            data-aos='zoome-in'
+            data-aos="zoome-in"
             src="mission.jpg"
             alt="Mission"
             loading="lazy"
             className="w-full h-52 object-cover rounded mb-4"
           />
           <h3 className="text-2xl font-semibold mb-1 px-2">Our Mission</h3>
-          <p className="text-lg px-2">
+          <p className="md:text-lg text-base px-2">
             To deliver exceptional travel experiences by offering tailored
             solutions and promoting sustainable tourism practices.
           </p>
         </div>
-        <div
-          className="p-2 bg-white rounded shadow-xl"
-          data-aos='fade-up'
-        >
+        <div className="p-2 bg-white rounded shadow-xl" data-aos="fade-up">
           <img
-          data-aos='zoom-in'
-          loading="lazy"
+            data-aos="zoom-in"
+            loading="lazy"
             src="services.jpg"
             alt="Services"
             className="w-full h-52 object-cover rounded mb-4"
           />
           <h3 className="text-2xl font-semibold mb-1 px-2">Core Values</h3>
-          <p className="text-lg px-2">
+          <p className="md:text-lg text-base px-2">
             From last-minute <span className="font-bold">train tickets</span> to
             affordable <span className="font-bold">airfares</span>, we provide
             round-the-clock assistance for all your travel needs.

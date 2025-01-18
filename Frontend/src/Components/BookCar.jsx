@@ -154,12 +154,12 @@ const BookCar = () => {
                 />
               </svg>
             </div>
-            <h1 className="text-gray-100 text-3xl md:text-4xl">Experience the Best Cars</h1>
+            <h1 className="text-gray-100 text-xl md:text-4xl">Experience the Best Cars</h1>
           </div>
-          <p className=" text-gray-200">
+          <p className=" text-gray-200 md:text-base text-sm md:px-0 px-10">
             Please choose your preferred car from below
           </p>
-          <div className="mt-4 flex justify-center space-x-4">
+          <div className="md:mt-4 mt-2 text-sm flex justify-center space-x-4">
             <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA" className="px-4 py-2 cursor-pointer rounded-full bg-white text-primary font-medium">
               Pick From Lucknow
             </a>
@@ -200,12 +200,12 @@ const BookCar = () => {
             <SwiperSlide key={car.id}>
               <div
                 data-aos="flip-right"
-                className="bg-gray-100 shadow-md rounded-lg overflow-hidden"
+                className="bg-gray-50 shadow-xl rounded-lg overflow-hidden cursor-grab "
               >
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 hover:scale-110 transition-all ease-in-out duration-300 overflow-hidden object-cover"
                 />
                 <div className="p-4 bg-slate-200 rounded-xl">
                   <h3 className="text-xl font-semibold text-primary">
@@ -249,7 +249,7 @@ const BookCar = () => {
             <FaChevronRight size={12} />
           </div> */}
         </Swiper>
-        <div className="custom-pagination flex justify-center mt-6 hover:cursor-pointer"></div>
+        <div className="custom-pagination flex justify-center md:mt-6 mt-0 mb-2  hover:cursor-pointer"></div>
       </div>
     </div>
   );
