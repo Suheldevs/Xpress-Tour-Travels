@@ -28,10 +28,10 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="bg-primary text-white pt-12 pb-2">
+    <footer className="bg-primary text-white pt-12 pb-2" data-aos='fade-up'>
       <div className="container mx-auto px-4 md:px-6">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left" data-aos='fade-up'>
           {/* Logo and Social Links */}
           <div>
             <Link to='/' className="flex justify-center items-center ">

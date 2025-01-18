@@ -78,7 +78,7 @@ const Services = () => {
               <h2 className="text-4xl font-semibold mb-4">{service.title}</h2>
               <p className=" leading-relaxed">{service.content}</p>
               <div className={` text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
-            <Link to='/contact' className="bg-secondary btn1 ease-in-out block  lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
+            <Link to='/contact' className="bg-secondary btn2 ease-in-out block  lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
               Enquire Now
             </Link>
             </div>

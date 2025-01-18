@@ -35,7 +35,7 @@ const AboutUs = () => {
           <h2 className="text-3xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>
-          <p className="text-lg mb-2">
+          <p className="text-base mb-2">
             Welcome to <span className="font-bold">Xpress Tour & Travels</span>{" "}
             your trusted partner for reliable and affordable cab rental
             services. Established with a passion for providing exceptional
@@ -45,7 +45,7 @@ const AboutUs = () => {
             <span className="font-bold">flight booking</span>, and{" "}
             <span className="font-bold">tour packages</span>.
           </p>
-          <p className="text-lg mb-2">
+          <p className="text-base mb-2">
             We are approved by the{" "}
             <span className="font-bold">
               Government of India, Department of Tourism
@@ -56,7 +56,7 @@ const AboutUs = () => {
             </span>
             .
           </p>
-          <p className="text-lg mb-2">
+          <p className="text-base mb-2">
             Our fleet of
             well-maintained vehicles is designed to meet all your travel needs,
             whether you're commuting for business, exploring the city, or
@@ -64,7 +64,7 @@ const AboutUs = () => {
             knowledgeable about local routes and dedicated to your safety, we
             guarantee a smooth and enjoyable ride every time.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-base mb-4">
             That’s where we,{" "}
             <span className="font-bold">Xpress Tour & Travels</span>, step in to
             guide you to your dream destinations. With our expertise in{" "}
@@ -80,6 +80,8 @@ const AboutUs = () => {
         <div className="flex-[6] md:block hidden md:p-2 p-0">
           <img
             src="about-us.jpg"
+            data-aos='zoom-in'
+            loading="lazy"
             alt="Xpress Tour & Travels"
             className="w-full h-full object-cover border-2 rounded sdw"
           />
@@ -92,6 +94,8 @@ const AboutUs = () => {
           <img
             src="vision.jpg"
             alt="Vision"
+            loading="lazy"
+            data-aos='zoome-in'
             className="w-full h-52 object-cover rounded mb-4"
           />
           <h3 className="text-2xl font-semibold mb-1 px-2">Our Vision</h3>
@@ -103,11 +107,12 @@ const AboutUs = () => {
         <div
           className="p-2 bg-white rounded shadow-2xl"
           data-aos="fade-up"
-          data-aos-delay="100"
         >
           <img
+            data-aos='zoome-in'
             src="mission.jpg"
             alt="Mission"
+            loading="lazy"
             className="w-full h-52 object-cover rounded mb-4"
           />
           <h3 className="text-2xl font-semibold mb-1 px-2">Our Mission</h3>
@@ -118,10 +123,11 @@ const AboutUs = () => {
         </div>
         <div
           className="p-2 bg-white rounded shadow-xl"
-          data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos='fade-up'
         >
           <img
+          data-aos='zoom-in'
+          loading="lazy"
             src="services.jpg"
             alt="Services"
             className="w-full h-52 object-cover rounded mb-4"

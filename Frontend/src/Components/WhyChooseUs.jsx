@@ -7,16 +7,15 @@ const WhyChooseUs = () => {
     { icon: <FaSuitcaseRolling size={40} />, title: "Customized Luxury Planning" },
     { icon: <FaPlaneDeparture size={40} />, title: "Cheapest Fares Guaranteed" },
     { icon: <FaAward size={40} />, title: "16+ Years of Expertise" },
-    { icon: <FaCarSide size={40} />, title: "Hassle-Free Booking" },  // New feature
-    { icon: <FaPassport size={40} />, title: "Exclusive Travel Packages" }, // New feature
+    { icon: <FaCarSide size={40} />, title: "Hassle-Free Booking" }, 
+    { icon: <FaPassport size={40} />, title: "Exclusive Travel Packages" }, 
   ];
 
   return (
-    <div data-aos='fade-up' className="relative flex flex-col items-center justify-center w-full gap-4 py-8 md:py-10 lg:py-12 ">
+    <div data-aos='fade-up' className="relative flex flex-col items-center justify-center w-full gap-4 py-8 md:py-10 lg:py-10">
       <h2 className="text-center text-primary flex items-center justify-center md:text-4xl text-3xl font-bold  ">
         Why Choose Us
       </h2>
-
       <div className="flex flex-col items-center justify-center lg:flex-row max-w-7xl">
         {/* Left-side text boxes */}
         <div className="flex flex-col gap-6 lg:gap-8">
@@ -33,7 +32,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Rotating circle with central image */}
-        <div className="relative h-[25rem] md:w-[32rem] w-[20rem] flex items-center justify-center sm:my-16">
+        <div className="relative h-[25rem] md:w-[32rem] w-[20rem] flex items-center justify-center ">
           <div className="absolute animate-spin- duration-1000 sm:size-[24.5rem] size-[16.5rem] rounded-full border-4 border-primary flex items-center justify-center">
             {/* {reasons.map((reason, index) => (
               <div

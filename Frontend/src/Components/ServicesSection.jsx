@@ -160,7 +160,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="bg-gray-50 py-12" data-aos='fade-up'>
       {/* Section Header */}
       <div className="text-center mb-10">
         <h2 className="md:text-4xl text-3xl font-bold text-gray-800">Our Services</h2>
@@ -173,6 +173,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {services.map((service,index) => (
     <div
+    data-aos='fade-up'
       key={service.id}
       className={` bg-gray-50 max-h-[350px] border rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col`}
     >

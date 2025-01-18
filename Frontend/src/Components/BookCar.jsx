@@ -213,11 +213,11 @@ const BookCar = () => {
                   </h3>
                   <div className="items-center text-primary/90">
                     <span>{car.description}</span>
-                    <div className="mt-2">
+                    <div className="">
                       <span>Start Price Per KM: </span>
                       <span className="font-semibold">{car.price}</span>
-                      <div className="flex w-full justify-start gap-6  rounded font-bold py-1 px-1">
-                        <div className="flex justify-center items-center gap-2 text-lg">
+                      <div className="flex w-full justify-start gap-6  rounded font-bold pt-2 pb-1 px-1">
+                        <div className="flex justify-center items-center gap-2  text-lg">
                           <TbAirConditioning className="text-2xl" />
                           <span>AC</span>
                         </div>
@@ -230,7 +230,7 @@ const BookCar = () => {
                           <span>{car.seats}</span>
                         </div>
                       </div>
-                      <Link to='/contact' className="border-4 inline-block p-1 mt-4 w-full border-primary rounded-full hover:scale-105 transition-all duration-100">
+                      <Link to='/contact' className="border- inline-block p-1 mt-2 w-full border-primary rounded-full hover:scale-105 transition-all duration-100">
                         <button className="bg-primary text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
                           Book Now
                         </button>
