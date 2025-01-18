@@ -4,24 +4,19 @@ import { FaCar, FaPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  // Car Images Array
+
   const carImages = [
     "car1.png", 
-    // "car2.png",
     "car5.png",
     "car3.png",
-    // "car4.webp",
-    // "car6.webp",
-    // "car7.jpg",
   ];
 
   const [currentCarIndex, setCurrentCarIndex] = useState(0);
 
-  
   useEffect(() => {
     Aos.init({
-      duration: 2000, // Animation duration (in ms)
-      once: false,     // Whether animation should happen only once
+      duration: 2000,
+      once: false,     
     }); 
     const interval = setInterval(() => {
       setCurrentCarIndex((prevIndex) => (prevIndex + 1) % carImages.length);

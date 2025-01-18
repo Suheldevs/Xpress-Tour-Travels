@@ -128,7 +128,7 @@ const FAQ = () => {
         ))}
       </div>
 
-<div className="w-full flex px-6 md:px-10 flex-col md:flex-row gap-6">
+<div className="w-full flex px-6 md:px-10 flex-col md:flex-row gap-6 mb-6">
       <div className="flex-1 ">
         <h2 className="text-3xl font-semibold tex-white mb-4">
           {faqCategories[selectedCategory].category}

@@ -27,12 +27,12 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
      }, []);
   const servicesList = [
-    "Tour Package",
-    "Car Rental",
-    "Bus Booking",
-    "Train Ticketing",
-    "Passport & Visa",
-    "Other Services",
+    "Cab Rental Services",
+    "Tour Packages Services",
+    "Bus Booking Services",
+    "Train Ticketing Services",
+    "Passport & Visa Services",
+    "Other Services ",
   ];
 
   const handleChange = (e) => {

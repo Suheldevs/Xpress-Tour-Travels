@@ -1,18 +1,8 @@
 import React from "react";
-import {
-  FaCogs,
-  FaArrowRight,
-  FaCar,
-  FaRoute,
-  FaMapMarkedAlt,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaCar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const AboutComponent = () => {
-  const handleScroll = () => {
-    window.scrollTo(0, 0); // Scroll to the top
-  };
   return (
     <section data-aos="fade-up" className="relative bg-bgcolor2 py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-1">
@@ -24,16 +14,15 @@ const AboutComponent = () => {
           </h2>
           <p className="text-lg text-gray-700 text-justify">
             <span className="font-bold">Wellcome to Xpress Tour & Travels</span>
-            your trusted partner for reliable and
-            affordable cab rental services. Established with a passion for
-            providing exceptional transportation solutions, we have built a
-            reputation for safety, comfort, and customer satisfaction.
+            your trusted partner for reliable and affordable cab rental
+            services. Established with a passion for providing exceptional
+            transportation solutions, we have built a reputation for safety,
+            comfort, and customer satisfaction.
             <span className="font-bold"> taxi services Lucknow</span>,
             <span className="font-bold"> flight booking</span>, and
             <span className="font-bold"> tour packages</span>.
           </p>
         </div>
-        {/* <div class="absolute top-0 right-0  w-[200px] h-[200px] z-[-20]  bg-primary rounded-full transform translate-x-[0%] translate-y-[-40%]  opacity-100"></div> */}
 
         {/* Content Section */}
         <div className="text-left">
@@ -65,26 +54,26 @@ const AboutComponent = () => {
         <div className="text-left" data-aos="fade-up">
           <ul className="grid md:grid-cols-4 grid-cols-2  gap-4 text-lg text-gray-700">
             <li className="flex items-center gap-0 flex-col">
-              <img src="car.png" className="h-24" />
+              <img src="About/car.png" className="h-24" />
               Wide Range of Vehicles
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src="flexibility.png" className="h-24" />
+              <img src="About/flexibility.png" className="h-24" />
               Flexible Rental Plans
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src="delivery-location.png" className="h-24" />
+              <img src="About/delivery-location.png" className="h-24" />
               Seamless Pickup & Drop-off
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src="tour-bus.png" className="h-24" />
+              <img src="About/tour-bus.png" className="h-24" />
               Customized Tour Packages
             </li>
           </ul>
         </div>
 
         {/* Button Section */}
-        <div className="md:inline md:text-left text-center mt-7">
+        <div data-aos='fade-up' className="md:inline md:text-left text-center mt-7">
           <div className="border-0 p-1  inline-block  border-primary rounded-full">
             <Link to="/about" className="btn ">
               Know More About Us

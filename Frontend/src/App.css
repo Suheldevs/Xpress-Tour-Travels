@@ -74,7 +74,7 @@ body{
 
   /* breadcrumb satrt */
   .breadcrumb{
-    background:url('../public/breadcrumb.jpg');
+    background:url('/breadcrumb.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

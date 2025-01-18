@@ -114,7 +114,7 @@ const services = [
    description: "Reliable cab rental services offering affordable rates, professional drivers, and 24/7 availability for your convenience.",
     price: "Starting @ just Rs 12/Km",
     buttonLabel: "Book Now",
-    image: "cab.avif", // Replace with actual image path
+    image: "services/cab.jpg", // Replace with actual image path
   },
   {
     id: 2,
@@ -122,7 +122,7 @@ const services = [
     description: "Exciting tour packages featuring unique destinations, curated experiences, and all-inclusive options for unforgettable adventures.",
     price: "Starting @ just Rs 499/-",
     buttonLabel: "Book Now",
-    image: "tour.avif", // Replace with actual image path
+    image: "services/tour.jpg", // Replace with actual image path
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ const services = [
     description: "Convenient Air Ticketing Services offering competitive fares, easy booking, and real-time flight updates for travelers.",
     price: "Starting @ just Rs 1199/-",
     buttonLabel: "Book Now",
-    image: "air.avif", // Replace with actual image path
+    image: "services/air.jpg", // Replace with actual image path
   },
   {
     id: 4,
@@ -138,7 +138,7 @@ const services = [
     description: "Efficient Train Ticketing services providing easy bookings, real-time updates, and competitive pricing for hassle-free travel.",
     price: "Starting @ just Rs 199/-",
     buttonLabel: "Book Now",
-    image: "train.jpg", // Replace with actual image path
+    image: "services/Train-Ticketing-services.jpg", // Replace with actual image path
   },
   {
     id: 5,
@@ -146,7 +146,7 @@ const services = [
     description: "Comprehensive Passport and Visa Services ensuring fast processing, expert guidance, and hassle-free travel documentation solutions.",
     price: "Starting @ just Rs 19999/-",
     buttonLabel: "Book Now",
-    image: "services/passport.webp", // Replace with actual image path
+    image: "services/Passport-Visa-services.jpg", // Replace with actual image path
   },
   {
     id: 6,
