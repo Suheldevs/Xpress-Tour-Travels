@@ -235,7 +235,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-6 border-t border-gray-700 pt-4 text-center text-sm text-gray-200">
+        <div className="mt-2 border-t border-gray-700 pt- text-center text-sm text-gray-200">
           <BottomFooter />
         </div>
       </div>

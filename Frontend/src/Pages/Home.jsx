@@ -10,6 +10,7 @@ import { HowItWorks } from '../Components/HWW'
 import WhyChooseUs from '../Components/WhyChooseUs'
 import Footer from '../Components/Footer'
 import Review from '../Components/Review'
+import StatsComponent from '../Components/Statics'
 
 function Home() {
   useEffect(() => {
@@ -22,8 +23,9 @@ function Home() {
     <AboutComponent/>
     <BookCar/>
     <ServicesSection/>
-    <HowWeWork/>
+    <StatsComponent/>
     <WhyChooseUs/>
+    <HowWeWork/>
     <Review/>
     {/* <HowItWorks/> */}
     </>
