@@ -11,31 +11,13 @@ import { Link } from "react-router-dom";
 // Sample car data
 const carData = [
   {
-    id: 1,
-    name: "BMW",
-    price: "50/- per km",
-    image: "cars/bmw.png",
-    description: "Luxury and Comfort Redefined",
-    seats: 4,
-    engine: "Petrol",
-  },
-  {
-    id: 2,
-    name: "Mercedes",
-    price: "55/- per km",
-    image: "cars/Mercedes.png",
-    description: "Premium Driving Experience",
-    seats: 4,
-    engine: "Petrol",
-  },
-  {
-    id: 3,
-    name: "Audi",
-    price: "53/- per km",
-    image: "cars/audi.png",
-    description: "Performance and Elegance",
-    seats: 4,
-    engine: "Petrol",
+    id: 10,
+    name: "Toyota Crysta",
+    price: "18/- per km",
+    image: "cars/ToyotaC.png",
+    description: "Luxury and Performance",
+    seats: 7,
+    engine: "Diesel",
   },
   {
     id: 4,
@@ -47,6 +29,16 @@ const carData = [
     engine: "Petrol",
   },
   {
+    id: 8,
+    name: "Toyota Rumion",
+    price: "15/- per km",
+    image: "cars/ToyotaRumion.png",
+    description: "Spacious Family Car",
+    seats: 6,
+    engine: "Petrol",
+  },
+  
+  {
     id: 5,
     name: "Toyota Glanza",
     price: "14/- per km",
@@ -54,15 +46,6 @@ const carData = [
     description: "Compact and Comfortable",
     seats: 4,
     engine: "Petrol",
-  },
-  {
-    id: 10,
-    name: "Toyota Crysta",
-    price: "18/- per km",
-    image: "cars/ToyotaC.png",
-    description: "Luxury and Performance",
-    seats: 7,
-    engine: "Diesel",
   },
   {
     id: 6,
@@ -82,15 +65,7 @@ const carData = [
     seats: 4,
     engine: "Petrol",
   },
-  {
-    id: 8,
-    name: "Toyota Rumion",
-    price: "15/- per km",
-    image: "cars/ToyotaRumion.png",
-    description: "Spacious Family Car",
-    seats: 6,
-    engine: "Petrol",
-  },
+ 
   {
     id: 9,
     name: "Toyota Innova",
@@ -128,6 +103,35 @@ const carData = [
     seats: 50,
     engine: "Diesel",
   },
+  {
+    id: 1,
+    name: "BMW",
+    price: "50/- per km",
+    image: "cars/bmw.png",
+    description: "Luxury and Comfort Redefined",
+    seats: 4,
+    engine: "Petrol",
+  },
+  {
+    id: 2,
+    name: "Mercedes",
+    price: "55/- per km",
+    image: "cars/Mercedes.png",
+    description: "Premium Driving Experience",
+    seats: 4,
+    engine: "Petrol",
+  },
+  
+  {
+    id: 3,
+    name: "Audi",
+    price: "53/- per km",
+    image: "cars/audi.png",
+    description: "Performance and Elegance",
+    seats: 4,
+    engine: "Petrol",
+  },
+
 ];
 
 

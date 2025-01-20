@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className={`absolute z-50  w-full   text-white `}>
+    <header className={`absolute z-50  w-full   text-white `} id='header'>
       <nav className=" mx-auto flex  justify-between md:h-[7rem] h-[5rem]  md:px-16 px-4 items-center ">
         {/* Logo */}
         <div className="text-2xl font-bold  text-white">

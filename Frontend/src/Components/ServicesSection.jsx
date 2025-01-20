@@ -117,20 +117,20 @@ const services = [
     image: "services/cab.jpg", // Replace with actual image path
   },
   {
-    id: 2,
-    title: "Tour Packages",
-    description: "Exciting tour packages featuring unique destinations and all-inclusive options for unforgettable adventures.",
-    price: "Starting @ just Rs 499/-",
-    buttonLabel: "Book Now",
-    image: "services/tour.jpg", // Replace with actual image path
-  },
-  {
     id: 3,
     title: "Air Ticketing Services",
     description: "Convenient Air Ticketing Services offering competitive fares, easy booking, and real-time flight updates for travelers.",
     price: "Starting @ just Rs 1199/-",
     buttonLabel: "Book Now",
     image: "services/air.jpg", // Replace with actual image path
+  },
+  {
+    id: 2,
+    title: "Tour Packages",
+    description: "Exciting tour packages featuring unique destinations and all-inclusive options for unforgettable adventures.",
+    price: "Starting @ just Rs 499/-",
+    buttonLabel: "Book Now",
+    image: "services/tour.jpg", // Replace with actual image path
   },
   {
     id: 4,
@@ -141,20 +141,20 @@ const services = [
     image: "services/Train-Ticketing-services.jpg", // Replace with actual image path
   },
   {
-    id: 5,
-    title: "Passport & Visa Services",
-    description: "Passport and Visa Services ensuring fast processing, and hassle-free travel documentation solutions.",
-    price: "Starting @ just Rs 19999/-",
-    buttonLabel: "Book Now",
-    image: "services/Passport-Visa-services.jpg", // Replace with actual image path
-  },
-  {
     id: 6,
     title: "Bus Booking Services",
     description: "Affordable Bus Booking Services with easy online reservations and comfortable travel options available.",
     price: "Starting @ just Rs 20000/-",
     buttonLabel: "Book Now",
     image: "cars/bus.png", // Replace with actual image path
+  },
+  {
+    id: 5,
+    title: "Passport & Visa Services",
+    description: "Passport and Visa Services ensuring fast processing, and hassle-free travel documentation solutions.",
+    price: "Starting @ just Rs 19999/-",
+    buttonLabel: "Book Now",
+    image: "services/Passport-Visa-services.jpg", // Replace with actual image path
   },
 ];
 

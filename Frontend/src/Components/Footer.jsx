@@ -15,30 +15,47 @@ import { GiRotaryPhone } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
 import BottomFooter from "./CopyRightsection";
 
-
 const Footer = () => {
   const location = useLocation();
 
   const handleServiceLinkClick = (sectionId) => {
-    if (location.pathname === '/services') {
+    if (location.pathname === "/services") {
       const section = document.getElementById(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
   };
+  const handleLogoClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <footer className="bg-primary text-white pt-12 pb-2" data-aos='fade-up'>
+    <footer className="bg-primary text-white pt-12 pb-2" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left" data-aos='fade-up'>
+        <div
+          className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left"
+          data-aos="fade-up"
+        >
           {/* Logo and Social Links */}
           <div>
-            <Link to='/' className="flex justify-center items-center ">
+            <Link
+              to="/"
+              onClick={handleLogoClick}
+              className="flex justify-center items-center "
+            >
               <img src="xpress.jpg" className="h-24 rounded-full" />
             </Link>
             <h2 className="text-xl font-bold text-secondary text-center mb-4">
-             <Link to='/'> Xpress Tour & Travel </Link>
+              <Link to="/" onClick={handleLogoClick}>
+                {" "}
+                Xpress Tour & Travels{" "}
+              </Link>
             </h2>
             <p className="text-gray-200 text-center">
               Travel with trust and comfort. Your satisfaction is our priority.
@@ -94,47 +111,71 @@ const Footer = () => {
               Our Services
             </h3>
             <div className="text-gray-200 space-y-1">
-              <Link to="/services" onClick={(e) => {
-                    // e.preventDefault(); 
-                    handleServiceLinkClick('cab'); 
-                  }} className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Cab
-                Retal services
-              </Link>
-              <Link to="/services" onClick={(e) => {
-                    // e.preventDefault(); 
-                    handleServiceLinkClick('tour'); 
-                  }} className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Tour
-                Packages
-              </Link>
-              <Link to="/services" onClick={(e) => {
-                    // e.preventDefault(); 
-                    handleServiceLinkClick('air'); 
-                  }} className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Air
-                Ticketing
-              </Link>
-              <Link to="/services" onClick={(e) => {
-                    // e.preventDefault(); 
-                    handleServiceLinkClick('train'); 
-                  }} className="block hover:text-secondary">
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Train
-                Ticketing
-              </Link>
-              <Link to="/services" onClick={(e) => {
-                    // e.preventDefault(); 
-                    handleServiceLinkClick('passport'); 
-                  }} className="block hover:text-secondary">
+              <Link
+                to="/services"
+                onClick={(e) => {
+                  // e.preventDefault();
+                  handleServiceLinkClick("cab");
+                }}
+                className="block hover:text-secondary"
+              >
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Passport & Visa Services
+                Cab Retal services
               </Link>
-              <Link to="/services" onClick={(e) => {
-                    // e.preventDefault(); 
-                    handleServiceLinkClick('bus'); 
-                  }} className="block hover:text-secondary">
+              <Link
+                to="/services"
+                onClick={(e) => {
+                  // e.preventDefault();
+                  handleServiceLinkClick("air");
+                }}
+                className="block hover:text-secondary"
+              >
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
+                Air Ticketing
+              </Link>
+              <Link
+                to="/services"
+                onClick={(e) => {
+                  // e.preventDefault();
+                  handleServiceLinkClick("tour");
+                }}
+                className="block hover:text-secondary"
+              >
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
+                Tour Packages
+              </Link>
+              <Link
+                to="/services"
+                onClick={(e) => {
+                  // e.preventDefault();
+                  handleServiceLinkClick("train");
+                }}
+                className="block hover:text-secondary"
+              >
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
+                Train Ticketing
+              </Link>
+              <Link
+                to="/services"
+                onClick={(e) => {
+                  // e.preventDefault();
+                  handleServiceLinkClick("bus");
+                }}
+                className="block hover:text-secondary"
+              >
                 <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
                 Bus Booking Services
+              </Link>
+              <Link
+                to="/services"
+                onClick={(e) => {
+                  // e.preventDefault();
+                  handleServiceLinkClick("passport");
+                }}
+                className="block hover:text-secondary"
+              >
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
+                Passport & Visa Services
               </Link>
             </div>
           </div>
@@ -151,25 +192,25 @@ const Footer = () => {
                   <FaPhoneAlt className="inline-block mr-2" />
                 </a>
                 <a href="tel:+91-9935115786">+91-9935115786</a>,
-                <a href="tel:+91-8604778866"> 8604778866</a>
+                <a href="tel:+91-7860021563"> 7860021563</a>
               </p>
               <p>
                 <GiRotaryPhone className="inline-block mr-2" />
                 <a href="tel:05224077786">0522-4077786</a>,
-                <a href="tel:05224066686"> 4066686</a>,
+                <a href="tel:052242700786"> 2700786</a>,
                 <a href="tel:05222312786"> 2312786</a>
               </p>
               <p>
-                <a href="mailto:xpresstt@yahoo.com">
+                <a href="mailto:info@xpresstourtravels.com">
                   <FaEnvelope className="inline-block mr-2" />
-                  xpresstt@yahoo.com
+                  info@xpresstourtravels.com
                 </a>
               </p>
               <div>
                 <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA">
                   <FaLocationDot className="inline-block mr-2" />
-                  45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, Uttar
-                  Pradesh 226016
+                  45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, UP
+                  226016
                 </a>
               </div>
             </div>

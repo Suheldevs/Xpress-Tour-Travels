@@ -32,7 +32,7 @@ const AboutUs = () => {
 
       {/* About Us Section */}
       <div className="flex flex-col md:flex-row text-justify rounded shadow-xl bg-white md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
-        <div className="flex-[6] md:p-6 p-0 text-justify" data-aos="fade-right">
+        <div className="flex-[6] md:p-6 p-0 text-left" data-aos="fade-right">
           <h2 className="md:text-3xl text-2xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>

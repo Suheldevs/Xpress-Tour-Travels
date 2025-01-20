@@ -26,7 +26,7 @@ const HeroSection = () => {
 
   return (
     <section  className="relative md:h-[90vh] h-[60vh] w-full overflow-hidden bg-gradient-to-b  from-gray-600 to-primary">
-      <video
+      {/* <video
       data-aos='fade-up'
         className="absolute opacity-25 top-0 left-0 h-full   w-full object-cover"
         src="bg-video.mp4" 
@@ -34,7 +34,7 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-      />
+      /> */}
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -54,9 +54,9 @@ const HeroSection = () => {
           </p>
           <div className="md:mt-8 mt-4 flex gap-4 flex-col md:flex-row items-center">
             <div className="border-4 p-1 lg:animate-bounce hover:animate-none border-gray-100 rounded-full">
-            <button className="bg-secondary text-white lg:text-xl text-lg font-semibold md:px-12 px-10 md:py-3 py-2 rounded-full shadow-md transition">
+            <Link to='/contact' className="bg-secondary block text-white lg:text-xl text-lg font-semibold md:px-12 px-10 md:py-3 py-2 rounded-full shadow-md transition">
               Book Now
-            </button>
+            </Link>
             </div>
             <Link to='/services' className="md:block hidden border-4 p-1 border-gray-100 rounded-full">
             <button className="bg-primary hover:bg-primary/60 text-white lg:text-xl text-lg font-semibold px-12 py-3 rounded-full shadow-md transition">

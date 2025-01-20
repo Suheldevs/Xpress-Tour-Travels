@@ -14,6 +14,14 @@ const SocialSidebar = () => {
   return (
     <div className="sidebar fixed md:bottom-[25%] bottom-0 z-50  right-0 transform -translate-y-1/5 mb-4 flex flex-col items-center rounded-l-lg p-2 shadow-lg space-y-5">
       <a
+        href="tel:+91-9935115786"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
+      >
+        <FaPhone className="rotate-90" size={15} />
+      </a>
+      <a
         href="https://api.whatsapp.com/send?phone=9935115786"
         target="_blank"
         rel="noopener noreferrer"
@@ -62,14 +70,7 @@ const SocialSidebar = () => {
         <FaLinkedin size={25} />
       </a> */}
 
-      <a
-        href="tel:+91-9935115786"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
-      >
-        <FaPhone className="rotate-90" size={15} />
-      </a>
+      
     </div>
   );
 };

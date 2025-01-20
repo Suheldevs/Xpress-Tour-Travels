@@ -106,13 +106,13 @@ const ContactUs = () => {
                 <br className="md:block hidden" /> Lucknow, Uttar Pradesh 226016
               </div>
             </a>
-            <a href="mailto:xpresstt@yahoo.com" className="mb-2 flex justify-start items-start gap-2 mt-4">
+            <a href="mailto:info@xpresstourtravels.com" className="mb-2 flex justify-start items-start gap-2 mt-4">
               <MdEmail className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
               <div className="font-sans">
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Mail For Information
                 </div>
-                xpresstt@yahoo.com
+                info@xpresstourtravels.com
               </div>
             </a>
             <a href="tel:+91-8604778866" className="mb-2 flex justify-start items-start gap-2 mt-4">
@@ -121,7 +121,7 @@ const ContactUs = () => {
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Call for Help
                 </div>
-                +91-8604778866, 8604778866
+                +91-8604778866, 7860021563
               </div>
             </a>
             <a href="tel:0522-4077786" className="mb-2 flex justify-start items-start gap-2 mt-4">
@@ -130,10 +130,18 @@ const ContactUs = () => {
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Land Line help
                 </div>
-                0522-4077786, 4066686, 2312786
+                0522-4077786, 2700786, 2312786
               </div>
             </a>
             <p className="flex gap-4 mt-4 ">
+            <a
+                href="tel:+91-9935115786"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
+              >
+                <FaPhone className="rotate-90" size={23} />
+              </a>
               <a
                 href="https://api.whatsapp.com/send?phone=9935115786"
                 target="_blank"
@@ -167,14 +175,7 @@ const ContactUs = () => {
                 <FaInstagram size={30} />
               </a>
 
-              <a
-                href="tel:+91-9935115786"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
-              >
-                <FaPhone className="rotate-90" size={23} />
-              </a>
+              
             </p>
           </div>
           <div className="md:absolute md:block hidden z-[-10] w-[500px] h-[500px] bg-secondary rounded-full transform translate-x-[40%] translate-y-[40%] md:opacity-50 opacity-100"></div>

@@ -33,7 +33,7 @@ const AboutComponent = () => {
             enjoyable ride every time.
           </p>
           <p className="md:text-lg text-base text-gray-700 mt-1">
-            At <span className="font-bold">Xpress Tour & Travel</span>, we
+            At <span className="font-bold">Xpress Tour & Travels</span>, we
             prioritize convenience and flexibility. Our easy booking
             system and <span className="font-bold">
             24/7 customer support

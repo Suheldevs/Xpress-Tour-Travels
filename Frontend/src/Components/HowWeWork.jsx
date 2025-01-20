@@ -13,19 +13,19 @@ const HowWeWork = () => {
       bgClass: "", // Optional: Customize background for each step
     },
     {
+      icon: <FaCarAlt className="text-slate-800 text-4xl mx-auto mb-4" />,
+      title: "Pick-up Car",
+      description: "Arrive at the scheduled time to pick up your car.",
+      bgClass: "bg-gray-200 rounded-lg p-2", // Optional: Customize background for each step
+    },
+    {
       icon: (
         <FaMoneyCheckAlt className="text-slate-800 text-4xl mx-auto mb-4" />
       ),
       title: "Booking Payment",
       description:
         "After reserving, finalize your booking with a secure payment.",
-      bgClass: "bg-gray-200 rounded-lg p-2 ", // Example background class
-    },
-    {
-      icon: <FaCarAlt className="text-slate-800 text-4xl mx-auto mb-4" />,
-      title: "Pick-up Car",
-      description: "Arrive at the scheduled time to pick up your car.",
-      bgClass: "", // Optional: Customize background for each step
+      bgClass: " ", // Example background class
     },
   ];
 
