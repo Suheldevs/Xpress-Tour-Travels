@@ -6,13 +6,13 @@ const services = [
     title: "Cab Rental Services",
     id:'cab',
     image: "car-rental.webp",
-    content: `We provide a wide range of vehicles to suit every need and budget. From compact city cars like Tata Indica to luxury vehicles such as Toyota Innova, Honda Civic, Skoda, and Fortuner, our fleet is well-maintained and ready for your journey. All vehicles come with professional drivers who are trained to ensure comfort, safety, and an enjoyable experience. We also offer additional services such as GPS navigation, air conditioning, and child safety seats for family travel. Whether you are on a business trip, family vacation, or special occasion, we have the perfect vehicle for you.`,
+    content: `We offer a wide range of vehicles to suit every need and budget, from compact and reliable cars like the Maruti Suzuki Dzire and Tata Tigor to luxurious options such as BMW, Mercedes, and Audi. For families and groups, we provide spacious models like the Toyota Innova, Fortuner, and Tempo Traveller, as well as large buses for up to 50 passengers. Each vehicle is well-maintained and driven by professional chauffeurs, ensuring comfort, safety, and convenience. Additional features like GPS, air conditioning, and child safety seats make every journey seamless—perfect for business trips, family vacations, or special occasions.`,
   },
   {
     title: "Air Ticketing Services",
     id:'air',
     image: "Air-Ticketing-services.jpg", 
-    content: `We provide air ticket booking services for both domestic and international flights. Whether you're flying for business, leisure, or an emergency, we ensure you get the best prices with our special rates. Our team works with all major airlines, allowing you to book your flights with ease and convenience. Additionally, we offer services like seat selection, web check-in, and booking management. If you're traveling during peak seasons, our team can assist with securing tickets for hard-to-get flights, ensuring a smooth and hassle-free booking experience. Our commitment is to provide timely, affordable, and reliable travel solutions.`,
+    content: `We offer comprehensive Air Ticket Booking Services for domestic and international flights, catering to business, leisure, and emergency travel. Our team partners with major airlines to provide the best prices and special rates. We simplify your travel experience with services like seat selection, web check-in, and booking management. During peak seasons, we excel at securing hard-to-get tickets, ensuring a smooth and hassle-free booking process. Trust us for timely, affordable, and reliable travel solutions. If you're traveling during peak seasons, ensuring a smooth and hassle-free booking experience.`,
   },
   {
     title: "Tour Packages",
@@ -74,11 +74,11 @@ const Services = () => {
             </div>
 
             {/* Right Side (Content) */}
-            <div className="w-full md:w-1/2 md:pl-6 px-2 md:px-0 ">
-              <h2 className="md:text-4xl text-2xl font-semibold mb-4">{service.title}</h2>
+            <div className={`w-full md:w-1/2 ${index % 2 != 0 ? 'md:pr-4':'md:pl-4' }  px-2 md:px-0 `}>
+              <h2 className="md:text-4xl text-2xl font-semibold mb-4 ">{service.title}</h2>
               <p className=" leading-relaxed text-justify">{service.content}</p>
               <div className={` text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
-            <Link to='/contact' className="bg-secondary btn2 ease-in-out block  lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
+            <Link to='/contact' className="bg-secondary btn2 ease-in-out block  md:mb-0 mb-4 lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
               Enquire Now
             </Link>
             </div>

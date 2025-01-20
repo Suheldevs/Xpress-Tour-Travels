@@ -19,7 +19,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"
       >
-        <FaPhone className="rotate-90" size={15} />
+        <FaPhone className="rotate-90" size={17} />
       </a>
       <a
         href="https://api.whatsapp.com/send?phone=9935115786"
@@ -35,7 +35,7 @@ const SocialSidebar = () => {
         rel="noopener noreferrer"
         className="bg-red-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
       >
-        <FaYoutube size={30} />
+        <FaYoutube size={27} />
       </a>
       <a
         href="https://www.facebook.com/people/xpress-tour-and-travels/61569937321411/"

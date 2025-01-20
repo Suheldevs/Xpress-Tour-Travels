@@ -175,9 +175,9 @@ export default function ServicesSection() {
     <div
     data-aos='fade-up'
       key={service.id}
-      className={` bg-gray-50 max-h-[350px] border rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col`}
+      className={` bg-gray-50 max-h-[380px] border rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col`}
     >
-      <div className="h-40">
+      <div className="h-48">
         <img
           src={service.image}
           alt={service.title}

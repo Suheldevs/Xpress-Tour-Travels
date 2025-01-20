@@ -253,7 +253,7 @@ const BookCar = () => {
             <FaChevronRight size={12} />
           </div> */}
         </Swiper>
-        <div className="custom-pagination flex justify-center md:mt-6 mt-0 mb-2  hover:cursor-pointer"></div>
+        <div className="custom-pagination flex justify-center md:mt-6 mt-2 mb-2  hover:cursor-pointer"></div>
       </div>
     </div>
   );
