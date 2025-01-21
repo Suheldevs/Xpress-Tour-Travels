@@ -13,7 +13,7 @@ const carData = [
   {
     id: 10,
     name: "Toyota Crysta",
-    price: "18/- per km",
+    price: "16/- per km",
     image: "cars/ToyotaC.png",
     description: "Luxury and Performance",
     seats: 7,
@@ -22,7 +22,7 @@ const carData = [
   {
     id: 4,
     name: "Maruti Suzuki Dzire",
-    price: "12/- per km",
+    price: "10/- per km",
     image: "cars/MarutiSuzukiDzire.png",
     description: "Affordable and Reliable",
     seats: 4,
@@ -31,17 +31,25 @@ const carData = [
   {
     id: 8,
     name: "Toyota Rumion",
-    price: "15/- per km",
+    price: "14/- per km",
     image: "cars/ToyotaRumion.png",
     description: "Spacious Family Car",
     seats: 6,
     engine: "Petrol",
   },
-  
+  {
+    id: 9,
+    name: "Toyota Innova",
+    price: "15/- per km",
+    image: "cars/Toyota.png",
+    description: "Trusted for Long Drives",
+    seats: 7,
+    engine: "Diesel",
+  },
   {
     id: 5,
     name: "Toyota Glanza",
-    price: "14/- per km",
+    price: "10/- per km",
     image: "cars/glance.png",
     description: "Compact and Comfortable",
     seats: 4,
@@ -50,7 +58,7 @@ const carData = [
   {
     id: 6,
     name: "Honda Amaze",
-    price: "13/- per km",
+    price: "10/- per km",
     image: "cars/Honda.png",
     description: "Smooth and Stylish",
     seats: 4,
@@ -59,7 +67,7 @@ const carData = [
   {
     id: 7,
     name: "Tata Tigor",
-    price: "12/- per km",
+    price: "10/- per km",
     image: "cars/TataTigore.png",
     description: "Value for Money",
     seats: 4,
@@ -67,19 +75,9 @@ const carData = [
   },
  
   {
-    id: 9,
-    name: "Toyota Innova",
-    price: "16/- per km",
-    image: "cars/Toyota.png",
-    description: "Trusted for Long Drives",
-    seats: 7,
-    engine: "Diesel",
-  },
- 
-  {
     id: 11,
     name: "Toyota Fortuner",
-    price: "25/- per km",
+    price: "50/- per km",
     image: "cars/ToyotaFor.png",
     description: "Luxury SUV for Adventures",
     seats: 6,
@@ -88,7 +86,7 @@ const carData = [
   {
     id: 12,
     name: "Tempo Traveller (12/18/25 Seater)",
-    price: "30/- per km",
+    price: "25-35/- per km",
     image: "cars/tempo.png",
     description: "Perfect for Group Travel",
     seats: 12,
@@ -97,7 +95,7 @@ const carData = [
   {
     id: 13,
     name: "Bus (AC / Non AC / Luxury)",
-    price: "40/- per km",
+    price: "AS PER REQ.",
     image: "cars/bus.png",
     description: "Large Capacity for Long Journeys",
     seats: 50,
@@ -106,7 +104,7 @@ const carData = [
   {
     id: 1,
     name: "BMW",
-    price: "50/- per km",
+    price: "90/- per km",
     image: "cars/bmw.png",
     description: "Luxury and Comfort Redefined",
     seats: 4,
@@ -115,7 +113,7 @@ const carData = [
   {
     id: 2,
     name: "Mercedes",
-    price: "55/- per km",
+    price: "80/- per km",
     image: "cars/Mercedes.png",
     description: "Premium Driving Experience",
     seats: 4,
@@ -125,7 +123,7 @@ const carData = [
   {
     id: 3,
     name: "Audi",
-    price: "53/- per km",
+    price: "85/- per km",
     image: "cars/audi.png",
     description: "Performance and Elegance",
     seats: 4,
