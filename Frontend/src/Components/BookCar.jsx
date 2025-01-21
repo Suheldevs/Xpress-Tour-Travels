@@ -16,7 +16,7 @@ const carData = [
     price: "16/- per km",
     image: "cars/ToyotaC.png",
     description: "Luxury and Performance",
-    seats: 7,
+    seats: 6+1,
     engine: "Diesel",
   },
   {
@@ -25,7 +25,7 @@ const carData = [
     price: "10/- per km",
     image: "cars/MarutiSuzukiDzire.png",
     description: "Affordable and Reliable",
-    seats: 4,
+    seats: 4+1,
     engine: "Petrol",
   },
   {
@@ -34,7 +34,7 @@ const carData = [
     price: "14/- per km",
     image: "cars/ToyotaRumion.png",
     description: "Spacious Family Car",
-    seats: 6,
+    seats: 6+1,
     engine: "Petrol",
   },
   {
@@ -51,8 +51,8 @@ const carData = [
     name: "Toyota Glanza",
     price: "10/- per km",
     image: "cars/glance.png",
-    description: "Compact and Comfortable",
-    seats: 4,
+    description: "Compact and Comfortable",l
+    seats: 4+1,
     engine: "Petrol",
   },
   {
@@ -61,7 +61,7 @@ const carData = [
     price: "10/- per km",
     image: "cars/Honda.png",
     description: "Smooth and Stylish",
-    seats: 4,
+    seats: 4+1,
     engine: "Petrol",
   },
   {
@@ -70,7 +70,7 @@ const carData = [
     price: "10/- per km",
     image: "cars/TataTigore.png",
     description: "Value for Money",
-    seats: 4,
+    seats: 4+1,
     engine: "Petrol",
   },
  
@@ -80,7 +80,7 @@ const carData = [
     price: "50/- per km",
     image: "cars/ToyotaFor.png",
     description: "Luxury SUV for Adventures",
-    seats: 6,
+    seats: 6+1,
     engine: "Diesel",
   },
   {
@@ -89,7 +89,7 @@ const carData = [
     price: "25-35/- per km",
     image: "cars/tempo.png",
     description: "Perfect for Group Travel",
-    seats: 12,
+    seats: 12-25,
     engine: "Diesel",
   },
   {
@@ -107,7 +107,7 @@ const carData = [
     price: "90/- per km",
     image: "cars/bmw.png",
     description: "Luxury and Comfort Redefined",
-    seats: 4,
+    seats: 5+1,
     engine: "Petrol",
   },
   {
@@ -116,7 +116,7 @@ const carData = [
     price: "80/- per km",
     image: "cars/Mercedes.png",
     description: "Premium Driving Experience",
-    seats: 4,
+    seats: 6+1,
     engine: "Petrol",
   },
   
@@ -126,7 +126,7 @@ const carData = [
     price: "85/- per km",
     image: "cars/audi.png",
     description: "Performance and Elegance",
-    seats: 4,
+    seats: 4+1,
     engine: "Petrol",
   },
 
