@@ -16,17 +16,18 @@ const carData = [
     price: "16/- per km",
     image: "cars/ToyotaC.png",
     description: "Luxury and Performance",
-    seats: 6+1,
+    seats: "7/8",
     engine: "Diesel",
   },
+
   {
-    id: 4,
-    name: "Maruti Suzuki Dzire",
-    price: "10/- per km",
-    image: "cars/MarutiSuzukiDzire.png",
-    description: "Affordable and Reliable",
-    seats: 4+1,
-    engine: "Petrol",
+    id: 9,
+    name: "Toyota Innova",
+    price: "15/- per km",
+    image: "cars/Toyota.png",
+    description: "Trusted for Long Drives",
+    seats: "7/8",
+    engine: "Diesel",
   },
   {
     id: 8,
@@ -34,25 +35,25 @@ const carData = [
     price: "14/- per km",
     image: "cars/ToyotaRumion.png",
     description: "Spacious Family Car",
-    seats: 6+1,
+    seats: "7/8",
     engine: "Petrol",
   },
   {
-    id: 9,
-    name: "Toyota Innova",
-    price: "15/- per km",
-    image: "cars/Toyota.png",
-    description: "Trusted for Long Drives",
-    seats: 7,
-    engine: "Diesel",
+    id: 4,
+    name: "Maruti Suzuki Dzire",
+    price: "10/- per km",
+    image: "cars/MarutiSuzukiDzire.png",
+    description: "Affordable and Reliable",
+    seats: "5",
+    engine: "Petrol",
   },
   {
     id: 5,
     name: "Toyota Glanza",
     price: "10/- per km",
     image: "cars/glance.png",
-    description: "Compact and Comfortable",l
-    seats: 4+1,
+    description: "Compact and Comfortable",
+    seats: "5",
     engine: "Petrol",
   },
   {
@@ -61,7 +62,7 @@ const carData = [
     price: "10/- per km",
     image: "cars/Honda.png",
     description: "Smooth and Stylish",
-    seats: 4+1,
+    seats: "5",
     engine: "Petrol",
   },
   {
@@ -70,26 +71,26 @@ const carData = [
     price: "10/- per km",
     image: "cars/TataTigore.png",
     description: "Value for Money",
-    seats: 4+1,
+    seats: "5",
     engine: "Petrol",
   },
- 
+
   {
     id: 11,
     name: "Toyota Fortuner",
     price: "50/- per km",
     image: "cars/ToyotaFor.png",
     description: "Luxury SUV for Adventures",
-    seats: 6+1,
+    seats: "7/8",
     engine: "Diesel",
   },
   {
     id: 12,
-    name: "Tempo Traveller (12/18/25 Seater)",
+    name: "Tempo Traveller",
     price: "25-35/- per km",
     image: "cars/tempo.png",
     description: "Perfect for Group Travel",
-    seats: 12-25,
+    seats: "12/18/25",
     engine: "Diesel",
   },
   {
@@ -98,7 +99,7 @@ const carData = [
     price: "AS PER REQ.",
     image: "cars/bus.png",
     description: "Large Capacity for Long Journeys",
-    seats: 50,
+    seats: "40/50/60",
     engine: "Diesel",
   },
   {
@@ -107,7 +108,7 @@ const carData = [
     price: "90/- per km",
     image: "cars/bmw.png",
     description: "Luxury and Comfort Redefined",
-    seats: 5+1,
+    seats: "5/7",
     engine: "Petrol",
   },
   {
@@ -116,22 +117,20 @@ const carData = [
     price: "80/- per km",
     image: "cars/Mercedes.png",
     description: "Premium Driving Experience",
-    seats: 6+1,
+    seats: "5/7",
     engine: "Petrol",
   },
-  
+
   {
     id: 3,
     name: "Audi",
     price: "85/- per km",
     image: "cars/audi.png",
     description: "Performance and Elegance",
-    seats: 4+1,
+    seats: 4 + 1,
     engine: "Petrol",
   },
-
 ];
-
 
 const BookCar = () => {
   return (
@@ -156,13 +155,18 @@ const BookCar = () => {
                 />
               </svg>
             </div>
-            <h1 className="text-gray-100 text-xl md:text-4xl">Experience the Best Cars</h1>
+            <h1 className="text-gray-100 text-xl md:text-4xl">
+              Experience the Best Cars
+            </h1>
           </div>
           <p className=" text-gray-200 md:text-base text-sm md:px-0 px-10">
             Please choose your preferred car from below
           </p>
           <div className="md:mt-4 mt-2 text-sm flex justify-center space-x-4">
-            <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA" className="px-4 py-2 cursor-pointer rounded-full bg-white text-primary font-medium">
+            <a
+              href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA"
+              className="px-4 py-2 cursor-pointer rounded-full bg-white text-primary font-medium"
+            >
               Pick From Lucknow
             </a>
           </div>
@@ -171,11 +175,15 @@ const BookCar = () => {
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
-          modules={[Navigation, Pagination, Scrollbar]}
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
           // navigation={{
           //   nextEl: ".swiper-button-next",
           //   prevEl: ".swiper-button-prev",
           // }}
+          autoplay={{
+            delay: 1200,
+            disableOnInteraction: true,
+          }}
           navigation={false}
           pagination={{ clickable: true, el: ".custom-pagination" }}
           loop={true}
@@ -202,7 +210,7 @@ const BookCar = () => {
             <SwiperSlide key={car.id}>
               <div
                 data-aos="flip-right"
-                className="bg-gray-50 shadow-xl rounded-lg overflow-hidden cursor-grab "
+                className="bg-gray-50 shadow-xl rounded-lg overflow-hidden "
               >
                 <img
                   src={car.image}
@@ -232,7 +240,10 @@ const BookCar = () => {
                           <span>{car.seats}</span>
                         </div>
                       </div>
-                      <Link to='/contact' className="border- inline-block p-1 mt-2 w-full border-primary rounded-full hover:scale-105 transition-all duration-100">
+                      <Link
+                        to="/contact"
+                        className="border- inline-block p-1 mt-2 w-full border-primary rounded-full hover:scale-105 transition-all duration-100"
+                      >
                         <button className="bg-primary text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
                           Book Now
                         </button>

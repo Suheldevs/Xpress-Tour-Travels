@@ -12,7 +12,7 @@ import {
 
 const SocialSidebar = () => {
   return (
-    <div className="sidebar fixed md:bottom-[25%] bottom-0 z-50  right-0 transform -translate-y-1/5 mb-4 flex flex-col items-center rounded-l-lg p-2 shadow-lg space-y-5">
+    <div className="sidebar fixed md:bottom-[25%] bottom-0 z-50  right-0 transform -translate-y-1/5 mb-4 flex  flex-col items-center rounded-l-lg p-2 shadow-lg space-y-5">
       <a
         href="tel:+91-9935115786"
         target="_blank"

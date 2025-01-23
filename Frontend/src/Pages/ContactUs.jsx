@@ -121,7 +121,7 @@ const ContactUs = () => {
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Call for Help
                 </div>
-                +91-8604778866, 7860021563
+                +91-8604778866, 7860021583
               </div>
             </a>
             <a href="tel:0522-4077786" className="mb-2 flex justify-start items-start gap-2 mt-4">

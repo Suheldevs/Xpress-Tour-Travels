@@ -6,7 +6,7 @@ const FeatureSection = () => {
     <section className="bg-primary py-8 lg:py-12 md:py-10">
       <div data-aos="fade-up" className="max-w-7xl mx-auto px-2 sm:px-12 lg:px-16">
         <div className="grid md:grid-cols-4 grid-cols-1 border rounded-2xl  border-white/10 bg-white/5">
-          <div className="flex-1 text-center rounded-lg shadow-md p-6 first">
+          <div className="flex-1 text-center shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
             <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-4">
               <FaMoneyBillAlt className="text-5xl"/>
             </div>
@@ -17,7 +17,7 @@ const FeatureSection = () => {
             </p>
           </div>
 
-          <div className="flex-1  text-center rounded-3xl shadow-md p-6 second border border-gray-300 bg-white/10">
+          <div className="flex-1  text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
             <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-4">
               <FaShieldAlt className="text-5xl"/>
             </div>
@@ -28,7 +28,7 @@ const FeatureSection = () => {
             </p>
           </div>
 
-          <div className="flex-1 text-center rounded-lg shadow-md p-6 third">
+          <div className="flex-1 text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
             <div className="flex justify-center items-center w-14 h-14 mx-auto  text-white rounded-full mb-4">
               <FaHeadset className="text-5xl" />
             </div>
@@ -39,7 +39,7 @@ const FeatureSection = () => {
             </p>
           </div>
 
-          <div className="flex-1 text-center  shadow-md p-6 ">
+          <div className="flex-1 text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
             <div className="flex justify-center items-center w-14 h-14 mx-auto text-white rounded-full mb-4">
               <FaClipboardList className="text-5xl"/>
             </div>

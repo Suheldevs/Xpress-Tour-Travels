@@ -11,7 +11,7 @@ const BottomFooter = () => {
     <div className="flex flex-wrap items-center justify-center gap-1 text-center">
       <p className="text-white">Copyright</p>
       <FaRegCopyright className="text-[1rem]" />
-      <p className="text-white">{new Date().getFullYear()} Express Tour & Travels</p>
+      <p className="text-white">{new Date().getFullYear()} Xpress Tour & Travels</p>
       <span className="hidden sm:inline-block">||</span>
       <p className="text-white">All Rights Reserved</p>
       <span className="hidden sm:inline-block">||</span>

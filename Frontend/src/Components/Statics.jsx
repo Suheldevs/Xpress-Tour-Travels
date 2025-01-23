@@ -5,7 +5,7 @@ import { AiOutlineSafety } from "react-icons/ai";
 
 const stats = [
     { id: 4, icon: <img src='statics/experience-4.svg'className="h-full w-full"/>, title: "Happy Clients", value: "100000+" },
-  { id: 1, icon: <img src='statics/experience-1.svg'className="h-full w-full"/>, title: "Years Of Experience", value: "16+" },
+  { id: 1, icon: <img src='statics/experience-1.svg'className="h-full w-full"/>, title: "Years Of Experience", value: "27+" },
   { id: 2, icon: <img src='statics/driver.png'className="h-full w-full"/>, title: "Professional Drivers", value: "100%" },
   { id: 3, icon: <AiOutlineSafety className="h-full w-full"/>, title: "Safety", value: "100%" },
 ];

@@ -51,7 +51,7 @@ const Footer = () => {
             >
               <img src="xpress.jpg" className="h-24 rounded-full" />
             </Link>
-            <h2 className="text-xl font-bold text-secondary text-center mb-4">
+            <h2 className="text-xl mt-3 font-bold text-secondary text-center mb-4">
               <Link to="/" onClick={handleLogoClick}>
                 {" "}
                 Xpress Tour & Travels{" "}
