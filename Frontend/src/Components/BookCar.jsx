@@ -88,7 +88,7 @@ const carData = [
     id: 12,
     name: "Tempo Traveller",
     price: "25-35/- per km",
-    image: "cars/tempo.png",
+    image: "cars/Tempo.png",
     description: "Perfect for Group Travel",
     seats: "12/18/25",
     engine: "Diesel",
@@ -175,30 +175,28 @@ const BookCar = () => {
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
+          slidesPerGroup={Math.ceil(carData.length / 11)} // Groups slides into 11 dots
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-          // navigation={{
-          //   nextEl: ".swiper-button-next",
-          //   prevEl: ".swiper-button-prev",
-          // }}
           autoplay={{
-            delay: 1200,
-            disableOnInteraction: true,
+            delay: 5000,
+            disableOnInteraction: false,
           }}
           navigation={false}
-          pagination={{ clickable: true, el: ".custom-pagination" }}
-          loop={true}
+          pagination={{
+            clickable: true,
+            el: ".custom-pagination", // Attach to custom pagination element
+          }}
+          loop={false} // Ensure it doesn't loop to prevent confusion
           centeredSlides={false}
           breakpoints={{
             640: {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-
             768: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -206,6 +204,9 @@ const BookCar = () => {
           }}
           className="px-4 max-w-6xl mx-auto"
         >
+
+        
+
           {carData.map((car) => (
             <SwiperSlide key={car.id}>
               <div
@@ -218,16 +219,14 @@ const BookCar = () => {
                   className="w-full h-48 hover:scale-110 transition-all ease-in-out duration-300 overflow-hidden object-cover"
                 />
                 <div className="p-4 bg-slate-200 rounded-xl">
-                  <h3 className="text-xl font-semibold text-primary">
-                    {car.name}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-primary">{car.name}</h3>
                   <div className="items-center text-primary/90">
                     <span>{car.description}</span>
                     <div className="">
                       <span>Start Price Per KM: </span>
                       <span className="font-semibold">{car.price}</span>
-                      <div className="flex w-full justify-start gap-6  rounded font-bold pt-2 pb-1 px-1">
-                        <div className="flex justify-center items-center gap-2  text-lg">
+                      <div className="flex w-full justify-start gap-6 rounded font-bold pt-2 pb-1 px-1">
+                        <div className="flex justify-center items-center gap-2 text-lg">
                           <TbAirConditioning className="text-2xl" />
                           <span>AC</span>
                         </div>
@@ -255,13 +254,12 @@ const BookCar = () => {
             </SwiperSlide>
           ))}
 
-          {/* <div className="swiper-button-prev bg-primary absolute top-1/2 left-1  transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
-            <FaChevronLeft size={12} />
-          </div>
-          <div className="swiper-button-next bg-primary absolute top-1/2 right-1 transform -translate-y-1/2 z-10 text-white p-3 rounded-full shadow-md hover:bg-gray-600 transition cursor-pointer">
-            <FaChevronRight size={12} />
-          </div> */}
+          <div className="custom-pagination flex justify-center md:mt-6 mt-2 mb-2 hover:cursor-pointer"></div>
         </Swiper>
+
+
+
+
         <div className="custom-pagination flex justify-center md:mt-6 mt-2 mb-2  hover:cursor-pointer"></div>
       </div>
     </div>

@@ -17,6 +17,18 @@ const FeatureSection = () => {
             </p>
           </div>
 
+
+          <div className="flex-1 text-center  shadow-md p-6 border border-gray-300 bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
+            <div className="flex justify-center items-center w-14 h-14 mx-auto  text-white rounded-full mb-4">
+              <FaHeadset className="text-5xl" />
+            </div>
+            <h2 className="text-white font-bold  mb-1">24/7 Support</h2>
+            <div className="opacity-50"><hr/></div>
+            <p className="text-gray-400 mt-4">
+              Our team is here for you anytime, offering assistance around the clock.
+            </p>
+          </div>
+
           <div className="flex-1  text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
             <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-4">
               <FaShieldAlt className="text-5xl"/>
@@ -28,16 +40,7 @@ const FeatureSection = () => {
             </p>
           </div>
 
-          <div className="flex-1 text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
-            <div className="flex justify-center items-center w-14 h-14 mx-auto  text-white rounded-full mb-4">
-              <FaHeadset className="text-5xl" />
-            </div>
-            <h2 className="text-white font-bold  mb-1">24/7 Support</h2>
-            <div className="opacity-50"><hr/></div>
-            <p className="text-gray-400 mt-4">
-              Our team is here for you anytime, offering assistance around the clock.
-            </p>
-          </div>
+        
 
           <div className="flex-1 text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
             <div className="flex justify-center items-center w-14 h-14 mx-auto text-white rounded-full mb-4">
@@ -49,6 +52,9 @@ const FeatureSection = () => {
               Enjoy a quick, hassle-free booking process—reserve your car in minutes.
             </p>
           </div>
+
+
+
         </div>
       </div>
     </section>

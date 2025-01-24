@@ -79,7 +79,7 @@ const HowWeWork = () => {
                   <h4 className="text-2xl font-medium text-gray-800">
                     {step.title}
                   </h4>
-                  <p className="text-gray-600 text-sm mt-2">
+                  <p className="text-gray-600 text-sm mt-2 text-left">
                     {step.description}
                   </p>
                 </div>

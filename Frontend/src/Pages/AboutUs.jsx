@@ -37,7 +37,7 @@ const AboutUs = () => {
             Best Cab Rental Services In Lucknow
           </h2>
           <div className="md:text-left text-center">
-            <p className="md:text-lg text-base text-gray-700 text-justify">
+            <p className="md:text-lg text-base text-gray-700 text-left">
               <span className="font-bold">
                 Welcome to Xpress Tour & Travels
               </span>

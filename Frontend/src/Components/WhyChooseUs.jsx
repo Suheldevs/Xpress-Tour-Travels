@@ -1,12 +1,12 @@
 import React from "react";
 import { FaClock, FaSuitcaseRolling, FaPlaneDeparture, FaAward, FaCarSide, FaPassport } from "react-icons/fa"; // Add new icons for car rental and tour
-
+import { FaCarAlt } from "react-icons/fa";
 const WhyChooseUs = () => {
   const reasons = [
-    { icon: <FaClock size={40} />, title: "24/7 Availability" },
+    { icon: <FaCarAlt size={40} />, title: "Variety of Vehicles" },
     { icon: <FaSuitcaseRolling size={40} />, title: "Customized Luxury Planning" },
     { icon: <FaPlaneDeparture size={40} />, title: "Cheapest Fares Guaranteed" },
-    { icon: <FaAward size={40} />, title: "16+ Years of Expertise" },
+    { icon: <FaAward size={40} />, title: "Reliability" },
     { icon: <FaCarSide size={40} />, title: "Hassle-Free Booking" }, 
     { icon: <FaPassport size={40} />, title: "Exclusive Travel Packages" }, 
   ];

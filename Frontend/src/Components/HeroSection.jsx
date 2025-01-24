@@ -42,16 +42,22 @@ const HeroSection = () => {
       {/* Content */}
       <div  className="relative z-10 flex flex-col md:flex-row  md:pt-14  h-full items-center md:justify-start md:mt-14 mt-10  md:px-8 px-0 justify-center md:text-left text-center">
         <div data-aos='fade-down' className="md:w-8/12 w-full flex flex-col justify-center md:pl-12 px-4 md:px-0 pb-10 items-center md:items-start text-white">
-          <p className=" sm:text-lg bg-opacity-70 bg-black py-2 px-4 rounded-full w-fit flex justify-center items-center gap-2">
+          {/* <p className=" sm:text-lg bg-opacity-70 bg-black py-2 px-4 rounded-full w-fit flex justify-center items-center gap-2">
          <span ><FaCar className=""/></span>Welcome to Xpress Tour & Travels
+          </p> */}
+          <p className=" sm:text-lg lg:text-[2.5rem] md:text-[2rem] font-bold bg-opacity-70 bg-black py-4 pl-2 lg:pr-6 md:pr-0 rounded-r-full w-fit flex justify-center items-center gap-2 ">
+         <span ><FaCar className="text-secondary md:mr-4"/></span>Xpress Tour & Travels
           </p>
-          <h1 className="text-2xl md:text-5xl  font-bold mt-2 ">
+          <div className="flex flex-col lg:flex-row items-center gap-2">
+          <h1 className="text-2xl md:text-[1.5rem]  font-bold mt-2 ">
             Explore More, Pay Less 
-            <div className="text-secondary md:mt-2 mt-1">Hassle-Free Travel Services</div>
           </h1>
-          <p className="mt-4 text-lg md:block hidden font-medium">
+          <div className="text-secondary md:mt-2 mt-1 text-xl font-bold">Hassle-Free Travel Services</div>
+          </div>
+  
+          {/* <p className="mt-4 text-lg md:block hidden font-medium">
             Your Trusted Travel Partner
-          </p>
+          </p> */}
           <div className="md:mt-8 mt-4 flex gap-4 flex-col md:flex-row items-center">
             <div className="border-4 p-1 lg:animate-bounce hover:animate-none border-gray-100 rounded-full">
             <Link to='/contact' className="bg-secondary block text-white lg:text-xl text-lg font-semibold md:px-12 px-10 md:py-3 py-2 rounded-full shadow-md transition">

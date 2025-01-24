@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   FaFacebookF,
@@ -14,6 +14,7 @@ import {
 import { GiRotaryPhone } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
 import BottomFooter from "./CopyRightsection";
+import Aos from "aos";
 
 const Footer = () => {
   const location = useLocation();
@@ -34,6 +35,19 @@ const Footer = () => {
     });
   };
 
+
+    useEffect(() => {
+      // Initialize AOS
+      Aos.init({
+        duration: 1000, // Set animation duration (optional)
+        once: true,     // Trigger animation only once
+      }); 
+      // Optional: Reset AOS on route change if you're using React Router
+      return () => {
+        Aos.refresh();  // Refresh AOS when component unmounts
+      };
+    }, []);  // Empty array to run this effect only once
+
   return (
     <footer className="bg-primary text-white pt-12 pb-2" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
@@ -51,7 +65,7 @@ const Footer = () => {
             >
               <img src="xpress.jpg" className="h-24 rounded-full" />
             </Link>
-            <h2 className="text-xl mt-3 font-bold text-secondary text-center mb-4">
+            <h2 className="text-xl mt-3 font-bold text-secondary text-center mb-2">
               <Link to="/" onClick={handleLogoClick}>
                 {" "}
                 Xpress Tour & Travels{" "}

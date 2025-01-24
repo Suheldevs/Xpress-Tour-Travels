@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import Aos from "aos";
 const services = [
   {
     title: "Cab Rental Services",
@@ -42,10 +42,21 @@ const services = [
 
 const Services = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-     }, []);
+    // Initialize AOS
+    Aos.init({
+      duration: 1000, // Set animation duration (optional)
+      once: true,     // Trigger animation only once
+    });
+    window.scrollTo(0, 0);  // Ensure the page scrolls to the top on refresh
+
+    // Optional: Reset AOS on route change if you're using React Router
+    return () => {
+      Aos.refresh();  // Refresh AOS when component unmounts
+    };
+  }, []);  // Empty array to run this effect only once
   return (
     <div className="">
+  
      <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12  font-bold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Our Services</div>
@@ -57,6 +68,7 @@ const Services = () => {
         </div>
       </h1>
     <div className="space-y-6 md:px-8 px-2 mb-8">
+
         {services.map((service, index) => (
           <div
           data-aos='fade-up'
@@ -76,7 +88,7 @@ const Services = () => {
             {/* Right Side (Content) */}
             <div className={`w-full md:w-1/2 ${index % 2 != 0 ? 'md:pr-4':'md:pl-4' }  px-2 md:px-0 `}>
               <h2 className="md:text-4xl text-2xl font-semibold mb-4 ">{service.title}</h2>
-              <p className=" leading-relaxed text-justify">{service.content}</p>
+              <p className=" leading-relaxed text-left">{service.content}</p>
               <div className={` text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
             <Link to='/contact' className="bg-secondary btn2 ease-in-out block  md:mb-0 mb-4 lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
               Enquire Now
