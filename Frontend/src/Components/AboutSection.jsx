@@ -22,7 +22,7 @@ const AboutComponent = () => {
         </div>
 
         {/* Content Section */}
-        <div className="text-justify">
+        <div className="md:text-justify text-start ">
           <p className="md:text-lg text-base text-gray-700">
               Our fleet of well-maintained vehicles
           
