@@ -36,8 +36,8 @@ const AboutUs = () => {
           <h2 className="md:text-3xl text-2xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>
-          <div className="md:text-left text-center">
-            <p className="md:text-lg text-base text-gray-700 text-left">
+          <div className="=">
+            <p className="md:text-lg text-base text-gray-700 lg:text-justify text-start">
               <span className="font-bold">
                 Welcome to Xpress Tour & Travels
               </span>
@@ -53,26 +53,27 @@ const AboutUs = () => {
           </div>
 
           {/* Content Section */}
-          <div className="text-justify">
-            <p className="md:text-lg text-base text-gray-700">
-              We are approved by the{" "}
-              <span className="font-bold">
-                Government of India, Department of Tourism
-              </span>{" "}
-              and are proud members of the{" "}
-              <span className="font-bold">
-                IATO (Indian Association of Tour Operators)
-              </span>
-              .
-            </p>
-            <p className="md:text-lg text-base text-gray-700">
+          <div className="space-y-4">
+          <p className="text-base text-gray-700 lg:text-justify text-start  mt-4 md:text-lg">
+  We are approved by the{" "}
+  <span className="font-bold">
+    Government of India, Department of Tourism
+  </span>{" "}
+  and are proud members of the{" "}
+  <span className="font-bold">
+    IATO (Indian Association of Tour Operators)
+  </span>
+  .
+</p>
+
+            <p className="text-base text-gray-700 lg:text-justify text-start   md:text-lg ">
               Our fleet of well-maintained vehicles is designed to meet all your
               travel needs, whether you're commuting for business, exploring the
               city, or heading to the airport. With a team of professional
               drivers who are knowledgeable about local routes and dedicated to
               your safety, we guarantee a smooth and enjoyable ride every time.
             </p>
-            <p className="md:text-lg text-base text-gray-700">
+            <p className="text-base text-gray-700 lg:text-justify text-start mt-10 md:text-lg">
               That’s where we,{" "}
               <span className="font-bold">Xpress Tour & Travels</span>, step in
               to guide you to your dream destinations. With our expertise in{" "}

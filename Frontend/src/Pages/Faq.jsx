@@ -114,11 +114,11 @@ const FAQ = () => {
       </h1>
 
       {/* Category Buttons */}
-      <div className="flex justify-center flex-wrap gap-4 space-x-4 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 mx-auto  gap-4  mb-8 px-4 lg:px-20 w-fit ">
         {faqCategories.map((category, idx) => (
           <button
             key={idx}
-            className={`px-4 py-2 rounded-lg font-medium ${
+            className={`px-4 py-2 rounded-lg font-medium lg:w-fit  ${
               selectedCategory === idx ? "bg-secondary text-white" : "bg-primary text-white"
             }`}
             onClick={() => setSelectedCategory(idx)}

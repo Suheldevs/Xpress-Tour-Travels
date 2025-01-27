@@ -17,7 +17,7 @@ const StatsComponent = () => {
         backgroundPosition:'center'
       }}>
         <div className="absolute inset-0 bg-primary bg-opacity-80"></div>
-      <div className="relative z-10 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:px-10 px-2">
+      <div className="relative z-10 container mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 md:px-10 px-2">
         {stats.map((stat) => (
           <div
             key={stat.id}

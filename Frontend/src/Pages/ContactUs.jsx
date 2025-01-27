@@ -115,13 +115,13 @@ const ContactUs = () => {
                 info@xpresstourtravels.com
               </div>
             </a>
-            <a href="tel:+91-8604778866" className="mb-2 flex justify-start items-start gap-2 mt-4">
+            <a href="tel:+91-9935115786," className="mb-2 flex justify-start items-start gap-2 mt-4">
               <FaPhone className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rotate-90 rounded w-8 h-8" />
               <div>
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Call for Help
                 </div>
-                +91-8604778866, 7860021583
+                +91-9935115786, 7860021583
               </div>
             </a>
             <a href="tel:0522-4077786" className="mb-2 flex justify-start items-start gap-2 mt-4">

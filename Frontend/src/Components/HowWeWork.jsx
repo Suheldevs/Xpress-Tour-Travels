@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCarAlt, FaCalendarAlt, FaMoneyCheckAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HowWeWork = () => {
   // Steps data
@@ -28,6 +28,8 @@ const HowWeWork = () => {
       bgClass: " ", // Example background class
     },
   ];
+
+  const navigate=useNavigate()
 
   return (
     <div data-aos="fade-up" className="bg-primary lg:py-12 md:py-10 py-8">
@@ -95,7 +97,7 @@ const HowWeWork = () => {
               Explore our top-rated, most popular cars, each maintained to the
               highest standards for comfort, safety, and performance.
             </p>
-            <button className="px-4 py-2 bg-black text-white text-sm font-medium rounded-md flex items-center justify-center">
+            <button className="px-4 py-2 bg-black text-white text-sm font-medium rounded-md flex items-center justify-center" onClick={()=>navigate("/contact")}>
               <FaCarAlt className="mr-2" />
               Book Now
             </button>
