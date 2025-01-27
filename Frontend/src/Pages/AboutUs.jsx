@@ -31,13 +31,13 @@ const AboutUs = () => {
       </h1>
 
       {/* About Us Section */}
-      <div className="flex flex-col md:flex-row text-justify rounded shadow-xl bg-white md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
+      <div className="flex flex-col md:flex-row text-start rounded shadow-xl bg-white md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
         <div className="flex-[6] md:p-6 p-0 text-left" data-aos="fade-right">
           <h2 className="md:text-3xl text-2xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
           </h2>
           <div className="=">
-            <p className="md:text-lg text-base text-gray-700 lg:text-justify text-start">
+            <p className="md:text-lg text-base text-gray-700 lg:text-start text-start">
               <span className="font-bold">
                 Welcome to Xpress Tour & Travels
               </span>
@@ -54,7 +54,7 @@ const AboutUs = () => {
 
           {/* Content Section */}
           <div className="space-y-4">
-          <p className="text-base text-gray-700 lg:text-justify text-start  mt-4 md:text-lg">
+          <p className="text-base text-gray-700 lg:text-start text-start  mt-4 md:text-lg">
   We are approved by the{" "}
   <span className="font-bold">
     Government of India, Department of Tourism
@@ -66,7 +66,7 @@ const AboutUs = () => {
   .
 </p>
 
-            <p className="text-base text-gray-700 lg:text-justify text-start   md:text-lg ">
+            <p className="text-base text-gray-700 lg:text-start text-start   md:text-lg ">
               Our fleet of well-maintained vehicles is designed to meet all your
               travel needs, whether you're commuting for business, exploring the
               city, or heading to the airport. With a team of professional

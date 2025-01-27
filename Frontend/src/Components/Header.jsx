@@ -18,7 +18,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Navbar */}
-        <div className="flex md:hidden ">
+        <div className="flex lg:hidden ">
           <button
             className="text-2xl     "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -95,7 +95,7 @@ const Header = () => {
         )}
 
         {/* Desktop Navbar */}
-        <ul className="hidden md:flex space-x-6 gap-4  text-white">
+        <ul className="hidden lg:flex space-x-6 gap-4  text-white">
           <li>
             <Link
               to="/"

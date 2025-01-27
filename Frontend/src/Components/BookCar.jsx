@@ -138,10 +138,38 @@ const BookCar = () => {
       <div data-aos="fade-up" className="max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="mb-6 text-center">
-          <h1 className="text-gray-100 text-xl md:text-4xl">Experience the Best Cars</h1>
+          <div className="flex justify-center items-center space-x-3">
+            <div className="bg-gray-200 p-2 rounded-full">
+              <svg
+                className="h-6 w-6 text-gray-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 10h18M9 21h6M9 3h6"
+                />
+              </svg>
+            </div>
+            <h1 className="text-gray-100 text-xl md:text-4xl">
+              Experience the Best Cars
+            </h1>
+          </div>
           <p className=" text-gray-200 md:text-base text-sm md:px-0 px-10">
             Please choose your preferred car from below
           </p>
+          <div className="md:mt-4 mt-2 text-sm flex justify-center space-x-4">
+            <a
+              href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA"
+              className="px-4 py-2 cursor-pointer rounded-full bg-white text-primary font-medium"
+            >
+              Pick From Lucknow
+            </a>
+          </div>
         </div>
 
         <Swiper

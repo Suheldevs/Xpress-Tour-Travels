@@ -11,6 +11,7 @@ import {
 import { FaLocationDot } from "react-icons/fa6";
 import { GiRotaryPhone } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   const [error, setError] = useState(null);
@@ -81,29 +82,31 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12 font-bold text-center mb-12 text-white">
+      <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12 font-bold text-center mb-12 text-white ">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 md:text-5xl text-3xl">Contact Us</div>
         <div className="relative z-10 text-lg mt-2 text-secondary">
-          <span className="hover:text-gray-300 cursor-pointer text-white">Home / </span>
+          <Link to={"/"}>           <span className="hover:text-gray-300 cursor-pointer text-white">Home / </span>
+          </Link>
+
           Contact Us
         </div>
       </h1>
 
       {/* Form and Office Details Section */}
-      <div className=" md:px-8  px-4  gap-6 md:gap-0 mb-12">
-        <div className="flex md:mx-10  md:flex-row flex-col md:gap-0 gap-4">
+      <div className=" md:px-8  lg:px-4  gap-6 md:gap-0 lg:mb-12  ">
+        <div className="flex lg:mx-10  lg:flex-row flex-col lg:gap-0 gap-4">
           {/* Office Details */}
           <div className="border flex-2 bg-white  md:bg-transparent text-gray-800 md:p-10 p-6 rounded-lg shadow-2xl z-10 ">
-            <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
+            <h2 className="md:text-2xl text-xl font-bold mb-4">Get in Touch with Us</h2>
             <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA" className="mb-2 flex justify-start items-start gap-2">
               <FaLocationDot className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
               <div className="font-sans ">
-                <div className="text-lg  font-semibold text-secondary tracking-wider md:mt-[-7px]">
+                <div className="text-lg  font-semibold text-secondary tracking-wider lg:mt-[-7px]">
                   Address
                 </div>
                 45A, Dayal Enclave, Sector 9, Indira Nagar,{" "}
-                <br className="md:block hidden" /> Lucknow, Uttar Pradesh 226016
+                <br className="lg:block hidden" /> Lucknow, Uttar Pradesh 226016
               </div>
             </a>
             <a href="mailto:info@xpresstourtravels.com" className="mb-2 flex justify-start items-start gap-2 mt-4">
@@ -178,8 +181,8 @@ const ContactUs = () => {
               
             </p>
           </div>
-          <div className="md:absolute md:block hidden z-[-10] w-[500px] h-[500px] bg-secondary rounded-full transform translate-x-[40%] translate-y-[40%] md:opacity-50 opacity-100"></div>
-          <div className="absolute top-0 right-0 z-[-10] w-[500px] h-[500px] md:bg-secondary bg-primary rounded-full transform translate-x-[0%] translate-y-[0%] md:opacity-50 opacity-100"></div>
+          <div className="lg:absolute lg:block hidden z-[-10] w-[500px] h-[500px] bg-secondary rounded-full transform translate-x-[40%] translate-y-[40%] md:opacity-50 opacity-100"></div>
+          <div className="lg:absolute hidden top-0 right-0 z-[-10] w-[500px] h-[500px] lg:bg-secondary bg-primary rounded-full transform translate-x-[0%] translate-y-[0%] md:opacity-50 opacity-100"></div>
 
           {/* Enquiry Form */}
           <div className="pt-4 px-8 pb-2 flex-1 bg-primary  border rounded-lg shadow-lg">
@@ -312,17 +315,18 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Right Section: Google Map */}
-        <div className="bg-white px-4 py-8 md:mx-10  rounded-lg shadow-lg">
+ 
+      </div>
+            
+             <div className="bg-white py-4 rounded-lg shadow-lg">
           {/* <div className="text-2xl font-semibold mb-2">Our Location</div> */}
           <iframe
-            className="w-full md:h-96 h-52 rounded-md"
+            className="w-full md:h-96 h-[20rem] rounded-md"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.671640149946!2d81.003404574093!3d26.88217166140491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2sXpress%20Tour%20And%20Travels!5e0!3m2!1sen!2sin!4v1737034567545!5m2!1sen!2sin"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div>
     </div>
   );
 };

@@ -6,8 +6,11 @@ const FeatureSection = () => {
     <section className="bg-primary py-8 lg:py-12 md:py-10">
       <div data-aos="fade-up" className="max-w-7xl mx-auto px-2 sm:px-12 lg:px-16">
         <div className="grid md:grid-cols-4 grid-cols-1 border rounded-2xl  border-white/10 bg-white/5">
+
+
+
           <div className="flex-1 text-center shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
-            <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-4">
+            <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-6 ">
               <FaMoneyBillAlt className="text-5xl"/>
             </div>
             <h2 className="text-white  mb-1">Best Pricing</h2>
@@ -30,7 +33,7 @@ const FeatureSection = () => {
           </div>
 
           <div className="flex-1  text-center  shadow-md p-6 hover:border hover:border-gray-300 hover:bg-white/10 rounded-3xl transition-all ease-in-out duration-400 hover:cursor-pointer">
-            <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-4">
+            <div className="flex justify-center items-center mx-auto  text-white rounded-full mb-6">
               <FaShieldAlt className="text-5xl"/>
             </div>
             <h2 className="text-white mb-1">Fully Insured</h2>

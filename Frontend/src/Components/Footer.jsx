@@ -1,32 +1,34 @@
 import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
+  FaGreaterThan,
   FaPhoneAlt,
   FaEnvelope,
-  FaGreaterThan,
-  FaPhone,
-  FaYoutube,
-  FaWhatsapp,
+
 } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
-import { FaLocationDot } from "react-icons/fa6";
 import BottomFooter from "./CopyRightsection";
 import Aos from "aos";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   const location = useLocation();
+  const navigate = useNavigate(); // Use navigate to programmatically navigate
 
   const handleServiceLinkClick = (sectionId) => {
+    // Check if the user is on the /services page
     if (location.pathname === "/services") {
+      // Scroll to the section if already on services page
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
+    } else {
+      // Otherwise, navigate to the /services page and scroll to the section
+      navigate(`/services#${sectionId}`);
     }
   };
+
   const handleLogoClick = () => {
     window.scrollTo({
       top: 0,
@@ -35,88 +37,33 @@ const Footer = () => {
     });
   };
 
-
-    useEffect(() => {
-      // Initialize AOS
-      Aos.init({
-        duration: 1000, // Set animation duration (optional)
-        once: true,     // Trigger animation only once
-      }); 
-      // Optional: Reset AOS on route change if you're using React Router
-      return () => {
-        Aos.refresh();  // Refresh AOS when component unmounts
-      };
-    }, []);  // Empty array to run this effect only once
+  useEffect(() => {
+    // Initialize AOS
+    Aos.init({
+      duration: 1000, // Set animation duration (optional)
+      once: true,     // Trigger animation only once
+    });
+    return () => {
+      Aos.refresh();  // Refresh AOS when component unmounts
+    };
+  }, []);
 
   return (
     <footer className="bg-primary text-white pt-12 pb-2" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         {/* Top Section */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left"
-          data-aos="fade-up"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left">
           {/* Logo and Social Links */}
           <div>
-            <Link
-              to="/"
-              onClick={handleLogoClick}
-              className="flex justify-center items-center "
-            >
+            <Link to="/" onClick={handleLogoClick} className="flex justify-center items-center">
               <img src="xpress.jpg" className="h-24 rounded-full" />
             </Link>
             <h2 className="text-xl mt-3 font-bold text-secondary text-center mb-2">
-              <Link to="/" onClick={handleLogoClick}>
-                {" "}
-                Xpress Tour & Travels{" "}
-              </Link>
+              <Link to="/" onClick={handleLogoClick}> Xpress Tour & Travels </Link>
             </h2>
             <p className="text-gray-200 text-center">
               Travel with trust and comfort. Your satisfaction is our priority.
             </p>
-            {/* <div className="flex justify-center items-center space-x-4 mt-4">
-              <a
-                href="https://api.whatsapp.com/send?phone=9935115786"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 p-1 text-white rounded-full transition-transform transform hover:scale-110"
-              >
-                <FaWhatsapp size={20} />
-              </a>
-              <a
-                href="https://www.youtube.com/@xpresstourandtravels"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-500 p-1 text-white rounded-full transition-transform transform hover:scale-110"
-              >
-                <FaYoutube size={20} />
-              </a>
-              <a
-                href="https://www.facebook.com/people/xpress-tour-and-travels/61569937321411/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-500 p-1 rounded-full text-white transition-transform transform hover:scale-110"
-              >
-                <FaFacebookF size={20} />
-              </a>
-              <a
-                href="https://www.instagram.com/xpresstourandtravels/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-t p-1 to-red-500 from-pink-600  rounded-full text-white transition-transform transform hover:scale-110"
-              >
-                <FaInstagram size={20} />
-              </a>
-              
-              <a
-                href="tel:+91-9935115786"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 p-2 text-white rounded-full transition-transform transform hover:scale-110"
-              >
-                <FaPhone className="rotate-90" size={15} />
-              </a>
-            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -127,69 +74,45 @@ const Footer = () => {
             <div className="text-gray-200 space-y-1">
               <Link
                 to="/services"
-                onClick={(e) => {
-                  // e.preventDefault();
-                  handleServiceLinkClick("cab");
-                }}
+                onClick={() => handleServiceLinkClick("cab")}
                 className="block hover:text-secondary"
               >
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Cab Retal services
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Cab Rental Services
               </Link>
               <Link
                 to="/services"
-                onClick={(e) => {
-                  // e.preventDefault();
-                  handleServiceLinkClick("air");
-                }}
+                onClick={() => handleServiceLinkClick("air")}
                 className="block hover:text-secondary"
               >
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Air Ticketing
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Air Ticketing
               </Link>
               <Link
                 to="/services"
-                onClick={(e) => {
-                  // e.preventDefault();
-                  handleServiceLinkClick("tour");
-                }}
+                onClick={() => handleServiceLinkClick("tour")}
                 className="block hover:text-secondary"
               >
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Tour Packages
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Tour Packages
               </Link>
               <Link
                 to="/services"
-                onClick={(e) => {
-                  // e.preventDefault();
-                  handleServiceLinkClick("train");
-                }}
+                onClick={() => handleServiceLinkClick("train")}
                 className="block hover:text-secondary"
               >
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Train Ticketing
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Train Ticketing
               </Link>
               <Link
                 to="/services"
-                onClick={(e) => {
-                  // e.preventDefault();
-                  handleServiceLinkClick("bus");
-                }}
+                onClick={() => handleServiceLinkClick("bus")}
                 className="block hover:text-secondary"
               >
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Bus Booking Services
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Bus Booking Services
               </Link>
               <Link
                 to="/services"
-                onClick={(e) => {
-                  // e.preventDefault();
-                  handleServiceLinkClick("passport");
-                }}
+                onClick={() => handleServiceLinkClick("passport")}
                 className="block hover:text-secondary"
               >
-                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" />{" "}
-                Passport & Visa Services
+                <FaGreaterThan className="inline-block mr-1 text-xs text-secondary" /> Passport & Visa Services
               </Link>
             </div>
           </div>
@@ -202,17 +125,13 @@ const Footer = () => {
             <div className="text-gray-200 space-y-2">
               <p>
                 <a href="tel:+91-9935115786">
-                  {" "}
                   <FaPhoneAlt className="inline-block mr-2" />
                 </a>
-                <a href="tel:+91-9935115786">+91-9935115786</a>,
-                <a href="tel:+91-7860021563"> 7860021563</a>
+                <a href="tel:+91-9935115786">+91-9935115786</a>
               </p>
               <p>
                 <GiRotaryPhone className="inline-block mr-2" />
-                <a href="tel:05224077786">0522-4077786</a>,
-                <a href="tel:052242700786"> 2700786</a>,
-                <a href="tel:05222312786"> 2312786</a>
+                <a href="tel:05224077786">0522-4077786</a>
               </p>
               <p>
                 <a href="mailto:info@xpresstourtravels.com">
@@ -223,8 +142,7 @@ const Footer = () => {
               <div>
                 <a href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA">
                   <FaLocationDot className="inline-block mr-2" />
-                  45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, UP
-                  226016
+                  45A, Dayal Enclave, Sector 9, Indira Nagar, Lucknow, UP 226016
                 </a>
               </div>
             </div>
@@ -236,7 +154,7 @@ const Footer = () => {
               Our Location
             </h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.671640149946!2d81.003404574093!3d26.88217166140491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2sXpress%20Tour%20And%20Travels!5e0!3m2!1sen!2sin!4v1737034567545!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=..."
               width="100%"
               height="200"
               frameBorder="0"

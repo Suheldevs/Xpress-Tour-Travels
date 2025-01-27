@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Aos from "aos";
 const services = [
   {
@@ -41,19 +41,37 @@ const services = [
 ];
 
 const Services = () => {
-  useEffect(() => {
-    // Initialize AOS
-    Aos.init({
-      duration: 1000, // Set animation duration (optional)
-      once: true,     // Trigger animation only once
-    });
-    window.scrollTo(0, 0);  // Ensure the page scrolls to the top on refresh
+  
+  const location = useLocation();
 
-    // Optional: Reset AOS on route change if you're using React Router
-    return () => {
-      Aos.refresh();  // Refresh AOS when component unmounts
+  useEffect(() => {
+    // Initialize AOS for animations
+    Aos.init({
+      duration: 1000,
+      once: true, // Trigger animation only once
+    });
+
+    const scrollToSection = () => {
+      const hash = location.hash; // Get the current URL hash (e.g., "#tour")
+      if (hash) {
+        const section = document.querySelector(hash); // Find the section with that id
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      } else {
+        window.scrollTo(0, 0); // Scroll to top if no hash is present
+      }
     };
-  }, []);  // Empty array to run this effect only once
+
+    // Call the function to scroll to the section on component load
+    scrollToSection();
+
+    // Optional: Reset AOS on route change
+    return () => {
+      Aos.refresh();
+    };
+  }, [location.hash]); // Depend on location.hash to run whenever the hash changes
+
   return (
     <div className="">
   
