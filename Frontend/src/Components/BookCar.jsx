@@ -1,12 +1,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-import { FaChevronLeft, FaChevronRight, FaGasPump } from "react-icons/fa";
+
+import { FaGasPump } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
 import { MdAirlineSeatReclineNormal } from "react-icons/md";
-import "swiper/css";
+import "swiper/css"; // Default Swiper styles
 import "swiper/css/navigation";
+import "swiper/css/pagination"; // Make sure this is included for pagination dots
 import { Link } from "react-router-dom";
+
 
 // Sample car data
 const carData = [
@@ -19,7 +22,6 @@ const carData = [
     seats: "7/8",
     engine: "Diesel",
   },
-
   {
     id: 9,
     name: "Toyota Innova",
@@ -74,7 +76,6 @@ const carData = [
     seats: "5",
     engine: "Petrol",
   },
-
   {
     id: 11,
     name: "Toyota Fortuner",
@@ -120,14 +121,13 @@ const carData = [
     seats: "5/7",
     engine: "Petrol",
   },
-
   {
     id: 3,
     name: "Audi",
     price: "85/- per km",
     image: "cars/audi.png",
     description: "Performance and Elegance",
-    seats: 4 + 1,
+    seats: "4 + 1",
     engine: "Petrol",
   },
 ];
@@ -138,44 +138,16 @@ const BookCar = () => {
       <div data-aos="fade-up" className="max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="mb-6 text-center">
-          <div className="flex justify-center items-center space-x-3">
-            <div className="bg-gray-200 p-2 rounded-full">
-              <svg
-                className="h-6 w-6 text-gray-700"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 10h18M9 21h6M9 3h6"
-                />
-              </svg>
-            </div>
-            <h1 className="text-gray-100 text-xl md:text-4xl">
-              Experience the Best Cars
-            </h1>
-          </div>
+          <h1 className="text-gray-100 text-xl md:text-4xl">Experience the Best Cars</h1>
           <p className=" text-gray-200 md:text-base text-sm md:px-0 px-10">
             Please choose your preferred car from below
           </p>
-          <div className="md:mt-4 mt-2 text-sm flex justify-center space-x-4">
-            <a
-              href="https://maps.app.goo.gl/5Xw2nRefpgtcrLiGA"
-              className="px-4 py-2 cursor-pointer rounded-full bg-white text-primary font-medium"
-            >
-              Pick From Lucknow
-            </a>
-          </div>
         </div>
 
         <Swiper
-          spaceBetween={20}
+          spaceBetween={10}
           slidesPerView={1}
-          slidesPerGroup={Math.ceil(carData.length / 11)} // Groups slides into 11 dots
+          slidesPerGroup={1}
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
           autoplay={{
             delay: 5000,
@@ -183,46 +155,39 @@ const BookCar = () => {
           }}
           navigation={false}
           pagination={{
-            clickable: true,
-            el: ".custom-pagination", // Attach to custom pagination element
+            clickable: true, // Enable clickable dots
           }}
-          loop={false} // Ensure it doesn't loop to prevent confusion
-          centeredSlides={false}
+          loop={false} // Ensure no looping happens
           breakpoints={{
-            640: {
+            320: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              slidesPerGroup: 1,
+              spaceBetween: 10,
             },
-            768: {
+            640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 15,
             },
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
             },
           }}
-          className="px-4 max-w-6xl mx-auto"
+          className="px-4 max-w-6xl mx-auto h-[30rem] relative"
         >
-
-        
-
           {carData.map((car) => (
             <SwiperSlide key={car.id}>
-              <div
-                data-aos="flip-right"
-                className="bg-gray-50 shadow-xl rounded-lg overflow-hidden "
-              >
+              <div className="bg-gray-50 shadow-xl rounded-lg overflow-hidden  border border-green-500">
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="w-full h-48 hover:scale-110 transition-all ease-in-out duration-300 overflow-hidden object-cover"
+                  className="w-full h-[15rem] hover:scale-110 transition-all ease-in-out duration-300 overflow-hidden object-cover"
                 />
                 <div className="p-4 bg-slate-200 rounded-xl">
                   <h3 className="text-xl font-semibold text-primary">{car.name}</h3>
                   <div className="items-center text-primary/90">
                     <span>{car.description}</span>
-                    <div className="">
+                    <div>
                       <span>Start Price Per KM: </span>
                       <span className="font-semibold">{car.price}</span>
                       <div className="flex w-full justify-start gap-6 rounded font-bold pt-2 pb-1 px-1">
@@ -253,17 +218,12 @@ const BookCar = () => {
               </div>
             </SwiperSlide>
           ))}
-
-          <div className="custom-pagination flex justify-center md:mt-6 mt-2 mb-2 hover:cursor-pointer"></div>
         </Swiper>
-
-
-
-
-        <div className="custom-pagination flex justify-center md:mt-6 mt-2 mb-2  hover:cursor-pointer"></div>
       </div>
     </div>
   );
 };
+
+
 
 export default BookCar;

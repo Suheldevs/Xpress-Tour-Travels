@@ -3,12 +3,27 @@
 @tailwind utilities;
 
 
+/* Ensure Swiper pagination is correctly styled */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Adjust the positioning as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center the dots */
+  z-index: 9999; /* Ensure it appears on top */
+}
 
-.custom-pagination .swiper-pagination-bullet {
-    display: inline-block; /* Ensure all bullets are inline */
-  }
-  
-  .custom-pagination .swiper-pagination-bullet:nth-child(n+12) {
-    display: none; /* Hide all bullets after the 11th */
-  }
-  
+/* Default (inactive) pagination dots */
+.swiper-pagination-bullet {
+  background-color: white !important; /* Make default dots white */
+  width: 12px !important; /* Dot size */
+  height: 12px !important; /* Dot size */
+  border-radius: 50% !important; /* Circular shape */
+  opacity: 0.6 !important; /* Slightly faded inactive dots */
+  transition: background-color 0.3s ease !important; /* Smooth transition */
+}
+
+/* Active pagination dot */
+.swiper-pagination-bullet-active {
+  background-color: #1d4ed8 !important; /* Blue active dot (you can change the color) */
+  opacity: 1 !important; /* Full opacity for active dot */
+}
