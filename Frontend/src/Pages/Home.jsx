@@ -11,6 +11,7 @@ import WhyChooseUs from '../Components/WhyChooseUs'
 import Footer from '../Components/Footer'
 import Review from '../Components/Review'
 import StatsComponent from '../Components/Statics'
+import VisitorCounter from '../Components/VisitorCount'
 
 function Home() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function Home() {
      }, []);
   return (
     <>
+    {/* <VisitorCounter/> */}
     <HeroSection/>
     <FeatureSection/>
     <AboutComponent/>

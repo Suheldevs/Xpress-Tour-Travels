@@ -10,6 +10,7 @@ import { GiRotaryPhone } from "react-icons/gi";
 import BottomFooter from "./CopyRightsection";
 import Aos from "aos";
 import { FaLocationDot } from "react-icons/fa6";
+import VisitorCounter from "./VisitorCount";
 
 const Footer = () => {
   const location = useLocation();
@@ -73,7 +74,7 @@ const Footer = () => {
                   <h4 className="bg-secondary w-fit px-2 py-2">20</h4>
                 </div>
             </div> */}
-
+<VisitorCounter/>
           </div>
 
           {/* Quick Links */}
