@@ -45,7 +45,7 @@ const HeroSection = () => {
           {/* <p className=" sm:text-lg bg-opacity-70 bg-black py-2 px-4 rounded-full w-fit flex justify-center items-center gap-2">
          <span ><FaCar className=""/></span>Welcome to Xpress Tour & Travels
           </p> */}
-          <p className=" sm:text-lg lg:text-[2.5rem] md:text-[2rem] font-bold bg-opacity-70 bg-black py-4 pl-2 pr-4 lg:pr-6 md:pr-0 rounded-r-full w-fit flex justify-center items-center gap-2 ">
+          <p className=" sm:text-lg lg:text-[2.5rem] md:text-[2rem] font-bold bg-opacity-70  py-4 pl-2 pr-4 lg:pr-6 md:pr-0 rounded-r-full w-fit flex justify-center items-center gap-2 ">
          <span ><FaCar className="text-secondary md:mr-4"/></span>Xpress Tour & Travels
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-2">

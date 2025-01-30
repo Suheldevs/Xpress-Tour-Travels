@@ -14,7 +14,7 @@ import SocialSidebar from './Components/Sidebaar';
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
       <SocialSidebar />
       <Routes>
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/about" element={<AboutUs />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 };
 

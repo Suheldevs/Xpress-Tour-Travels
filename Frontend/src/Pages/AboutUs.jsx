@@ -33,9 +33,9 @@ const AboutUs = () => {
       {/* About Us Section */}
       <div className="flex flex-col md:flex-row text-start rounded shadow-xl bg-white md:p-10 px-4  mt-4 md:mx-10 mx-2 overflow-hidden">
         <div className="flex-[6] md:p-6 p-0 text-left" data-aos="fade-right">
-          <h2 className="md:text-3xl text-2xl font-semibold mb-6">
+          {/* <h2 className="md:text-3xl text-2xl font-semibold mb-6">
             Best Cab Rental Services In Lucknow
-          </h2>
+          </h2> */}
           <div className="=">
             <p className="md:text-lg text-base text-gray-700 lg:text-start text-start">
               <span className="font-bold">
@@ -45,7 +45,7 @@ const AboutUs = () => {
               services. Established with a passion for providing exceptional
               transportation solutions, we have built a reputation for safety,
               comfort, and customer satisfaction. We offer a range of services,
-              including{" "}
+              including <strong>Best Cab Rental Services In Lucknow</strong>,{" "}
               <span className="font-bold">taxi services in Lucknow</span>,{" "}
               <span className="font-bold">flight booking</span>, and{" "}
               <span className="font-bold">tour packages</span>.

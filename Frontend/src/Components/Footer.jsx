@@ -64,6 +64,16 @@ const Footer = () => {
             <p className="text-gray-200 text-center">
               Travel with trust and comfort. Your satisfaction is our priority.
             </p>
+            {/* <div className="flex items-start mx-auto justify-center mt-2 gap-4">
+                <Link to="/" onClick={handleLogoClick} className="flex justify-center items-center">
+                <img src="xpress.jpg" className="w-10 h-10 rounded-full" />
+                </Link>
+                <div>
+                  <p>Total Count:</p>
+                  <h4 className="bg-secondary w-fit px-2 py-2">20</h4>
+                </div>
+            </div> */}
+
           </div>
 
           {/* Quick Links */}
@@ -127,12 +137,27 @@ const Footer = () => {
                 <a href="tel:+91-9935115786">
                   <FaPhoneAlt className="inline-block mr-2" />
                 </a>
-                <a href="tel:+91-9935115786">+91-9935115786</a>
+                <a href="tel:919935115786">
+                +91-9935115786
+                </a>
+              ,      <a href="tel:917860021583">
+                +91-7860021583
+                </a>
               </p>
+           
               <p>
                 <GiRotaryPhone className="inline-block mr-2" />
-                <a href="tel:05224077786">0522-4077786</a>
+                <a href="tel:05224077786">
+                  0522-4077786
+                </a>
+              ,      <a href="tel:05222700786">
+                2700786,
+                </a>{" "}
+                <a href="tel:05222312786">
+                2312786
+                </a>
               </p>
+             
               <p>
                 <a href="mailto:info@xpresstourtravels.com">
                   <FaEnvelope className="inline-block mr-2" />

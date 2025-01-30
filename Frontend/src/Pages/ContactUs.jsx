@@ -95,7 +95,7 @@ const ContactUs = () => {
 
       {/* Form and Office Details Section */}
       <div className=" md:px-8  lg:px-4  gap-6 md:gap-0 lg:mb-12  ">
-        <div className="flex lg:mx-10  lg:flex-row flex-col lg:gap-0 gap-4">
+        <div className="flex lg:mx-10  lg:flex-row flex-col-reverse lg:gap-0 gap-4">
           {/* Office Details */}
           <div className="border flex-2 bg-white  md:bg-transparent text-gray-800 md:p-10 p-6 rounded-lg shadow-2xl z-10 ">
             <h2 className="md:text-2xl text-xl font-bold mb-4">Get in Touch with Us</h2>
@@ -118,24 +118,39 @@ const ContactUs = () => {
                 info@xpresstourtravels.com
               </div>
             </a>
-            <a href="tel:+91-9935115786," className="mb-2 flex justify-start items-start gap-2 mt-4">
+            <div className="mb-2 flex justify-start items-start gap-2 mt-4">
+              
               <FaPhone className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rotate-90 rounded w-8 h-8" />
               <div>
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Call for Help
                 </div>
-                +91-9935115786, 7860021583
+                <a href="tel:919935115786">
+                +91-9935115786
+                </a>
+              ,      <a href="tel:917860021583">
+                +91-7860021583
+                </a>
               </div>
-            </a>
-            <a href="tel:0522-4077786" className="mb-2 flex justify-start items-start gap-2 mt-4">
+            </div>
+            <div  className="mb-2 flex justify-start items-start gap-2 mt-4">
               <GiRotaryPhone className="inline-block mr-2 p-1 bg-secondary text-white text-5xl rounded w-8 h-8" />
               <div className="font-sans">
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Land Line help
                 </div>
-                0522-4077786, 2700786, 2312786
+                <a href="tel:05224077786">
+                  0522-4077786
+                </a>
+              ,      <a href="tel:05222700786">
+                2700786,
+                </a>{" "}
+                <a href="tel:05222312786">
+                2312786
+                </a>
+              
               </div>
-            </a>
+            </div>
             <p className="flex gap-4 mt-4 ">
             <a
                 href="tel:+91-9935115786"
