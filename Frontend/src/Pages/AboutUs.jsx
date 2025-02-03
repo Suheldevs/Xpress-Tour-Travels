@@ -6,8 +6,9 @@ import BookNow from "../Components/BookNow";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import { FaCar } from "react-icons/fa";
 const AboutUs = () => {
-  AOS.init();
+
   useEffect(() => {
+    AOS.init();
     window.scrollTo(0, 0);
   }, []);
 
