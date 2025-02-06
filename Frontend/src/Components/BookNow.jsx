@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';  // Import AOS styles
+
 
 const BookNow = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Optional: adjust duration of the animation
+    });
+  }, []);
   return (
     <div
       className="relative bg-cover bg-center text-white flex items-center h-64 md:h-80  shadow-lg "
