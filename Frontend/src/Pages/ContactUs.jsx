@@ -125,10 +125,10 @@ const ContactUs = () => {
                 <div className="text-lg font-semibold text-secondary md:mt-[-7px]">
                   Call for Help
                 </div>
-                <a href="tel:919935115786">
+                <a href="tel:9935115786">
                 +91-9935115786
                 </a>
-              ,      <a href="tel:917860021583">
+              ,      <a href="tel:7860021583">
                 +91-7860021583
                 </a>
               </div>
@@ -153,7 +153,7 @@ const ContactUs = () => {
             </div>
             <p className="flex gap-4 mt-4 ">
             <a
-                href="tel:+91-9935115786"
+                href="tel:9935115786"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 p-3 text-white rounded-full transition-transform transform hover:scale-110"

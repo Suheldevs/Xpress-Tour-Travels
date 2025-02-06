@@ -135,13 +135,13 @@ const Footer = () => {
             </h3>
             <div className="text-gray-200 space-y-2">
               <p>
-                <a href="tel:+91-9935115786">
+                <a href="tel:9935115786">
                   <FaPhoneAlt className="inline-block mr-2" />
                 </a>
-                <a href="tel:919935115786">
+                <a href="tel:9935115786">
                 +91-9935115786
                 </a>
-              ,      <a href="tel:917860021583">
+              ,      <a href="tel:7860021583">
                 +91-7860021583
                 </a>
               </p>
