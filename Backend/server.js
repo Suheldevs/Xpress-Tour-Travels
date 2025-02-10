@@ -8,7 +8,7 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 
 app.use(cors({
-    origin: ['https://www.xpresstourtravels.com/','https://xpresstourtravels.com/','http://localhost:3000'], 
+    origin: ['https://www.xpresstourtravels.com','https://xpresstourtravels.com','http://localhost:3000','http://localhost:5173'], 
     credentials: true
 }));
 app.use(cookieParser());
