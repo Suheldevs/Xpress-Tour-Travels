@@ -4,3 +4,5 @@ Frontend/dist.zip
 Frontend/dist (2).zip
 Frontend/dist (3).zip
 Frontend/dist (3).zip
+/Backend/node_modules
+Frontend/.env
