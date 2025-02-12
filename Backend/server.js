@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 app.use(cors({
-    origin: ['https://www.xpresstourtravels.com', 'https://xpresstourtravels.com', 'http://localhost:3000', 'http://localhost:5173'],
+    origin: ['https://www.xpresstourtravels.com', 'https://xpresstourtravels.com', 'http://localhost:3000', 'http://localhost:5173','https://expresstourdemo.netlify.app','https://expresstourdemo.netlify.app/'],
     credentials: true
 }));
 app.use(cookieParser());
