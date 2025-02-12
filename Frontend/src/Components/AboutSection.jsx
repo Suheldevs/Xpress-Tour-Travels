@@ -2,6 +2,11 @@ import React from "react";
 import { FaCar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+import car from '../assets/Home/About/car.png'
+import delivery from '../assets/Home/About/delivery-location.png'
+import flexibility from '../assets/Home/About/flexibility.png'
+import tourbus from '../assets/Home/About/tour-bus.png'
+
 const AboutComponent = () => {
   return (
     <section data-aos="fade-up" className="relative bg-bgcolor2 py-12">
@@ -19,10 +24,6 @@ const AboutComponent = () => {
             transportation solutions, we have built a reputation for safety,
             comfort, and customer satisfaction.
           </p>
-        {/* </div> */}
-
-        {/* Content Section */}
-        {/* <div className=" w-full border border-red-500"> */}
   <p className="md:text-lg text-base text-gray-700 whitespace-normal w-full text-justify">
     Our fleet of well-maintained vehicles is designed to meet all your travel needs, whether you're commuting for business, exploring the city, or heading to the airport. With a team of professional drivers who are knowledgeable about local routes and dedicated to your safety, we guarantee a smooth and enjoyable ride every time.
   </p>
@@ -39,19 +40,19 @@ const AboutComponent = () => {
         <div className="text-left md:mt-0 mt-2" data-aos="fade-up">
           <ul className="grid md:grid-cols-4 grid-cols-2  gap-10 text-lg text-gray-700">
             <li className="flex items-center gap-0 flex-col">
-              <img src="About/car.png" className="h-24" />
+              <img src={car} loading="lazy" className="h-24" />
               Wide Range of Vehicles
             </li>
             <li className="flex items-center  gap-0 flex-col">
-              <img src="About/flexibility.png" className="h-24" />
+              <img src={flexibility} loading="lazy" className="h-24" />
               Flexible Rental Plans
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src="About/delivery-location.png" className="h-24" />
+              <img src={delivery} loading="lazy" className="h-24" />
               Seamless Pickup & Drop-off
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src="About/tour-bus.png" className="h-24" />
+              <img src={tourbus} loading="lazy" className="h-24" />
               Customized Tour Packages
             </li>
           </ul>

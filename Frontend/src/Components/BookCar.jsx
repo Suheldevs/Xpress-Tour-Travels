@@ -7,17 +7,30 @@ import { TbAirConditioning } from "react-icons/tb";
 import { MdAirlineSeatReclineNormal } from "react-icons/md";
 import "swiper/css"; // Default Swiper styles
 import "swiper/css/navigation";
-import "swiper/css/pagination"; // Make sure this is included for pagination dots
+import "swiper/css/pagination"; 
 import { Link } from "react-router-dom";
 
-
+//car images
+import ToyotaC from '../assets/cars/ToyotaC.webp'
+import Toyota from '../assets/cars/Toyota.webp'
+import ToyotaRumion from '../assets/cars/ToyotaRumion.webp'
+import MarutiSuzukiDzire from '../assets/cars/MarutiSuzukiDzire.webp'
+import glance from '../assets/cars/glance.webp'
+import Honda from '../assets/cars/Honda.webp'
+import TataTigore from '../assets/cars/TataTigore.webp'
+import ToyotaFor from '../assets/cars/ToyotaFor.webp'
+import Tempo from '../assets/cars/Tempo.webp'
+import bus from '../assets/cars/bus.webp'
+import bmw from '../assets/cars/bmw.webp'
+import Mercedes from '../assets/cars/Mercedes.webp'
+import audi from '../assets/cars/audi.webp'
 // Sample car data
 const carData = [
   {
     id: 10,
     name: "Toyota Crysta",
     price: "16/- per km",
-    image: "cars/ToyotaC.png",
+    image:`${ToyotaC}`,
     description: "Luxury and Performance",
     seats: "7/8",
     engine: "Diesel",
@@ -26,7 +39,7 @@ const carData = [
     id: 9,
     name: "Toyota Innova",
     price: "15/- per km",
-    image: "cars/Toyota.png",
+    image:`${Toyota}`,
     description: "Trusted for Long Drives",
     seats: "7/8",
     engine: "Diesel",
@@ -35,7 +48,7 @@ const carData = [
     id: 8,
     name: "Toyota Rumion",
     price: "14/- per km",
-    image: "cars/ToyotaRumion.png",
+    image:`${ToyotaRumion}`,
     description: "Spacious Family Car",
     seats: "7/8",
     engine: "Petrol",
@@ -44,7 +57,7 @@ const carData = [
     id: 4,
     name: "Maruti Suzuki Dzire",
     price: "10/- per km",
-    image: "cars/MarutiSuzukiDzire.png",
+    image:`${MarutiSuzukiDzire}`,
     description: "Affordable and Reliable",
     seats: "5",
     engine: "Petrol",
@@ -53,7 +66,7 @@ const carData = [
     id: 5,
     name: "Toyota Glanza",
     price: "10/- per km",
-    image: "cars/glance.png",
+    image:`${glance}`,
     description: "Compact and Comfortable",
     seats: "5",
     engine: "Petrol",
@@ -62,7 +75,7 @@ const carData = [
     id: 6,
     name: "Honda Amaze",
     price: "10/- per km",
-    image: "cars/Honda.png",
+    image:`${Honda}`,
     description: "Smooth and Stylish",
     seats: "5",
     engine: "Petrol",
@@ -71,7 +84,7 @@ const carData = [
     id: 7,
     name: "Tata Tigor",
     price: "10/- per km",
-    image: "cars/TataTigore.png",
+    image:`${TataTigore}`,
     description: "Value for Money",
     seats: "5",
     engine: "Petrol",
@@ -80,7 +93,7 @@ const carData = [
     id: 11,
     name: "Toyota Fortuner",
     price: "50/- per km",
-    image: "cars/ToyotaFor.png",
+    image:`${ToyotaFor}`,
     description: "Luxury SUV for Adventures",
     seats: "7/8",
     engine: "Diesel",
@@ -89,7 +102,7 @@ const carData = [
     id: 12,
     name: "Tempo Traveller",
     price: "25-35/- per km",
-    image: "cars/Tempo.png",
+    image:`${Tempo}`,
     description: "Perfect for Group Travel",
     seats: "12/18/25",
     engine: "Diesel",
@@ -98,7 +111,7 @@ const carData = [
     id: 13,
     name: "Bus (AC / Non AC / Luxury)",
     price: "AS PER REQ.",
-    image: "cars/bus.png",
+    image:`${bus}`,
     description: "Large Capacity for Long Journeys",
     seats: "40/50/60",
     engine: "Diesel",
@@ -107,7 +120,7 @@ const carData = [
     id: 1,
     name: "BMW",
     price: "90/- per km",
-    image: "cars/bmw.png",
+    image:`${bmw}`,
     description: "Luxury and Comfort Redefined",
     seats: "5/7",
     engine: "Petrol",
@@ -116,7 +129,7 @@ const carData = [
     id: 2,
     name: "Mercedes",
     price: "80/- per km",
-    image: "cars/Mercedes.png",
+    image:`${Mercedes}`,
     description: "Premium Driving Experience",
     seats: "5/7",
     engine: "Petrol",
@@ -125,7 +138,7 @@ const carData = [
     id: 3,
     name: "Audi",
     price: "85/- per km",
-    image: "cars/audi.png",
+    image:`${audi}`,
     description: "Performance and Elegance",
     seats: "4 + 1",
     engine: "Petrol",
@@ -209,10 +222,11 @@ const BookCar = () => {
                 <img
                   src={car.image}
                   alt={car.name}
+                  loading="lazy"
                   className="w-full h-[15rem] hover:scale-110 transition-all ease-in-out duration-300 overflow-hidden object-cover"
                 />
                 <div className="p-4 bg-slate-200 rounded-xl">
-                  <h3 className="text-xl font-semibold text-primary">{car.name}</h3>
+                  <div className="text-xl font-semibold text-primary">{car.name}</div>
                   <div className="items-center text-primary/90">
                     <span>{car.description}</span>
                     <div>
@@ -236,7 +250,7 @@ const BookCar = () => {
                         to="/contact"
                         className="border- inline-block p-1 mt-2 w-full border-primary rounded-full hover:scale-105 transition-all duration-100"
                       >
-                        <button className="bg-primary text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
+                        <button aria-label="Book Now" title="Book Now" className="bg-primary text-white text-xl hover:bg-secondary font-semibold w-full py-2 rounded-full shadow-md">
                           Book Now
                         </button>
                       </Link>

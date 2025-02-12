@@ -1,6 +1,7 @@
 import React from "react";
 import { FaClock, FaSuitcaseRolling, FaPlaneDeparture, FaAward, FaCarSide, FaPassport } from "react-icons/fa"; // Add new icons for car rental and tour
 import { FaCarAlt } from "react-icons/fa";
+import wcu from '../assets/Home/wcu.webp'
 const WhyChooseUs = () => {
   const reasons = [
     { icon: <FaCarAlt size={40} />, title: "Variety of Vehicles" },
@@ -34,25 +35,8 @@ const WhyChooseUs = () => {
         {/* Rotating circle with central image */}
         <div className="relative md:h-[25rem] h-[20rem] md:w-[32rem] w-[20rem] flex items-center justify-center ">
           <div className="absolute animate-spin- duration-1000 sm:size-[24.5rem] size-[16.5rem] rounded-full border-4 border-primary flex items-center justify-center">
-            {/* {reasons.map((reason, index) => (
-              <div
-                key={index}
-                className="absolute bg-white shadow-[0px_0px_12px_-6px_#000] rounded-full p-2"
-                style={{
-                  transform: `rotate(${index * (360 / reasons.length)}deg) translate(8rem)`,
-                }}
-              >
-                <div
-                  className="flex items-center justify-center"
-                  style={{
-                    transform: `rotate(${-index * (360 / reasons.length)}deg)`,
-                  }}
-                >
-                  {reason.icon}
-                </div>
-              </div>
-            ))} */}
-          <img src='why-choose-us1.webp' loading="lazy" className="w-full rounded-full p-1 h-full object-cover" alt="Car" />
+           
+          <img src={wcu} loading="lazy" className="w-full rounded-full p-1 h-full object-cover" alt="Car" />
           </div>
         </div>
 
