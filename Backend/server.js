@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 app.use(cors({
-    origin: ['https://www.xpresstourtravels.com', 'https://xpresstourtravels.com', 'http://localhost:3000', 'http://localhost:5173','https://expresstourdemo.netlify.app','https://expresstourdemo.netlify.app/'],
+    origin: ['https://www.xpresstourtravels.com', 'https://xpresstourtravels.com', 'http://localhost:3000', 'http://localhost:5173', 'https://expresstourdemo.netlify.app', 'https://expresstourdemo.netlify.app/'],
     credentials: true
 }));
 app.use(cookieParser());
@@ -29,7 +29,11 @@ if (fs.existsSync(FILE_PATH)) {
 
 app.get('/visitor-count', (req, res) => {
     if (!req.cookies.visitor_id) {
-        res.cookie('visitor_id', 'visited', { maxAge: 24 * 60 * 60 * 1000, httpOnly: false, sameSite: 'Lax' });
+        res.cookie('visitor_id', 'visited', {
+            maxAge: 24 * 60 * 60 * 1000, httpOnly: false,
+            sameSite: 'None',
+            secure: true
+        });
 
         visitorCount++;
         fs.writeFileSync(FILE_PATH, JSON.stringify({ count: visitorCount }));
