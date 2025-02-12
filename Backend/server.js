@@ -3,42 +3,39 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 
 app.use(cors({
-    origin: ['https://www.xpresstourtravels.com','https://xpresstourtravels.com','http://localhost:3000','http://localhost:5173'], 
+    origin: ['https://www.xpresstourtravels.com', 'https://xpresstourtravels.com', 'http://localhost:3000', 'http://localhost:5173'],
     credentials: true
 }));
 app.use(cookieParser());
 
-const FILE_PATH = path.join(__dirname, 'visitor.json');
+const FILE_PATH = path.join(__dirname, 'visitor_count.json');
 
 
-let visitors = new Set();
+let visitorCount = 0;
+
 if (fs.existsSync(FILE_PATH)) {
     try {
         const data = JSON.parse(fs.readFileSync(FILE_PATH, 'utf-8'));
-        visitors = new Set(data.uniqueVisitors || []);
+        visitorCount = data.count || 0;
     } catch (error) {
-        console.error("Error reading visitor file:", error);
-        fs.writeFileSync(FILE_PATH, JSON.stringify({ uniqueVisitors: [] }));
+        console.error("Error reading visitor count file:", error);
+        fs.writeFileSync(FILE_PATH, JSON.stringify({ count: 0 }));
     }
 }
 
 app.get('/visitor-count', (req, res) => {
-    let visitorId = req.cookies.visitor_id;
+    if (!req.cookies.visitor_id) {
+        res.cookie('visitor_id', 'visited', { maxAge: 24 * 60 * 60 * 1000, httpOnly: false, sameSite: 'Lax' });
 
-    if (!visitorId) {
-        visitorId = uuidv4();
-        res.cookie('visitor_id', visitorId, { maxAge: 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'Lax' }); 
-        visitors.add(visitorId);
-
-        fs.writeFileSync(FILE_PATH, JSON.stringify({ uniqueVisitors: Array.from(visitors) }));
+        visitorCount++;
+        fs.writeFileSync(FILE_PATH, JSON.stringify({ count: visitorCount }));
     }
 
-    res.json({ totalVisitors: visitors.size });
+    res.json({ totalVisitors: visitorCount });
 });
 
 app.listen(3001, () => console.log("Server running on port 3001"));
