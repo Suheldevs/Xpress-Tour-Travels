@@ -47,6 +47,7 @@ function Testimonials() {
           onLoad={handleLoad}
           onError={handleError}
           style={loading ? { display: 'none' } : {}}
+          title="Xpress Tour & Travels reviews"
         ></iframe>
          </div>
       

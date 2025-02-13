@@ -23,7 +23,9 @@ const App = () => {
         <Route
           path="/faq"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="flex justify-center items-center p-12">
+  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+</div>}>
               <FAQ />
             </Suspense>
           }
@@ -31,7 +33,9 @@ const App = () => {
         <Route
           path="/services"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="flex justify-center items-center p-12">
+  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+</div>}>
               <Services />
             </Suspense>
           }
@@ -39,7 +43,9 @@ const App = () => {
         <Route
           path="/testimonial"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="flex justify-center items-center p-12">
+  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+</div>}>
               <Testimonials />
             </Suspense>
           }
@@ -47,7 +53,9 @@ const App = () => {
         <Route
           path="/contact"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="flex justify-center items-center p-12">
+  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+</div>}>
               <ContactUs />
             </Suspense>
           }
@@ -55,7 +63,9 @@ const App = () => {
         <Route
           path="/about"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="flex justify-center items-center p-12">
+  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+</div>}>
               <AboutUs />
             </Suspense>
           }

@@ -71,10 +71,7 @@ const ServicesSection = React.memo(() => {
       {/* Section Header */}
       <header className="text-center mb-10">
         <h2 className="md:text-4xl text-3xl font-bold text-gray-800">Our Services</h2>
-        {/* Uncomment and update the paragraph below if needed */}
-        {/* <p className="text-gray-600 mt-4">
-          Explore our range of premium services designed to make your journey seamless and memorable.
-        </p> */}
+       
       </header>
 
       {/* Grid Layout */}
@@ -90,17 +87,16 @@ const ServicesSection = React.memo(() => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover"
+                className="w-full h-48 object-cover"
                 loading="lazy"
               />
             </div>
             <div className="flex flex-1 flex-col justify-between">
               <div className="text-center mt-4 mb-0">
-                <h3 id={`service-title-${service.id}`} className="text-xl font-semibold text-gray-800">
+                <p id={`service-title-${service.id}`} className="text-xl font-semibold text-gray-800">
                   {service.title}
-                </h3>
+                </p>
                 <p className="text-gray-600 mt-2 text-sm px-5">{service.description}</p>
-                {/* <p className="text-red-500 font-bold mt-4">{service.price}</p> */}
               </div>
               <div className="p-4 text-center" data-aos="fade-up">
                 <Link to="/contact" aria-label={`Book service: ${service.title}`}>

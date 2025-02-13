@@ -44,9 +44,9 @@ const HowWeWork = () => {
               How We Work
             </h2>
           </div>
-          <h3 className="text-sm font-semibold text-gray-200 md:ps-0 ps-6 md:mt-2 mt-0">
+          <p className="text-sm font-semibold text-gray-200 md:ps-0 ps-6 md:mt-2 mt-0">
             We Are The Best For You
-          </h3>
+          </p>
         </div>
 
         {/* Steps Section */}

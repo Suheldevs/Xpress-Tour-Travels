@@ -1,37 +1,43 @@
-import React, { useEffect } from 'react'
-import Header from '../Components/Header'
-import HeroSection from '../Components/HeroSection'
-import FeatureSection from '../Components/FeatureSection'
-import AboutComponent from '../Components/AboutSection'
-import BookCar from '../Components/BookCar'
-import ServicesSection from '../Components/ServicesSection'
-import HowWeWork from '../Components/HowWeWork'
-import { HowItWorks } from '../Components/HWW'
-import WhyChooseUs from '../Components/WhyChooseUs'
-import Footer from '../Components/Footer'
-import Review from '../Components/Review'
-import StatsComponent from '../Components/Statics'
-import VisitorCounter from '../Components/VisitorCount'
+import React, { useEffect, lazy, Suspense } from "react";
+import HeroSection from "../Components/HeroSection";
+import FeatureSection from "../Components/FeatureSection";
+
+// Lazy Load Other Sections
+const AboutComponent = lazy(() => import("../Components/AboutSection"));
+const BookCar = lazy(() => import("../Components/BookCar"));
+const ServicesSection = lazy(() => import("../Components/ServicesSection"));
+const StatsComponent = lazy(() => import("../Components/Statics"));
+const WhyChooseUs = lazy(() => import("../Components/WhyChooseUs"));
+const HowWeWork = lazy(() => import("../Components/HowWeWork"));
+const Review = lazy(() => import("../Components/Review"));
 
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
-     }, []);
+  }, []);
+
   return (
     <>
-    {/* <VisitorCounter/> */}
-    <HeroSection/>
-    <FeatureSection/>
-    <AboutComponent/>
-    <BookCar/>
-    <ServicesSection/>
-    <StatsComponent/>
-    <WhyChooseUs/>
-    <HowWeWork/>
-    <Review/>
-    {/* <HowItWorks/> */}
+      <HeroSection />
+      <FeatureSection />
+
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center p-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+          </div>
+        }
+      >
+        <AboutComponent />
+        <BookCar />
+        <ServicesSection />
+        <StatsComponent />
+        <WhyChooseUs />
+        <HowWeWork />
+        <Review />
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

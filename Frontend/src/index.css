@@ -27,3 +27,7 @@
   background-color: #1d4ed8 !important; /* Blue active dot (you can change the color) */
   opacity: 1 !important; /* Full opacity for active dot */
 }
+
+.bgcolor{
+  background-color: #1c9ff1;
+}

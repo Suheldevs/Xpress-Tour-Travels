@@ -76,6 +76,7 @@ const Header = () => {
               alt="Xpress Tour & Travels Logo" 
               className="h-[5rem] md:h-[8rem] rounded-full" 
               loading="eager" 
+              title="Xpress Tour & Travels Logo"
             />
           </Link>
         </div>

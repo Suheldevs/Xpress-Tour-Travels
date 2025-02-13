@@ -59,7 +59,7 @@ const FeatureSection = React.memo(() => {
               <div className="flex justify-center items-center mx-auto text-white rounded-full mb-6">
                 {feature.icon}
               </div>
-              <h3 className="text-white mb-1">{feature.title}</h3>
+              <p className="text-white md:text-2xl text-lg font-semibold mb-1">{feature.title}</p>
               <div className="opacity-50">
                 <hr />
               </div>

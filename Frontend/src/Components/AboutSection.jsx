@@ -40,19 +40,19 @@ const AboutComponent = () => {
         <div className="text-left md:mt-0 mt-2" data-aos="fade-up">
           <ul className="grid md:grid-cols-4 grid-cols-2  gap-10 text-lg text-gray-700">
             <li className="flex items-center gap-0 flex-col">
-              <img src={car} loading="lazy" className="h-24" />
+              <img src={car} loading="lazy" alt=" Wide Range of Vehicles image" className="h-24" />
               Wide Range of Vehicles
             </li>
             <li className="flex items-center  gap-0 flex-col">
-              <img src={flexibility} loading="lazy" className="h-24" />
+              <img src={flexibility} loading="lazy" alt="Flexible Rental Plans image" className="h-24" />
               Flexible Rental Plans
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src={delivery} loading="lazy" className="h-24" />
+              <img src={delivery} loading="lazy" alt="Seamless Pickup & Drop-off image" className="h-24" />
               Seamless Pickup & Drop-off
             </li>
             <li className="flex items-center gap-0 flex-col">
-              <img src={tourbus} loading="lazy" className="h-24" />
+              <img src={tourbus} loading="lazy" alt=" Customized Tour Packages image" className="h-24" />
               Customized Tour Packages
             </li>
           </ul>
