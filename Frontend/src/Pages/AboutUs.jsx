@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BookNow from "../Components/BookNow";
 import WhyChooseUs from "../Components/WhyChooseUs";
-
+import { Helmet } from "react-helmet-async";
 import aboutusimage from '../assets/about/about-us.webp'
 import vision from '../assets/about/vision.webp'
 import mision from '../assets/about/mision.webp'
@@ -18,6 +18,15 @@ const AboutUs = () => {
 
   return (
     <div>
+      {/* SEO Optimizations */}
+<Helmet>
+  <title>About Us - Xpress Tour & Travels</title>
+  <meta 
+    name="description" 
+    content="Learn more about Xpress Tour & Travels, our mission, vision, and commitment to providing the best travel experiences, cab rentals, and tour services." 
+  />
+</Helmet>
+
       {/* Breadcrumb Section */}
       <h1 className="breadcrumb relative md:pt-32 pt-24 pb-12 font-semibold text-center mb-12 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
@@ -114,7 +123,7 @@ const AboutUs = () => {
             data-aos="zoome-in"
             className="w-full h-52 object-cover rounded mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-1 px-2">Our Vision</h3>
+          <div className="text-2xl font-semibold mb-1 px-2">Our Vision</div>
           <p className="md:text-lg text-base px-2">
             To provide safe, reliable, and high-quality transportation services
             that our customers can trust and depend on.
@@ -128,7 +137,7 @@ const AboutUs = () => {
             loading="lazy"
             className="w-full h-52 object-cover rounded mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-1 px-2">Our Mission</h3>
+          <div className="text-2xl font-semibold mb-1 px-2">Our Mission</div>
           <p className="md:text-lg text-base px-2">
             To deliver exceptional travel experiences by offering tailored
             solutions and promoting sustainable tourism practices.
@@ -142,7 +151,7 @@ const AboutUs = () => {
             alt="Services"
             className="w-full h-52 object-cover rounded mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-1 px-2">Core Values</h3>
+          <div className="text-2xl font-semibold mb-1 px-2">Core Values</div>
           <p className="md:text-lg text-base px-2">
             From last-minute <span className="font-bold">train tickets</span> to
             affordable <span className="font-bold">airfares</span>, we provide

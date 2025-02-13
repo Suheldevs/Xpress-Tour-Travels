@@ -119,6 +119,8 @@ const FAQ = () => {
         {faqCategories.map((category, idx) => (
           <button
             key={idx}
+            title={category}
+            aria-label={category}
             className={`px-4 py-2 rounded-lg font-medium lg:w-fit  ${
               selectedCategory === idx ? "bg-secondary text-white" : "bg-primary text-white"
             }`}

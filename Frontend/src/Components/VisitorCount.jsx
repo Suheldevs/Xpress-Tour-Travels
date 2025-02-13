@@ -3,7 +3,7 @@ import axios from 'axios';
 import { FaGlobe } from 'react-icons/fa';
 
 function GlobetrotterTracker() {
-  const [count, setCount] = useState(null); // Null to indicate loading
+  const [count, setCount] = useState(null); 
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function GlobetrotterTracker() {
         setCount(res.data.totalVisitors);
       } catch (error) {
         console.error("Error fetching visitor count:", error);
-        setCount(0); // Fallback in case of an error
+        setCount(0); 
       }
     };
 
