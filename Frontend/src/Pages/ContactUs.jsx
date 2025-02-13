@@ -333,8 +333,7 @@ const ContactUs = () => {
  
       </div>
             
-             <div className="bg-white py-4 rounded-lg shadow-lg">
-          {/* <div className="text-2xl font-semibold mb-2">Our Location</div> */}
+             <div className="bg-white py-4 rounded-lg shadow-lg md:px-4">
           <iframe
             className="w-full md:h-96 h-[20rem] rounded-md"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.671640149946!2d81.003404574093!3d26.88217166140491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaddf88da7f%3A0x436ab4e6e38ea103!2sXpress%20Tour%20And%20Travels!5e0!3m2!1sen!2sin!4v1737034567545!5m2!1sen!2sin"

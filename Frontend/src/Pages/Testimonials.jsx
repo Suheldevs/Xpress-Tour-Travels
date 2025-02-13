@@ -28,7 +28,7 @@ function Testimonials() {
       </h1>
 
       {loading && (
-        <div className="w-full bg-slate-50 px-1  flex flex-wrap gap-4 justify-center">
+        <div className="w-full bg-slate-50 py-10 px-6 flex flex-wrap gap-4 justify-center">
           {[...Array(12)].map((_, index) => (
             <div
               key={index}

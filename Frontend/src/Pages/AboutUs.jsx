@@ -4,9 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BookNow from "../Components/BookNow";
 import WhyChooseUs from "../Components/WhyChooseUs";
-import { FaCar } from "react-icons/fa";
-const AboutUs = () => {
 
+import aboutusimage from '../assets/about/about-us.webp'
+import vision from '../assets/about/vision.webp'
+import mision from '../assets/about/mision.webp'
+import service from '../assets/about/service.webp'
+
+const AboutUs = () => {
   useEffect(() => {
     AOS.init();
     window.scrollTo(0, 0);
@@ -55,17 +59,17 @@ const AboutUs = () => {
 
           {/* Content Section */}
           <div className="space-y-4">
-          <p className="text-base text-gray-700 lg:text-start text-start  mt-4 md:text-lg">
-  We are approved by the{" "}
-  <span className="font-bold">
-    Government of India, Department of Tourism
-  </span>{" "}
-  and are proud members of the{" "}
-  <span className="font-bold">
-    IATO (Indian Association of Tour Operators)
-  </span>
-  .
-</p>
+            <p className="text-base text-gray-700 lg:text-start text-start  mt-4 md:text-lg">
+              We are approved by the{" "}
+              <span className="font-bold">
+                Government of India, Department of Tourism
+              </span>{" "}
+              and are proud members of the{" "}
+              <span className="font-bold">
+                IATO (Indian Association of Tour Operators)
+              </span>
+              .
+            </p>
 
             <p className="text-base text-gray-700 lg:text-start text-start   md:text-lg ">
               Our fleet of well-maintained vehicles is designed to meet all your
@@ -91,7 +95,7 @@ const AboutUs = () => {
         </div>
         <div className="flex-[6] md:block hidden md:p-2 p-0">
           <img
-            src="about-us.jpg"
+            src={aboutusimage}
             data-aos="zoom-in"
             loading="lazy"
             alt="Xpress Tour & Travels"
@@ -104,7 +108,7 @@ const AboutUs = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mx-10 mx-4">
         <div className="p-2 bg-white rounded shadow-xl" data-aos="fade-up">
           <img
-            src="vision.jpg"
+            src={vision}
             alt="Vision"
             loading="lazy"
             data-aos="zoome-in"
@@ -119,7 +123,7 @@ const AboutUs = () => {
         <div className="p-2 bg-white rounded shadow-2xl" data-aos="fade-up">
           <img
             data-aos="zoome-in"
-            src="mission.jpg"
+            src={mision}
             alt="Mission"
             loading="lazy"
             className="w-full h-52 object-cover rounded mb-4"
@@ -134,7 +138,7 @@ const AboutUs = () => {
           <img
             data-aos="zoom-in"
             loading="lazy"
-            src="services.jpg"
+            src={service}
             alt="Services"
             className="w-full h-52 object-cover rounded mb-4"
           />

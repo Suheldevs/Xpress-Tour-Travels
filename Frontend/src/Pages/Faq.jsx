@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,memo} from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import faq from '../assets/faq.webp'
 
 const faqCategories = [
   {
@@ -154,11 +155,11 @@ const FAQ = () => {
         ))}
       </div>
       <div className="flex-1 rounded md:p-6 p-0 mt-[-10px]">
-        <img src="faq.webp" loading="lazy" className="rounded"/>
+        <img src={faq} loading="lazy" className="rounded"/>
       </div>
       </div>
     </div>
   );
 };
 
-export default FAQ;
+export default memo(FAQ);

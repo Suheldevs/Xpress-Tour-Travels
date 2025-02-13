@@ -10,6 +10,7 @@ import { GiRotaryPhone } from "react-icons/gi";
 import BottomFooter from "./CopyRightsection";
 import Aos from "aos";
 import { FaLocationDot } from "react-icons/fa6";
+import logo from '../assets/Home/xpress.webp'
 import VisitorCounter from "./VisitorCount";
 
 const Footer = () => {
@@ -57,7 +58,7 @@ const Footer = () => {
           {/* Logo and Social Links */}
           <div>
             <Link to="/" onClick={handleLogoClick} className="flex justify-center items-center">
-              <img src="xpress.jpg" className="h-24 rounded-full" />
+              <img src={logo} className="h-24 rounded-full" />
             </Link>
             <h2 className="text-xl mt-3 font-bold text-secondary text-center mb-2">
               <Link to="/" onClick={handleLogoClick}> Xpress Tour & Travels </Link>
@@ -65,15 +66,7 @@ const Footer = () => {
             <p className="text-gray-200 text-center">
               Travel with trust and comfort. Your satisfaction is our priority.
             </p>
-            {/* <div className="flex items-start mx-auto justify-center mt-2 gap-4">
-                <Link to="/" onClick={handleLogoClick} className="flex justify-center items-center">
-                <img src="xpress.jpg" className="w-10 h-10 rounded-full" />
-                </Link>
-                <div>
-                  <p>Total Count:</p>
-                  <h4 className="bg-secondary w-fit px-2 py-2">20</h4>
-                </div>
-            </div> */}
+            
 <VisitorCounter/>
           </div>
 

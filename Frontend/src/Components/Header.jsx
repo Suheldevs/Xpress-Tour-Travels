@@ -21,7 +21,7 @@ const Header = () => {
               src={logo} 
               alt="Xpress Tour & Travels Logo" 
               className="h-[5rem] md:h-[8rem] rounded-full" 
-              loading="lazy" 
+              loading="eager" 
             />
           </Link>
         </div>
@@ -83,7 +83,7 @@ const Header = () => {
         )}
 
         {/* Desktop Navbar */}
-        <ul className="hidden lg:flex space-x-6 text-lg font-medium">
+        <ul className="hidden lg:flex space-x-10 text-lg font-medium">
           <li>
             <Link to="/" className="hover:text-secondary">
               Home

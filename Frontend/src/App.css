@@ -20,48 +20,11 @@ body{
   font-family: "Montserrat", serif;
 }
 
-/* p{
-    font-size: 1.1rem;
-    color:rgb(205, 207, 209)
-} */
 
-/* Custom Pagination Dots */
-/* Swiper pagination container */
-/* Swiper pagination container */
-
-
-
-
-
-
-/* .animat{
-    animation: feature-border 2s infinite;
-}
-@keyframes feature-border {
-    0% {
-      .first{
-        color: #f1c40f;
-        border: 2px solid #f1c40f;
-      }
-    }
-    25% {
-        .second{
-            border: 2px solid #f1c40f;
-          }
-    }
-    50% {
-        .third{
-            border: 2px solid #f1c40f;
-          }
-    }
-    100% {
-      
-    }
-  } */
 
   /* breadcrumb satrt */
   .breadcrumb{
-    background:url('/breadcrumb.jpg');
+    background:url('./assets/breadcrumb.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

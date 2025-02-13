@@ -4,7 +4,7 @@ import { FaRegCopyright } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const BottomFooter = () => {
-  // Copyright 2024 Dr. Mamta || All Rights Reserved || Designed By
+
   return (
     <div className="bg-primary ">
   <div className="flex flex-wrap items-center justify-center text-xs sm:text-sm md:text-[14px]  text-white w-full gap-1 px-4">

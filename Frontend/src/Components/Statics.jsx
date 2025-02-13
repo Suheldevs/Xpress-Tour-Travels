@@ -1,12 +1,14 @@
 // StatsComponent.jsx
-import React from "react";
-import { FaCog, FaProjectDiagram, FaUsers, FaSmile, FaCar } from "react-icons/fa";
+import React , {memo} from "react";
 import { AiOutlineSafety } from "react-icons/ai";
+import experience4 from '../assets/Home/statics/experience-4.svg'
+import experience1 from '../assets/Home/statics/experience-1.svg'
+import driver from '../assets/Home/statics/driver.png'
 
 const stats = [
-    { id: 4, icon: <img src='statics/experience-4.svg'className="h-full w-full"/>, title: "Happy Clients", value: "100000+" },
-  { id: 1, icon: <img src='statics/experience-1.svg'className="h-full w-full"/>, title: "Years Of Experience", value: "27+" },
-  { id: 2, icon: <img src='statics/driver.png'className="h-full w-full"/>, title: "Professional Drivers", value: "100%" },
+    { id: 4, icon: <img src={experience4} className="h-full w-full"/>, title: "Happy Clients", value: "100000+" },
+  { id: 1, icon: <img src={experience1} className="h-full w-full"/>, title: "Years Of Experience", value: "27+" },
+  { id: 2, icon: <img src={driver} className="h-full w-full"/>, title: "Professional Drivers", value: "100%" },
   { id: 3, icon: <AiOutlineSafety className="h-full w-full"/>, title: "Safety", value: "100%" },
 ];
 
@@ -35,4 +37,4 @@ const StatsComponent = () => {
   );
 };
 
-export default StatsComponent;
+export default memo(StatsComponent);
