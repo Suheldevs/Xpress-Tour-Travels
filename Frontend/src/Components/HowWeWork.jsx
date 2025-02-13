@@ -78,9 +78,9 @@ const HowWeWork = () => {
                     <div className="">{index + 1}.</div>{" "}
                     <div className="pt-4"> {step.icon}</div>
                   </div>
-                  <h4 className="text-2xl font-medium text-gray-800">
+                  <p className="text-2xl font-medium text-gray-800">
                     {step.title}
-                  </h4>
+                  </p>
                   <p className="text-gray-600 text-sm mt-2 text-left">
                     {step.description}
                   </p>

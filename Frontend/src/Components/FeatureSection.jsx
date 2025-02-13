@@ -63,7 +63,7 @@ const FeatureSection = React.memo(() => {
               <div className="opacity-50">
                 <hr />
               </div>
-              <p className="text-gray-400 mt-4">{feature.description}</p>
+              <p className="text-gray-100 mt-4">{feature.description}</p>
             </div>
           ))}
         </div>

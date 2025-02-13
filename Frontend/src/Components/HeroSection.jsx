@@ -30,11 +30,12 @@ const HeroSection = () => {
     <section className="relative md:h-[90vh] h-[60vh] w-full overflow-hidden bg-gradient-to-b from-gray-600 to-primary">
       <video
         className="absolute opacity-25 top-0 left-0 h-full w-full object-cover"
-        src="https://res.cloudinary.com/diz0v7rws/video/upload/v1739359332/Express/bg-video.mp4"
+        src="https://res.cloudinary.com/diz0v7rws/video/upload/q_auto,f_auto/v1739359332/Express/bg-video.mp4"
         autoPlay
         loop
         muted
         playsInline
+        crossOrigin="anonymous"
       >
         <track
           src="captions.vtt"
