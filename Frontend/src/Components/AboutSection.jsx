@@ -2,10 +2,10 @@ import React from "react";
 import { FaCar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import car from '../assets/Home/About/car.png'
-import delivery from '../assets/Home/About/delivery-location.png'
-import flexibility from '../assets/Home/About/flexibility.png'
-import tourbus from '../assets/Home/About/tour-bus.png'
+import car from '../assets/Home/About/car.webp'
+import delivery from '../assets/Home/About/delivery-location.webp'
+import flexibility from '../assets/Home/About/flexibility.webp'
+import tourbus from '../assets/Home/About/tour-bus.webp'
 
 const AboutComponent = () => {
   return (

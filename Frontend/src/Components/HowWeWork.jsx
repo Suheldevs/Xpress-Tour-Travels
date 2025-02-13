@@ -53,9 +53,9 @@ const HowWeWork = () => {
         <div className="relative grid grid-cols-1 md:grid-cols-4" data-aos='fade-up'>
           {/* Left Section */}
           <div className="bg-gray-200 p-6 rounded-l-lg shadow-md lg:flex flex-col justify-between hidden ">
-            <h4 className="text-4xl font-semibold text-gray-800 mb-4">
+            <p className="text-4xl font-semibold text-gray-800 mb-4">
               Top Cars
-            </h4>
+            </p>
             <p className="text-gray-700 text-sm mb-6">
               Explore our top-rated, most popular cars, each maintained to the
               highest standards for comfort, safety, and performance.
@@ -90,9 +90,9 @@ const HowWeWork = () => {
           </div>
           {/* Left Section */}
           <div className="bg-gray-200 p-6 rounded-lg shadow-md flex flex-col mt-4 justify-between lg:hidden ">
-            <h4 className="text-2xl font-semibold text-gray-800 mb-4">
+            <p className="text-2xl font-semibold text-gray-800 mb-4">
               Top Cars
-            </h4>
+            </p>
             <p className="text-gray-700 text-sm mb-6">
               Explore our top-rated, most popular cars, each maintained to the
               highest standards for comfort, safety, and performance.

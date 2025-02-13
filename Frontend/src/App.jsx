@@ -1,17 +1,17 @@
-import React, { Suspense, lazy } from 'react';
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home'; 
-import 'aos/dist/aos.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import SocialSidebar from './Components/Sidebaar';
+import React, { Suspense, lazy } from "react";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import "aos/dist/aos.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import SocialSidebar from "./Components/Sidebaar";
 
-const FAQ = lazy(() => import('./Pages/Faq'));
-const Services = lazy(() => import('./Pages/OurServices'));
-const Testimonials = lazy(() => import('./Pages/Testimonials'));
-const ContactUs = lazy(() => import('./Pages/ContactUs'));
-const AboutUs = lazy(() => import('./Pages/AboutUs'));
+const FAQ = lazy(() => import("./Pages/Faq"));
+const Services = lazy(() => import("./Pages/OurServices"));
+const Testimonials = lazy(() => import("./Pages/Testimonials"));
+const ContactUs = lazy(() => import("./Pages/ContactUs"));
+const AboutUs = lazy(() => import("./Pages/AboutUs"));
 
 const App = () => {
   return (
@@ -23,9 +23,13 @@ const App = () => {
         <Route
           path="/faq"
           element={
-            <Suspense fallback={<div className="flex justify-center items-center p-12">
-  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
-</div>}>
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center p-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+                </div>
+              }
+            >
               <FAQ />
             </Suspense>
           }
@@ -33,9 +37,13 @@ const App = () => {
         <Route
           path="/services"
           element={
-            <Suspense fallback={<div className="flex justify-center items-center p-12">
-  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
-</div>}>
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center p-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+                </div>
+              }
+            >
               <Services />
             </Suspense>
           }
@@ -43,9 +51,13 @@ const App = () => {
         <Route
           path="/testimonial"
           element={
-            <Suspense fallback={<div className="flex justify-center items-center p-12">
-  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
-</div>}>
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center p-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+                </div>
+              }
+            >
               <Testimonials />
             </Suspense>
           }
@@ -53,9 +65,13 @@ const App = () => {
         <Route
           path="/contact"
           element={
-            <Suspense fallback={<div className="flex justify-center items-center p-12">
-  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
-</div>}>
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center p-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+                </div>
+              }
+            >
               <ContactUs />
             </Suspense>
           }
@@ -63,9 +79,13 @@ const App = () => {
         <Route
           path="/about"
           element={
-            <Suspense fallback={<div className="flex justify-center items-center p-12">
-  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
-</div>}>
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center p-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-gray-900"></div>
+                </div>
+              }
+            >
               <AboutUs />
             </Suspense>
           }
