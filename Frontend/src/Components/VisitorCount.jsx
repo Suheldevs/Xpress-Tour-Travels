@@ -3,30 +3,20 @@ import axios from 'axios';
 import { FaGlobe } from 'react-icons/fa';
 
 function GlobetrotterTracker() {
-  const [count, setCount] = useState(null);
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const [count, setCount] = useState('0');
+
+  const fetchVisitorCount = async () => {
+    try {
+      const res = await axios.get(`https://db.drmanasaggarwal.com/express/vistor-count`, { withCredentials: true });
+      setCount(res.data.totalVisitors);
+    } catch (error) {
+      setCount('0');
+    }
+  };
 
   useEffect(() => {
-    const fetchVisitorCount = async () => {
-      try {
-        const res = await axios.get(`${backendUrl}/visitor-count`, { withCredentials: true });
-        setCount(res.data.totalVisitors);
-      } catch (error) {
-        setCount(0);
-      }
-    };
-
-   
-    const handleLoad = () => {
-      fetchVisitorCount();
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
+    fetchVisitorCount()
+  },[])
 
   return (
     <div className="flex justify-center mt-2">
@@ -34,7 +24,7 @@ function GlobetrotterTracker() {
         <span className="text-base font-medium flex justify-center items-center">
           <FaGlobe className="inline mr-1" /> Explorer:
         </span>
-        <span className="ml-2 text-lg font-semibold">{count !== null ? count : "Loading..."}</span>
+        <span className="ml-2 text-lg font-semibold">{count !== null ? count : "0"}</span>
       </div>
     </div>
   );

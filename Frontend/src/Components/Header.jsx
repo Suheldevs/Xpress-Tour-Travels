@@ -1,7 +1,7 @@
 import React, { useState, useCallback, memo } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/Home/xpress-logo.webp";
+import logo from "../assets/xpress-logo.png";
 
 const NavLinks = memo(({ toggleMenu }) => (
   <>
@@ -74,7 +74,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Xpress Tour & Travels Logo" 
-              className="h-[5rem] md:h-[8rem] rounded-full" 
+              className="h-[4rem] md:h-[7rem] rounded-full" 
               loading="eager" 
               title="Xpress Tour & Travels Logo"
             />

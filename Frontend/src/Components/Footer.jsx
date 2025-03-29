@@ -5,7 +5,7 @@ import { GiRotaryPhone } from "react-icons/gi";
 import BottomFooter from "./CopyRightsection";
 import Aos from "aos";
 import { FaLocationDot } from "react-icons/fa6";
-import logo from "../assets/Home/xpress.webp";
+import logo from "../assets/xpress-logo.png";
 import VisitorCounter from "./VisitorCount";
 
 const Footer = () => {

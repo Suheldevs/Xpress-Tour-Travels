@@ -17,8 +17,8 @@ const BottomFooter = () => {
       <span className="hidden sm:inline-block">||</span>
     </div>
     <div className="flex flex-wrap items-center justify-center gap-1 text-center">
-      <span className="text-white">Designed by</span>
-      <Link
+      <span className="text-white">Designed by</span> Mohd Suhel
+      {/* <Link
         to="https://www.codecrafter.co.in/"
         target="_blank"
         rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const BottomFooter = () => {
           alt="Designed by Company"
           className="h-auto w-[6rem] md:w-[7rem] lg:w-[8rem] inline-block"
         />
-      </Link>
+      </Link> */}
     </div>
   </div>
 </div>
