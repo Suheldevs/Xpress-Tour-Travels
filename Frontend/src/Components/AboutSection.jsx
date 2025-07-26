@@ -28,7 +28,7 @@ const AboutComponent = () => {
     Our fleet of well-maintained vehicles is designed to meet all your travel needs, whether you're commuting for business, exploring the city, or heading to the airport. With a team of professional drivers who are knowledgeable about local routes and dedicated to your safety, we guarantee a smooth and enjoyable ride every time.
   </p>
   <p className="md:text-lg text-[1rem] text-justify text-gray-700 mt-1 w-full">
-    At <strong>Xpress Tour & Travels</strong>, we prioritize convenience and flexibility. Our easy booking system and <strong>24/7 customer support</strong> ensure that you can reserve your cab whenever you need it. We believe in <strong>transparent pricing</strong>, with no hidden fees, so you can travel with peace of mind.
+    At <strong>Xpress Tour & Travels</strong>, we prioritize convenience and flexibility. Our easy booking system and <strong><Link to="/contact" className="font-semibold underline text-blue-500"> 24/7 customer support </Link></strong> ensure that you can reserve your cab whenever you need it. We believe in <strong>transparent pricing</strong>, with no hidden fees, so you can travel with peace of mind.
   </p>
 {/* </div> */}
 

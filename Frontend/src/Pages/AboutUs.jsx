@@ -59,7 +59,7 @@ const AboutUs = () => {
               services. Established with a passion for providing exceptional
               transportation solutions, we have built a reputation for safety,
               comfort, and customer satisfaction. We offer a range of services,
-              including <strong>Best Cab Rental Services In Lucknow</strong>,{" "}
+              including <Link to="/" className="font-semibold underline text-blue-500"> Best Cab Rental Services In Lucknow</Link> ,{" "}
               <span className="font-bold">taxi services in Lucknow</span>,{" "}
               <span className="font-bold">flight booking</span>, and{" "}
               <span className="font-bold">tour packages</span>.

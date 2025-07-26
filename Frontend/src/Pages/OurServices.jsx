@@ -23,7 +23,7 @@ const services = [
     title: "Air Ticketing Services",
     id:'air',
     image: `${air}`, 
-    content: `We offer comprehensive Air Ticket Booking Services for domestic and international flights, catering to business, leisure, and emergency travel. Our team partners with major airlines to provide the best prices and special rates. We simplify your travel experience with services like seat selection, web check-in, and booking management. During peak seasons, we excel at securing hard-to-get tickets, ensuring a smooth and hassle-free booking process. Trust us for timely, affordable, and reliable travel solutions. If you're traveling during peak seasons, ensuring a smooth and hassle-free booking experience.`,
+    content: <>We offer comprehensive Air Ticket Booking Services for domestic and international flights, catering to business, leisure, and emergency travel. Our team partners with major airlines to provide the best prices and special rates. We simplify your travel experience with services like seat selection, web check-in, and booking management. During peak seasons, we excel at securing hard-to-get tickets, ensuring a smooth and hassle-free booking process. Trust us for timely, affordable, and <Link to="/about" className="font-semibold underline text-blue-400"> reliable travel solutions</Link> . If you're traveling during peak seasons, ensuring a smooth and hassle-free booking experience.</>,
   },
   {
     title: "Tour Packages",
@@ -111,7 +111,7 @@ const Services = () => {
            {/* Right Side (Content) */}
            <div className={`w-full md:w-1/2 ${index % 2 != 0 ? 'md:pr-4':'md:pl-4' }  px-2 md:px-0 `}>
               <h2 className="md:text-4xl text-2xl font-semibold mb-4 md:mt-0 mt-2">{service.title}</h2>
-              <p className=" leading-relaxed text-left">{service.content}</p>
+              <p className=" leading-relaxed text-left">{service.content}  </p>
               <div className={` text-center inline-block mt-4 ${index % 2 != 0 ? 'border-gray-100':'border-primary'} rounded-full`}>
             <Link to='/contact' className="bg-secondary btn2 ease-in-out block  md:mb-0 mb-4 lg:text-xl text-lg font-semibold px-8 hover:px-11 rounded-full shadow-md transition-all duration-500">
               Enquire Now
